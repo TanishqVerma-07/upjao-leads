@@ -1,0 +1,12 @@
+# Obsidian vault is generated FROM the graph — never feed it back in,
+# or every `graphify update` re-extracts its own notes and the graph explodes.
+Sales Product/
+
+# Standard noise
+**/node_modules/
+**/__pycache__/
+**/.venv/
+backend/venv/
+backend/uploads/
+*.db
+.DS_Store
