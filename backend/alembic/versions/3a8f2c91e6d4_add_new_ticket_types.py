@@ -25,6 +25,12 @@ NEW_VALUES = OLD_VALUES + (
 
 def upgrade() -> None:
     """Upgrade schema."""
+    bind = op.get_bind()
+    if bind.dialect.name != 'sqlite':
+        # SQLAlchemy 2.x defaults create_constraint=False for native_enum=False,
+        # so this column is a plain VARCHAR with no DB-level CHECK constraint on
+        # Postgres — and all new values fit the existing length. Nothing to do.
+        return
     with op.batch_alter_table('tickets', recreate='always') as batch_op:
         batch_op.alter_column(
             'type',
@@ -36,6 +42,9 @@ def upgrade() -> None:
 
 def downgrade() -> None:
     """Downgrade schema."""
+    bind = op.get_bind()
+    if bind.dialect.name != 'sqlite':
+        return
     with op.batch_alter_table('tickets', recreate='always') as batch_op:
         batch_op.alter_column(
             'type',
