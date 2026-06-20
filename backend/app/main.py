@@ -16,6 +16,9 @@ app = FastAPI(title="Upjao Leads API", version="0.1.0")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[o.strip() for o in settings.ALLOWED_ORIGINS.split(",") if o.strip()],
+    # Also accept any Vercel deployment (preview + prod) without needing to pin
+    # the exact URL in ALLOWED_ORIGINS. Matches https://<anything>.vercel.app.
+    allow_origin_regex=r"https://.*\.vercel\.app",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
