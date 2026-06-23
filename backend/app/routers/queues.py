@@ -57,3 +57,11 @@ def product_queue(
     current_user: User = Depends(require_role(UserRole.product, UserRole.admin)),
 ):
     return _build_queue(db, TeamTarget.product)
+
+
+@router.get("/tech", response_model=List[TicketOut])
+def tech_queue(
+    db: Session = Depends(get_db),
+    current_user: User = Depends(require_role(UserRole.tech, UserRole.admin)),
+):
+    return _build_queue(db, TeamTarget.tech)

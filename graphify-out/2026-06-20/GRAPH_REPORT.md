@@ -1,16 +1,16 @@
 # Graph Report - sales product  (2026-06-20)
 
 ## Corpus Check
-- 75 files · ~33,394 words
+- 75 files · ~33,372 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 555 nodes · 1625 edges · 39 communities (38 shown, 1 thin omitted)
+- 555 nodes · 1624 edges · 39 communities (38 shown, 1 thin omitted)
 - Extraction: 52% EXTRACTED · 48% INFERRED · 0% AMBIGUOUS · INFERRED: 783 edges (avg confidence: 0.51)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `db625bab`
+- Built from commit: `8229ec71`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -207,7 +207,7 @@ Nodes (3): Expanding the ESLint configuration, React Compiler, React + Vite
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `UserRole` connect `API Schemas & Pydantic Models` to `Database Models & Lead/Ticket Logic`, `Project Docs & Dependencies`, `WebSocket & Notifications`, `Admin & Attachments UI`, `WebSocket Connection Manager`?**
-  _High betweenness centrality (0.023) - this node is a cross-community bridge._
+  _High betweenness centrality (0.024) - this node is a cross-community bridge._
 - **Why does `User` connect `Database Models & Lead/Ticket Logic` to `API Schemas & Pydantic Models`, `Project Docs & Dependencies`, `WebSocket & Notifications`, `Admin & Attachments UI`, `WebSocket Connection Manager`?**
   _High betweenness centrality (0.020) - this node is a cross-community bridge._
 - **Why does `ConnectionManager` connect `Lead Detail Page` to `WebSocket & Notifications`?**

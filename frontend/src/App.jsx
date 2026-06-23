@@ -38,13 +38,13 @@ export default function App() {
           } />
 
           <Route path="/queue" element={
-            <ProtectedRoute roles={["sales", "product"]}>
+            <ProtectedRoute roles={["sales", "product", "tech"]}>
               <Layout><QueuePage /></Layout>
             </ProtectedRoute>
           } />
 
           <Route path="/capabilities" element={
-            <ProtectedRoute roles={["product", "admin"]}>
+            <ProtectedRoute roles={["product", "tech", "admin"]}>
               <Layout><CapabilitiesPage /></Layout>
             </ProtectedRoute>
           } />

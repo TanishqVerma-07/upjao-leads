@@ -48,7 +48,7 @@ def compute_lead_status(db: Session, lead: Lead) -> LeadStatus:
         return LeadStatus.new
     open_statuses = {
         "New", "Accepted", "AI Analysing", "Open", "Contacted Lead", "Partial Sample",
-        "Under Review", "Re-Testing",
+        "Under Review", "In Progress", "Deployed",
     }
     has_open = any(t.status in open_statuses and not t.is_on_hold for t in tickets)
     return LeadStatus.active if has_open else LeadStatus.idle

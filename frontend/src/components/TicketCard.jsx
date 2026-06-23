@@ -37,16 +37,27 @@ const SAMPLE_SALES_OPTIONS = {
 const FORWARD_MAP = {
   analysis_request: { "New": "Accepted", "Accepted": "AI Analysing", "AI Analysing": "Done" },
   general:          { "Open": "Closed" },
-  new_commodity:    { "New": "Under Review", "Under Review": "Approved" },
-  new_variety:      { "New": "Under Review", "Under Review": "Approved" },
-  quality_mismatch: { "New": "Re-Testing", "Re-Testing": "Resolved" },
-  accuracy_issue:   { "New": "Under Review", "Under Review": "Resolved" },
+  // Buildable types share the 3-stage flow: Product triages, hands to Tech, Tech
+  // ships, Product confirms with the client.
+  new_commodity:    { "New": "Under Review", "Under Review": "In Progress", "In Progress": "Deployed", "Deployed": "Approved" },
+  new_variety:      { "New": "Under Review", "Under Review": "In Progress", "In Progress": "Deployed", "Deployed": "Approved" },
+  quality_mismatch: { "New": "Under Review", "Under Review": "In Progress", "In Progress": "Deployed", "Deployed": "Resolved" },
+  accuracy_issue:   { "New": "Under Review", "Under Review": "In Progress", "In Progress": "Deployed", "Deployed": "Resolved" },
 };
 
-// Types Product owns end-to-end — Sales can raise them but not move status forward
-const PRODUCT_DRIVEN_TYPES = new Set([
-  "analysis_request", "new_commodity", "new_variety", "quality_mismatch", "accuracy_issue",
-]);
+// Which role may advance a ticket out of its CURRENT status. null = any team member.
+// Mirrors the backend TRANSITION_ROLES so the UI only offers actions the user can do.
+function nextStepRole(type, status) {
+  if (type === "general") return null;            // either team can close
+  if (type === "analysis_request") return "product";
+  // Buildable types — Product owns triage + client confirmation, Tech owns the build
+  return {
+    "New": "product",
+    "Under Review": "product",   // Product hands off to Tech
+    "In Progress": "tech",       // Tech builds, then marks Deployed
+    "Deployed": "product",       // Product confirms with client → terminal
+  }[status] || null;
+}
 
 const TERMINAL = new Set(["Done", "Received", "Closed", "Rejected", "Approved", "Resolved"]);
 
@@ -119,13 +130,13 @@ export default function TicketCard({ ticket, onRefresh, dimmed = false }) {
   const isPartialSample  = ticket.status === "Partial Sample";
   const salesSeesActions = role === "sales" && isSampleRequest && !isTerminal;
   const productSeesPartialActions = role === "product" && isSampleRequest && isPartialSample;
-  // Product-driven types are owned by Product end-to-end; general is open to both; admin is read-only
-  const isProductDriven = PRODUCT_DRIVEN_TYPES.has(ticket.type);
-  const showGenericDropdown = !isSampleRequest && !isTerminal &&
-    !(isProductDriven && role === "sales") &&
-    role !== "admin";
 
   const genericNext = FORWARD_MAP[ticket.type]?.[ticket.status] || null;
+
+  // Only the role that owns the current step may advance it; admin is read-only.
+  const stepRole = nextStepRole(ticket.type, ticket.status);
+  const roleCanAct = role !== "admin" && (stepRole === null || stepRole === role);
+  const showGenericDropdown = !isSampleRequest && !isTerminal && !!genericNext && roleCanAct;
 
   const genericOptions = [];
   if (genericNext) genericOptions.push({ value: genericNext, label: `→ ${genericNext}` });

@@ -19,6 +19,7 @@ def _utcnow():
 class UserRole(str, enum.Enum):
     sales = "sales"
     product = "product"
+    tech = "tech"
     admin = "admin"
 
 
@@ -63,6 +64,7 @@ class TicketType(str, enum.Enum):
 class TeamTarget(str, enum.Enum):
     sales = "sales"
     product = "product"
+    tech = "tech"
 
 
 class CommentVisibility(str, enum.Enum):

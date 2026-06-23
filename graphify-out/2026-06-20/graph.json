@@ -4,54 +4,14 @@
   "graph": {},
   "nodes": [
     {
-      "label": "main.py",
-      "file_type": "code",
-      "source_file": "backend/app/main.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "app_main",
-      "community": 5,
-      "norm_label": "main.py"
-    },
-    {
-      "label": "startup()",
-      "file_type": "code",
-      "source_file": "backend/app/main.py",
-      "source_location": "L40",
-      "_origin": "ast",
-      "id": "app_main_startup",
-      "community": 5,
-      "norm_label": "startup()"
-    },
-    {
-      "label": "shutdown()",
-      "file_type": "code",
-      "source_file": "backend/app/main.py",
-      "source_location": "L46",
-      "_origin": "ast",
-      "id": "app_main_shutdown",
-      "community": 5,
-      "norm_label": "shutdown()"
-    },
-    {
-      "label": "health()",
-      "file_type": "code",
-      "source_file": "backend/app/main.py",
-      "source_location": "L51",
-      "_origin": "ast",
-      "id": "app_main_health",
-      "community": 5,
-      "norm_label": "health()"
-    },
-    {
       "label": "3a8f2c91e6d4_add_new_ticket_types.py",
       "file_type": "code",
       "source_file": "backend/alembic/versions/3a8f2c91e6d4_add_new_ticket_types.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "versions_3a8f2c91e6d4_add_new_ticket_types",
       "community": 32,
-      "norm_label": "3a8f2c91e6d4_add_new_ticket_types.py",
-      "id": "versions_3a8f2c91e6d4_add_new_ticket_types"
+      "norm_label": "3a8f2c91e6d4_add_new_ticket_types.py"
     },
     {
       "label": "upgrade()",
@@ -59,9 +19,9 @@
       "source_file": "backend/alembic/versions/3a8f2c91e6d4_add_new_ticket_types.py",
       "source_location": "L26",
       "_origin": "ast",
+      "id": "versions_3a8f2c91e6d4_add_new_ticket_types_upgrade",
       "community": 32,
-      "norm_label": "upgrade()",
-      "id": "versions_3a8f2c91e6d4_add_new_ticket_types_upgrade"
+      "norm_label": "upgrade()"
     },
     {
       "label": "downgrade()",
@@ -69,9 +29,9 @@
       "source_file": "backend/alembic/versions/3a8f2c91e6d4_add_new_ticket_types.py",
       "source_location": "L43",
       "_origin": "ast",
+      "id": "versions_3a8f2c91e6d4_add_new_ticket_types_downgrade",
       "community": 32,
-      "norm_label": "downgrade()",
-      "id": "versions_3a8f2c91e6d4_add_new_ticket_types_downgrade"
+      "norm_label": "downgrade()"
     },
     {
       "label": "app.json",
@@ -332,6 +292,46 @@
       "community": 0,
       "norm_label": "userrole",
       "id": "backend_app_deps_py_userrole"
+    },
+    {
+      "label": "main.py",
+      "file_type": "code",
+      "source_file": "backend/app/main.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 5,
+      "norm_label": "main.py",
+      "id": "app_main"
+    },
+    {
+      "label": "startup()",
+      "file_type": "code",
+      "source_file": "backend/app/main.py",
+      "source_location": "L36",
+      "_origin": "ast",
+      "community": 5,
+      "norm_label": "startup()",
+      "id": "app_main_startup"
+    },
+    {
+      "label": "shutdown()",
+      "file_type": "code",
+      "source_file": "backend/app/main.py",
+      "source_location": "L42",
+      "_origin": "ast",
+      "community": 5,
+      "norm_label": "shutdown()",
+      "id": "app_main_shutdown"
+    },
+    {
+      "label": "health()",
+      "file_type": "code",
+      "source_file": "backend/app/main.py",
+      "source_location": "L47",
+      "_origin": "ast",
+      "community": 5,
+      "norm_label": "health()",
+      "id": "app_main_health"
     },
     {
       "label": "models.py",
@@ -5556,91 +5556,6 @@
   ],
   "links": [
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/main.py",
-      "source_location": "L6",
-      "weight": 1.0,
-      "source": "app_main",
-      "target": "app_config",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/main.py",
-      "source_location": "L47",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "app_main",
-      "target": "app_main_health"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/main.py",
-      "source_location": "L42",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "app_main",
-      "target": "app_main_shutdown"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/main.py",
-      "source_location": "L36",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "app_main",
-      "target": "app_main_startup"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/main.py",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "app_main",
-      "target": "app_scheduler"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/main.py",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "app_main",
-      "target": "app_ws"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "backend/app/main.py",
-      "source_location": "L38",
-      "weight": 1.0,
-      "source": "app_main_startup",
-      "target": "app_scheduler_start_scheduler"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "backend/app/main.py",
-      "source_location": "L43",
-      "weight": 1.0,
-      "source": "app_main_shutdown",
-      "target": "app_scheduler_stop_scheduler"
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/alembic/versions/3a8f2c91e6d4_add_new_ticket_types.py",
@@ -6254,6 +6169,80 @@
       "confidence_score": 0.5,
       "source": "backend_app_deps_py_userrole",
       "target": "app_models_userrole"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/main.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_main",
+      "target": "app_main_health"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/main.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_main",
+      "target": "app_main_shutdown"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/main.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_main",
+      "target": "app_main_startup"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/main.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_main",
+      "target": "app_scheduler"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/main.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_main",
+      "target": "app_ws"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/app/main.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "app_main_startup",
+      "target": "app_scheduler_start_scheduler"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/app/main.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "app_main_shutdown",
+      "target": "app_scheduler_stop_scheduler"
     },
     {
       "relation": "contains",
@@ -22223,5 +22212,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "db625bab563081b20a97caa2f826841e34431dc7"
+  "built_at_commit": "8229ec71fe66a94a32fdf696f38947c8b4237287"
 }

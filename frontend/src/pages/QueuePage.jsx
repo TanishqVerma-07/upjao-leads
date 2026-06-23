@@ -13,7 +13,10 @@ export default function QueuePage() {
   const [tickets, setTickets] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const endpoint = user?.role === "sales" ? "/queues/sales" : "/queues/product";
+  const endpoint =
+    user?.role === "sales" ? "/queues/sales" :
+    user?.role === "tech"  ? "/queues/tech" :
+    "/queues/product";
 
   async function fetchQueue() {
     setLoading(true);
@@ -34,7 +37,7 @@ export default function QueuePage() {
       <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: "1.5rem" }}>
         <Inbox size={20} color="#0D9488" />
         <h1 style={{ fontSize: 24, fontWeight: 700, color: "#134E4A" }}>
-          {user?.role === "sales" ? "Sales Queue" : "Product Queue"}
+          {user?.role === "sales" ? "Sales Queue" : user?.role === "tech" ? "Tech Queue" : "Product Queue"}
         </h1>
         <span style={{ fontSize: 13, color: "#6B7280", marginLeft: 4 }}>
           {tickets.length} open ticket{tickets.length !== 1 ? "s" : ""}

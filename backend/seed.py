@@ -43,8 +43,14 @@ def seed():
                      password_hash=hash_pw("product123"), role=UserRole.product)
     hemali = User(name="Hemali", email="hemali@upjao.com",
                   password_hash=hash_pw("product123"), role=UserRole.product)
+    # Tech / ML-engineering team — owns model training, formula fixes, deploys
+    tech1 = User(name="Pranav Asthana", email="pranav@upjao.com",
+                 password_hash=hash_pw("tech123"), role=UserRole.tech)
+    tech2 = User(name="Pramod Swain", email="pramod@upjao.com",
+                 password_hash=hash_pw("tech123"), role=UserRole.tech)
 
-    db.add_all([admin, sales1, sales2, siddhi, pratamesh, product1, product2, sindhuja, hemali])
+    db.add_all([admin, sales1, sales2, siddhi, pratamesh,
+                product1, product2, sindhuja, hemali, tech1, tech2])
     db.flush()
 
     priya, ravi = sales1, sales2  # readable aliases used in later demo leads
@@ -280,11 +286,12 @@ def seed():
         changed_by=siddhi.id, note="Lead created",
     ))
 
+    # Currently sitting in the Tech queue (In Progress) — showcases the handoff.
     ticket5 = Ticket(
         lead_id=lead5.id,
         type=TicketType.quality_mismatch,
-        to_team=TeamTarget.product,
-        status="Re-Testing",
+        to_team=TeamTarget.tech,
+        status="In Progress",
         body="Client sent two grading reports for the same IR64 sample with conflicting moisture % — one says 12.1%, the other 14.8%. Need a re-test.",
         created_by=siddhi.id,
     )
@@ -298,13 +305,23 @@ def seed():
     ))
     db.add(StatusHistory(
         entity_type=EntityType.ticket, entity_id=ticket5.id,
-        from_status="New", to_status="Re-Testing",
-        changed_by=product2.id, note="Pulling sample for independent re-test",
+        from_status="New", to_status="Under Review",
+        changed_by=product2.id, note="Reproduced the discrepancy on our side",
+    ))
+    db.add(StatusHistory(
+        entity_type=EntityType.ticket, entity_id=ticket5.id,
+        from_status="Under Review", to_status="In Progress",
+        changed_by=product2.id, note="Handed to Tech for an independent re-test",
     ))
 
     db.add(Comment(
         lead_id=lead5.id, attached_ticket_id=ticket5.id, author_id=siddhi.id,
         body="Client is anxious — please prioritise, deadline is only 10 days out.",
+        visibility=CommentVisibility.shared,
+    ))
+    db.add(Comment(
+        lead_id=lead5.id, attached_ticket_id=ticket5.id, author_id=tech1.id,
+        body="Re-running the sample through a fresh annotation pass — will report numbers by tomorrow.",
         visibility=CommentVisibility.shared,
     ))
 
@@ -335,6 +352,7 @@ def seed():
         changed_by=siddhi.id, note="Lead created",
     ))
 
+    # Full lifecycle example — went all the way through Tech and back to Resolved.
     ticket6 = Ticket(
         lead_id=lead6.id,
         type=TicketType.accuracy_issue,
@@ -354,17 +372,32 @@ def seed():
     db.add(StatusHistory(
         entity_type=EntityType.ticket, entity_id=ticket6.id,
         from_status="New", to_status="Under Review",
-        changed_by=product1.id,
+        changed_by=product1.id, note="Confirmed the gap against our reference set",
     ))
     db.add(StatusHistory(
         entity_type=EntityType.ticket, entity_id=ticket6.id,
-        from_status="Under Review", to_status="Resolved",
-        changed_by=product1.id, note="Recalibrated model on this batch — gap closed to 1.2%",
+        from_status="Under Review", to_status="In Progress",
+        changed_by=product1.id, note="Handed to Tech to recalibrate the protein model",
+    ))
+    db.add(StatusHistory(
+        entity_type=EntityType.ticket, entity_id=ticket6.id,
+        from_status="In Progress", to_status="Deployed",
+        changed_by=tech2.id, note="Recalibrated on this batch — gap closed to 1.2%, pushed to PROD",
+    ))
+    db.add(StatusHistory(
+        entity_type=EntityType.ticket, entity_id=ticket6.id,
+        from_status="Deployed", to_status="Resolved",
+        changed_by=product1.id, note="Client confirmed the new numbers match — closing out",
     ))
 
     db.add(Comment(
+        lead_id=lead6.id, attached_ticket_id=ticket6.id, author_id=tech2.id,
+        body="Recalibrated and re-ran — within tolerance now. Deployed to production.",
+        visibility=CommentVisibility.shared,
+    ))
+    db.add(Comment(
         lead_id=lead6.id, attached_ticket_id=ticket6.id, author_id=product1.id,
-        body="Recalibrated and re-ran — within tolerance now. Sharing updated report with client.",
+        body="Shared the updated report with the client — they're happy. Resolved.",
         visibility=CommentVisibility.shared,
     ))
 
@@ -677,8 +710,8 @@ def seed():
                      message=f"New commodity request from {siddhi.name} on {lead3.client_name}", is_read=False),
         Notification(recipient_id=product2.id, type="new_ticket", lead_id=lead4.id, ticket_id=ticket4.id,
                      message=f"New variety request from {siddhi.name} on {lead4.client_name}", is_read=False),
-        Notification(recipient_id=siddhi.id, type="status_change", lead_id=lead5.id, ticket_id=ticket5.id,
-                     message="Ticket status updated to 'Re-Testing'", is_read=False),
+        Notification(recipient_id=tech1.id, type="status_change", lead_id=lead5.id, ticket_id=ticket5.id,
+                     message=f"Ticket handed to Tech on {lead5.client_name} — now In Progress", is_read=False),
         Notification(recipient_id=siddhi.id, type="status_change", lead_id=lead6.id, ticket_id=ticket6.id,
                      message="Ticket status updated to 'Resolved'", is_read=True),
         Notification(recipient_id=ravi.id, type="sla_breach", lead_id=lead10.id, ticket_id=ticket10.id,
@@ -696,9 +729,10 @@ def seed():
 
     db.commit()
     print("✓ Seed complete.")
-    print(f"  Users   : admin@upjao.com / priya@upjao.com / ravi@upjao.com / siddhi@upjao.com / pratamesh@upjao.com / "
-          f"ananya@upjao.com / dev@upjao.com / sindhuja@upjao.com / hemali@upjao.com")
-    print(f"  Password: admin123 (admin), sales123 (sales), product123 (product)")
+    print(f"  Sales   : priya@ / ravi@ / siddhi@ / pratamesh@  (sales123)")
+    print(f"  Product : ananya@ / dev@ / sindhuja@ / hemali@   (product123)")
+    print(f"  Tech    : pranav@ / pramod@                      (tech123)")
+    print(f"  Admin   : admin@upjao.com                        (admin123)")
     print(f"  Leads   : 15 total — covering new/active/idle/won/lost/dropped statuses")
     print(f"  Tickets : analysis_request, sample_request, general, new_commodity, new_variety, "
           f"quality_mismatch, accuracy_issue — including at-risk, on-hold, snoozed, and partial-sample examples")

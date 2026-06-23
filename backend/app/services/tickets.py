@@ -22,6 +22,24 @@ INITIAL_STATUS = {
     TicketType.accuracy_issue: "New",
 }
 
+# The four "buildable" types share one 3-stage Sales → Product → Tech flow:
+#   New (Product triages) → Under Review (Product investigates, hands to Tech)
+#   → In Progress (Tech builds: annotation/training/fix) → Deployed (Tech shipped,
+#   back to Product) → terminal (Product confirms with client).
+BUILDABLE_TYPES = (
+    TicketType.new_commodity, TicketType.new_variety,
+    TicketType.quality_mismatch, TicketType.accuracy_issue,
+)
+
+# new_commodity / new_variety end in "Approved" (added to catalog);
+# accuracy_issue / quality_mismatch end in "Resolved".
+_BUILDABLE_TERMINAL = {
+    TicketType.new_commodity: "Approved",
+    TicketType.new_variety: "Approved",
+    TicketType.quality_mismatch: "Resolved",
+    TicketType.accuracy_issue: "Resolved",
+}
+
 # Each status maps to a list of allowed next statuses
 FORWARD_TRANSITIONS = {
     TicketType.analysis_request: {
@@ -37,27 +55,24 @@ FORWARD_TRANSITIONS = {
     TicketType.general: {
         "Open": ["Closed"],
     },
-    # Sales flags a commodity/variety Product doesn't support yet —
-    # Product reviews and decides whether to add it to the capability catalog.
-    TicketType.new_commodity: {
-        "New":          ["Under Review"],
-        "Under Review": ["Approved"],
+    **{
+        t: {
+            "New":          ["Under Review"],
+            "Under Review": ["In Progress"],
+            "In Progress":  ["Deployed"],
+            "Deployed":     [_BUILDABLE_TERMINAL[t]],
+        }
+        for t in BUILDABLE_TYPES
     },
-    TicketType.new_variety: {
-        "New":          ["Under Review"],
-        "Under Review": ["Approved"],
-    },
-    # Raised when multiple grading reports on the same sample don't agree —
-    # Product re-tests and resolves the discrepancy.
-    TicketType.quality_mismatch: {
-        "New":        ["Re-Testing"],
-        "Re-Testing": ["Resolved"],
-    },
-    # Raised when a grading/analysis result's accuracy is below the expected bar.
-    TicketType.accuracy_issue: {
-        "New":          ["Under Review"],
-        "Under Review": ["Resolved"],
-    },
+}
+
+# Which team owns a ticket while it sits in a given status — drives queue routing
+# and who gets notified. Sales/Product statuses keep their team; the Tech stage
+# ("In Progress") routes to Tech, then bounces back to Product at "Deployed".
+STATUS_OWNER = {
+    "In Progress": TeamTarget.tech,
+    "Under Review": TeamTarget.product,
+    "Deployed": TeamTarget.product,
 }
 
 # (ticket_type, from_status, to_status) → roles allowed to make this move
@@ -69,6 +84,12 @@ TRANSITION_ROLES = {
     (TicketType.sample_request, "Contacted Lead", "Partial Sample"): [UserRole.sales],
     (TicketType.sample_request, "Partial Sample", "Received"):       [UserRole.product],
 }
+# Buildable types: Product owns triage + client-confirmation, Tech owns the build.
+for _t in BUILDABLE_TYPES:
+    TRANSITION_ROLES[(_t, "New", "Under Review")]            = [UserRole.product]
+    TRANSITION_ROLES[(_t, "Under Review", "In Progress")]    = [UserRole.product]  # hand to Tech
+    TRANSITION_ROLES[(_t, "In Progress", "Deployed")]        = [UserRole.tech]
+    TRANSITION_ROLES[(_t, "Deployed", _BUILDABLE_TERMINAL[_t])] = [UserRole.product]
 
 TERMINAL_STATUSES = {"Done", "Received", "Closed", "Rejected", "Approved", "Resolved"}
 
@@ -76,17 +97,14 @@ TERMINAL_STATUSES = {"Done", "Received", "Closed", "Rejected", "Approved", "Reso
 OPEN_STATUSES = {
     "New", "Accepted", "AI Analysing", "Open",
     "Contacted Lead", "Partial Sample",
-    "Under Review", "Re-Testing",
+    "Under Review", "In Progress", "Deployed",
 }
 
 
 def default_to_team(ticket_type: TicketType) -> Optional[TeamTarget]:
     if ticket_type == TicketType.analysis_request:
         return TeamTarget.product
-    if ticket_type in (
-        TicketType.new_commodity, TicketType.new_variety,
-        TicketType.quality_mismatch, TicketType.accuracy_issue,
-    ):
+    if ticket_type in BUILDABLE_TYPES:
         return TeamTarget.product
     if ticket_type == TicketType.sample_request:
         return TeamTarget.sales
@@ -166,6 +184,12 @@ def advance_status(
     # SLA clock starts when Sales first contacts the lead — 48 business hours to complete
     if ticket.type == TicketType.sample_request and new_status == "Contacted Lead":
         ticket.sla_clock_started_at = datetime.utcnow()
+
+    # Auto-handoff: a status can hand ownership to another team (e.g. Product hands
+    # a buildable ticket to Tech at "In Progress", Tech hands it back at "Deployed").
+    new_owner = STATUS_OWNER.get(new_status)
+    if new_owner is not None:
+        ticket.to_team = new_owner
 
     archive(db, EntityType.ticket, ticket.id, old, new_status, changed_by,
             partial_note if new_status == "Partial Sample" else None)

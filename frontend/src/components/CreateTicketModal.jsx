@@ -6,6 +6,7 @@ import { X } from "lucide-react";
 const TYPES_BY_ROLE = {
   sales:   ["analysis_request", "new_commodity", "new_variety", "quality_mismatch", "accuracy_issue", "general"],
   product: ["sample_request", "quality_mismatch", "accuracy_issue", "general"],
+  tech:    ["general"],
   admin:   ["general"],
 };
 

@@ -15,6 +15,11 @@ const NAV = {
     { to: "/queue", label: "My Queue", icon: Inbox },
     { to: "/capabilities", label: "Capabilities", icon: FlaskConical },
   ],
+  tech: [
+    { to: "/", label: "Leads", icon: LayoutDashboard },
+    { to: "/queue", label: "My Queue", icon: Inbox },
+    { to: "/capabilities", label: "Capabilities", icon: FlaskConical },
+  ],
   admin: [
     { to: "/", label: "Leads", icon: LayoutDashboard },
     { to: "/admin/users", label: "Users", icon: Users },
