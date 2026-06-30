@@ -1,16 +1,16 @@
-# Graph Report - sales product  (2026-06-23)
+# Graph Report - sales product  (2026-06-20)
 
 ## Corpus Check
-- 76 files · ~34,114 words
+- 75 files · ~33,394 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 559 nodes · 1630 edges · 42 communities (41 shown, 1 thin omitted)
-- Extraction: 52% EXTRACTED · 48% INFERRED · 0% AMBIGUOUS · INFERRED: 781 edges (avg confidence: 0.51)
+- 555 nodes · 1625 edges · 39 communities (38 shown, 1 thin omitted)
+- Extraction: 52% EXTRACTED · 48% INFERRED · 0% AMBIGUOUS · INFERRED: 783 edges (avg confidence: 0.51)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `a050c188`
+- Built from commit: `db625bab`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -46,8 +46,6 @@
 - [[_COMMUNITY_Vite Logo Asset|Vite Logo Asset]]
 - [[_COMMUNITY_ESLint Config|ESLint Config]]
 - [[_COMMUNITY_Frontend README|Frontend README]]
-- [[_COMMUNITY_Community 39|Community 39]]
-- [[_COMMUNITY_Community 40|Community 40]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `UserRole` - 77 edges
@@ -62,35 +60,35 @@
 10. `WinProbability` - 33 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `WebSocket` --uses--> `User`  [INFERRED]
-  backend/app/routers/ws_router.py → backend/app/models.py
 - `Session` --uses--> `Notification`  [INFERRED]
   backend/app/services/notifications.py → backend/app/models.py
 - `Notification` --uses--> `Notification`  [INFERRED]
   backend/app/services/notifications.py → backend/app/models.py
-- `Attachment` --uses--> `UserRole`  [INFERRED]
-  backend/app/routers/attachments.py → backend/app/models.py
-- `AttachmentOut` --uses--> `UserRole`  [INFERRED]
-  backend/app/routers/attachments.py → backend/app/models.py
+- `Session` --uses--> `UserRole`  [INFERRED]
+  backend/app/deps.py → backend/app/models.py
+- `User` --uses--> `UserRole`  [INFERRED]
+  backend/app/deps.py → backend/app/models.py
+- `UserRole` --uses--> `UserRole`  [INFERRED]
+  backend/app/deps.py → backend/app/models.py
 
 ## Import Cycles
 - 1-file cycle: `backend/app/services/sla.py -> backend/app/services/sla.py`
 - 1-file cycle: `backend/app/services/leads.py -> backend/app/services/leads.py`
 - 2-file cycle: `backend/app/models.py -> backend/app/services/sla.py -> backend/app/models.py`
 
-## Communities (42 total, 1 thin omitted)
+## Communities (39 total, 1 thin omitted)
 
 ### Community 0 - "Database Models & Lead/Ticket Logic"
-Cohesion: 0.05
-Nodes (46): Config, Settings, get_current_user(), require_role(), _enum(), Create a native_enum=False Enum column type for SQLite+Postgres compat., Session, User (+38 more)
+Cohesion: 0.06
+Nodes (51): Config, Settings, get_current_user(), require_role(), User, Session, User, UserRole (+43 more)
 
 ### Community 1 - "API Schemas & Pydantic Models"
-Cohesion: 0.30
-Nodes (48): CapabilityMatch, LeadStatus, Priority, TeamTarget, TicketType, UserRole, WinProbability, AttachmentOut (+40 more)
+Cohesion: 0.25
+Nodes (53): CapabilityMatch, LeadStatus, Priority, TeamTarget, TicketType, UserRole, WinProbability, AttachmentOut (+45 more)
 
 ### Community 2 - "Project Docs & Dependencies"
-Cohesion: 0.17
-Nodes (43): Capability, Comment, CommentVisibility, EntityType, Lead, Notification, Append-only archive. Never UPDATE or DELETE rows from this table., StatusHistory (+35 more)
+Cohesion: 0.14
+Nodes (44): Capability, Comment, CommentVisibility, EntityType, _enum(), Lead, Notification, Append-only archive. Never UPDATE or DELETE rows from this table. (+36 more)
 
 ### Community 3 - "Auth, DB Config & Attachments Router"
 Cohesion: 0.06
@@ -101,8 +99,8 @@ Cohesion: 0.08
 Nodes (24): dependencies, lucide-react, react, react-dom, react-router-dom, devDependencies, eslint, @eslint/js (+16 more)
 
 ### Community 5 - "WebSocket & Notifications"
-Cohesion: 0.56
-Nodes (9): Session, User, create_ticket(), hold_until(), list_lead_tickets(), _ticket_out(), toggle_hold(), update_ticket_status() (+1 more)
+Cohesion: 0.16
+Nodes (17): shutdown(), startup(), start_scheduler(), stop_scheduler(), Session, User, Session, Notification (+9 more)
 
 ### Community 6 - "Frontend Package & Build Config"
 Cohesion: 0.14
@@ -113,8 +111,8 @@ Cohesion: 0.10
 Nodes (20): 1. Create a New Canvas, 2. Add a Node to an Existing Canvas, 3. Connect Two Nodes, 4. Edit an Existing Canvas, Colors, Common Workflows, Complete Examples, Edges (+12 more)
 
 ### Community 8 - "SLA Engine & Notifications Router"
-Cohesion: 0.14
-Nodes (12): CreateTicketModal(), inp, sel, TYPE_LABELS, TYPES_BY_ROLE, FeedComposer(), ProtectedRoute(), useAuth() (+4 more)
+Cohesion: 0.13
+Nodes (12): FeedComposer(), ProtectedRoute(), useAuth(), DashboardPage(), inputStyle, labelStyle, LoginPage(), CapabilitiesPage() (+4 more)
 
 ### Community 9 - "Admin & Attachments UI"
 Cohesion: 0.31
@@ -125,8 +123,8 @@ Cohesion: 0.18
 Nodes (10): ENTITY_COLORS, pageBtn, sel, iconBtn, KIND_COLORS, KIND_LABEL, getToken(), apiFetch() (+2 more)
 
 ### Community 11 - "WebSocket Connection Manager"
-Cohesion: 0.20
-Nodes (20): Session, User, Session, Notification, capability_hint(), create_comment(), create_lead(), get_feed() (+12 more)
+Cohesion: 0.39
+Nodes (14): Session, User, capability_hint(), create_comment(), create_lead(), get_feed(), get_lead(), list_leads() (+6 more)
 
 ### Community 12 - "Lead Status Badges & Leads Page"
 Cohesion: 0.13
@@ -145,8 +143,8 @@ Cohesion: 0.15
 Nodes (8): COLORS, COLORS, filterInput, ghostBtn, LeadsPage(), primaryBtn, PRIORITIES, STATUSES
 
 ### Community 16 - "Analytics Dashboard UI"
-Cohesion: 0.21
-Nodes (11): applyBtn, dropdownStyle(), FORWARD_MAP, nextStepRole(), pill(), SAMPLE_SALES_OPTIONS, smallBtn(), TERMINAL (+3 more)
+Cohesion: 0.19
+Nodes (11): applyBtn, dropdownStyle(), FORWARD_MAP, pill(), PRODUCT_DRIVEN_TYPES, SAMPLE_SALES_OPTIONS, smallBtn(), TERMINAL (+3 more)
 
 ### Community 17 - "Capability Catalog UI"
 Cohesion: 0.18
@@ -181,8 +179,8 @@ Cohesion: 0.29
 Nodes (5): btnStyle, inputStyle, labelStyle, ROLES, tdStyle
 
 ### Community 25 - "App Init"
-Cohesion: 0.44
-Nodes (10): Session, User, Capability, add_capability(), delete_capability(), _enrich(), list_capabilities(), After catalog changes, refresh capability_match on every non-terminal lead. (+2 more)
+Cohesion: 0.29
+Nodes (5): CreateTicketModal(), inp, sel, TYPE_LABELS, TYPES_BY_ROLE
 
 ### Community 26 - "Hero Image Asset"
 Cohesion: 0.29
@@ -200,27 +198,19 @@ Nodes (4): Default Properties, Properties (Frontmatter) Reference, Property Type
 Cohesion: 0.50
 Nodes (3): Expanding the ESLint configuration, React Compiler, React + Vite
 
-### Community 39 - "Community 39"
-Cohesion: 0.25
-Nodes (5): CapabilitiesPage(), ghostBtn, inputStyle, labelStyle, primaryBtn
-
-### Community 40 - "Community 40"
-Cohesion: 0.38
-Nodes (4): shutdown(), startup(), start_scheduler(), stop_scheduler()
-
 ## Knowledge Gaps
-- **189 isolated node(s):** `TYPES_BY_ROLE`, `TYPE_LABELS`, `inp`, `sel`, `NAV` (+184 more)
+- **190 isolated node(s):** `promptDelete`, `trashOption`, `Config`, `AbstractEventLoop`, `WebSocket` (+185 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `UserRole` connect `API Schemas & Pydantic Models` to `Database Models & Lead/Ticket Logic`, `Project Docs & Dependencies`, `WebSocket & Notifications`, `Admin & Attachments UI`, `WebSocket Connection Manager`, `App Init`?**
+- **Why does `UserRole` connect `API Schemas & Pydantic Models` to `Database Models & Lead/Ticket Logic`, `Project Docs & Dependencies`, `WebSocket & Notifications`, `Admin & Attachments UI`, `WebSocket Connection Manager`?**
   _High betweenness centrality (0.023) - this node is a cross-community bridge._
-- **Why does `User` connect `Project Docs & Dependencies` to `Database Models & Lead/Ticket Logic`, `API Schemas & Pydantic Models`, `WebSocket & Notifications`, `Admin & Attachments UI`, `WebSocket Connection Manager`, `App Init`?**
+- **Why does `User` connect `Database Models & Lead/Ticket Logic` to `API Schemas & Pydantic Models`, `Project Docs & Dependencies`, `WebSocket & Notifications`, `Admin & Attachments UI`, `WebSocket Connection Manager`?**
   _High betweenness centrality (0.020) - this node is a cross-community bridge._
-- **Why does `ConnectionManager` connect `Lead Detail Page` to `WebSocket Connection Manager`?**
+- **Why does `ConnectionManager` connect `Lead Detail Page` to `WebSocket & Notifications`?**
   _High betweenness centrality (0.018) - this node is a cross-community bridge._
 - **Are the 75 inferred relationships involving `UserRole` (e.g. with `AttachmentOut` and `CapabilityCreate`) actually correct?**
   _`UserRole` has 75 INFERRED edges - model-reasoned connections that need verification._

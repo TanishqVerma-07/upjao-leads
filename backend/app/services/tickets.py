@@ -20,6 +20,7 @@ INITIAL_STATUS = {
     TicketType.new_variety: "New",
     TicketType.quality_mismatch: "New",
     TicketType.accuracy_issue: "New",
+    TicketType.tech_request: "New",
 }
 
 # The four "buildable" types share one 3-stage Sales → Product → Tech flow:
@@ -54,6 +55,11 @@ FORWARD_TRANSITIONS = {
     },
     TicketType.general: {
         "Open": ["Closed"],
+    },
+    # Direct-to-Tech request — no Product triage. Tech owns it start to finish.
+    TicketType.tech_request: {
+        "New":         ["In Progress"],
+        "In Progress": ["Done"],
     },
     **{
         t: {
@@ -91,6 +97,10 @@ for _t in BUILDABLE_TYPES:
     TRANSITION_ROLES[(_t, "In Progress", "Deployed")]        = [UserRole.tech]
     TRANSITION_ROLES[(_t, "Deployed", _BUILDABLE_TERMINAL[_t])] = [UserRole.product]
 
+# Direct-to-Tech requests are owned by Tech throughout.
+TRANSITION_ROLES[(TicketType.tech_request, "New", "In Progress")] = [UserRole.tech]
+TRANSITION_ROLES[(TicketType.tech_request, "In Progress", "Done")] = [UserRole.tech]
+
 TERMINAL_STATUSES = {"Done", "Received", "Closed", "Rejected", "Approved", "Resolved"}
 
 # Statuses that count as "open" for queue/lead-status logic
@@ -106,6 +116,8 @@ def default_to_team(ticket_type: TicketType) -> Optional[TeamTarget]:
         return TeamTarget.product
     if ticket_type in BUILDABLE_TYPES:
         return TeamTarget.product
+    if ticket_type == TicketType.tech_request:
+        return TeamTarget.tech
     if ticket_type == TicketType.sample_request:
         return TeamTarget.sales
     return None

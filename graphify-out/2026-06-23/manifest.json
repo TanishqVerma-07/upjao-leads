@@ -65,8 +65,8 @@
     "semantic_hash": ""
   },
   "backend/app/models.py": {
-    "mtime": 1782218267.7395222,
-    "ast_hash": "566b14ad5d7dfe96b733a472e6439b43",
+    "mtime": 1781877339.1642609,
+    "ast_hash": "696f3ed904b5ce7d9e0a2a2a7dc6e183",
     "semantic_hash": ""
   },
   "backend/app/routers/__init__.py": {
@@ -105,8 +105,8 @@
     "semantic_hash": ""
   },
   "backend/app/routers/queues.py": {
-    "mtime": 1782218375.5379713,
-    "ast_hash": "913427518faf7d7b18b0779ebffc019d",
+    "mtime": 1781759502.7420197,
+    "ast_hash": "54c689bfea3e6b68b0072ae62d505b69",
     "semantic_hash": ""
   },
   "backend/app/routers/tickets.py": {
@@ -140,8 +140,8 @@
     "semantic_hash": ""
   },
   "backend/app/services/leads.py": {
-    "mtime": 1782218353.5841804,
-    "ast_hash": "e80edbb7c50e716a3721e81d7a38378a",
+    "mtime": 1781877399.199164,
+    "ast_hash": "f91ea02b311327555d6f0cf596848035",
     "semantic_hash": ""
   },
   "backend/app/services/notifications.py": {
@@ -155,8 +155,8 @@
     "semantic_hash": ""
   },
   "backend/app/services/tickets.py": {
-    "mtime": 1782218344.0695243,
-    "ast_hash": "2462ea39b895870c7887739ed3bd79cb",
+    "mtime": 1781877381.0297406,
+    "ast_hash": "f1a78ef541d8e8d15883b29a31cff0c8",
     "semantic_hash": ""
   },
   "backend/app/ws.py": {
@@ -165,8 +165,8 @@
     "semantic_hash": ""
   },
   "backend/seed.py": {
-    "mtime": 1782218760.0709436,
-    "ast_hash": "cea11b61b81b5ded18c64a3e279ad7fc",
+    "mtime": 1781959015.7509522,
+    "ast_hash": "1d5360787e105fa83e8efad842f71394",
     "semantic_hash": ""
   },
   "frontend/eslint.config.js": {
@@ -180,8 +180,8 @@
     "semantic_hash": ""
   },
   "frontend/src/App.jsx": {
-    "mtime": 1782218485.5733502,
-    "ast_hash": "8514b984490f60c9207fa1d6b6ca7b0c",
+    "mtime": 1781787991.2250273,
+    "ast_hash": "8744cab044383c1d5270afaf1d97631e",
     "semantic_hash": ""
   },
   "frontend/src/api.js": {
@@ -195,8 +195,8 @@
     "semantic_hash": ""
   },
   "frontend/src/components/CreateTicketModal.jsx": {
-    "mtime": 1782218590.396752,
-    "ast_hash": "5df8a5d25074f9234c674af2dfca9dc3",
+    "mtime": 1781877467.801684,
+    "ast_hash": "31ba14a51ddeb170f39e7e3798ef3328",
     "semantic_hash": ""
   },
   "frontend/src/components/FeedComposer.jsx": {
@@ -205,8 +205,8 @@
     "semantic_hash": ""
   },
   "frontend/src/components/Layout.jsx": {
-    "mtime": 1782218418.468611,
-    "ast_hash": "5ed6071d8601adbd40bfc5e36ca850fb",
+    "mtime": 1781788002.7878668,
+    "ast_hash": "d46e14ae91f81b861f144bebf8f6e62a",
     "semantic_hash": ""
   },
   "frontend/src/components/PriorityBadge.jsx": {
@@ -225,8 +225,8 @@
     "semantic_hash": ""
   },
   "frontend/src/components/TicketCard.jsx": {
-    "mtime": 1782218580.130382,
-    "ast_hash": "49fbe358c80316e01a417cb841c34a64",
+    "mtime": 1781877515.9467928,
+    "ast_hash": "8b518243744ef8824d5dd7c870663d0b",
     "semantic_hash": ""
   },
   "frontend/src/context/AuthContext.jsx": {
@@ -260,8 +260,8 @@
     "semantic_hash": ""
   },
   "frontend/src/pages/QueuePage.jsx": {
-    "mtime": 1782218448.171333,
-    "ast_hash": "63462753b3d363ab6aad59d129c135d2",
+    "mtime": 1781765473.7986588,
+    "ast_hash": "c1e202e30d835d70747bde0bc5a2bb96",
     "semantic_hash": ""
   },
   "frontend/src/pages/admin/AnalyticsPage.jsx": {
@@ -412,11 +412,6 @@
   "render.yaml": {
     "mtime": 1781959141.630878,
     "ast_hash": "0209007dc0cb17dbec90a012e7b0a3cf",
-    "semantic_hash": ""
-  },
-  "backend/alembic/versions/5c1d4e8a9f02_add_tech_role.py": {
-    "mtime": 1782218392.7183223,
-    "ast_hash": "99f3ebbd4b1bdd6a1fa8b5533025af01",
     "semantic_hash": ""
   }
 }

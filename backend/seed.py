@@ -401,6 +401,33 @@ def seed():
         visibility=CommentVisibility.shared,
     ))
 
+    # Direct-to-Tech request on the same lead — Product asks Tech to retrain a
+    # parameter, straight to the Tech queue (no triage). Sits at In Progress.
+    ticket6b = Ticket(
+        lead_id=lead6.id,
+        type=TicketType.tech_request,
+        to_team=TeamTarget.tech,
+        status="In Progress",
+        body="Please retrain the Maize model to better detect the water-damage parameter — current accuracy is low on that class.",
+        created_by=sindhuja.id,
+    )
+    db.add(ticket6b)
+    db.flush()
+    db.add(StatusHistory(
+        entity_type=EntityType.ticket, entity_id=ticket6b.id,
+        from_status=None, to_status="New", changed_by=sindhuja.id,
+    ))
+    db.add(StatusHistory(
+        entity_type=EntityType.ticket, entity_id=ticket6b.id,
+        from_status="New", to_status="In Progress",
+        changed_by=tech1.id, note="Picked up — collecting water-damage samples for retraining",
+    ))
+    db.add(Comment(
+        lead_id=lead6.id, attached_ticket_id=ticket6b.id, author_id=tech1.id,
+        body="On it. Need ~200 more labelled water-damage samples; sourcing from the NDDB set.",
+        visibility=CommentVisibility.shared,
+    ))
+
     # ── Lead 7 — Won — Paddy, deal closed ───────────────────────────────────────
     lead7 = Lead(
         client_name="Spice Traders Ltd",
@@ -735,7 +762,8 @@ def seed():
     print(f"  Admin   : admin@upjao.com                        (admin123)")
     print(f"  Leads   : 15 total — covering new/active/idle/won/lost/dropped statuses")
     print(f"  Tickets : analysis_request, sample_request, general, new_commodity, new_variety, "
-          f"quality_mismatch, accuracy_issue — including at-risk, on-hold, snoozed, and partial-sample examples")
+          f"quality_mismatch, accuracy_issue, tech_request — incl. at-risk, on-hold, snoozed, "
+          f"partial-sample, and Tech-queue examples")
     print(f"  Notifications: {len(notifs)} seeded across read/unread states")
     db.close()
 

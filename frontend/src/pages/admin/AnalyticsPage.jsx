@@ -17,6 +17,11 @@ const TYPE_LABELS = {
   analysis_request: "Analysis",
   sample_request:   "Sample",
   general:          "General",
+  new_commodity:    "New Commodity",
+  new_variety:      "New Variety",
+  quality_mismatch: "Quality Mismatch",
+  accuracy_issue:   "Accuracy Issue",
+  tech_request:     "Tech Request",
 };
 
 export default function AnalyticsPage() {

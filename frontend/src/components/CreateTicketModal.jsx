@@ -4,9 +4,9 @@ import { useAuth } from "../context/AuthContext";
 import { X } from "lucide-react";
 
 const TYPES_BY_ROLE = {
-  sales:   ["analysis_request", "new_commodity", "new_variety", "quality_mismatch", "accuracy_issue", "general"],
-  product: ["sample_request", "quality_mismatch", "accuracy_issue", "general"],
-  tech:    ["general"],
+  sales:   ["analysis_request", "new_commodity", "new_variety", "quality_mismatch", "accuracy_issue", "tech_request", "general"],
+  product: ["sample_request", "quality_mismatch", "accuracy_issue", "tech_request", "general"],
+  tech:    ["tech_request", "general"],
   admin:   ["general"],
 };
 
@@ -17,6 +17,7 @@ const TYPE_LABELS = {
   new_variety:      "New Variety (→ Product)",
   quality_mismatch: "Quality Mismatch (→ Product)",
   accuracy_issue:   "Accuracy Issue (→ Product)",
+  tech_request:     "Tech Request (→ Tech)",
   general:          "General",
 };
 

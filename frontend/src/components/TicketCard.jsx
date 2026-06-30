@@ -12,6 +12,7 @@ const TYPE_LABELS = {
   new_variety:      "New Variety",
   quality_mismatch: "Quality Mismatch",
   accuracy_issue:   "Accuracy Issue",
+  tech_request:     "Tech Request",
 };
 
 const TYPE_COLORS = {
@@ -22,6 +23,7 @@ const TYPE_COLORS = {
   new_variety:      { bg: "#CFFAFE", color: "#155E75" },
   quality_mismatch: { bg: "#FEE2E2", color: "#991B1B" },
   accuracy_issue:   { bg: "#FFE4E6", color: "#9F1239" },
+  tech_request:     { bg: "#E0E7FF", color: "#3730A3" },
 };
 
 // Sales-driven transitions for sample_request
@@ -43,6 +45,8 @@ const FORWARD_MAP = {
   new_variety:      { "New": "Under Review", "Under Review": "In Progress", "In Progress": "Deployed", "Deployed": "Approved" },
   quality_mismatch: { "New": "Under Review", "Under Review": "In Progress", "In Progress": "Deployed", "Deployed": "Resolved" },
   accuracy_issue:   { "New": "Under Review", "Under Review": "In Progress", "In Progress": "Deployed", "Deployed": "Resolved" },
+  // Direct-to-Tech request — Tech owns it start to finish.
+  tech_request:     { "New": "In Progress", "In Progress": "Done" },
 };
 
 // Which role may advance a ticket out of its CURRENT status. null = any team member.
@@ -50,6 +54,7 @@ const FORWARD_MAP = {
 function nextStepRole(type, status) {
   if (type === "general") return null;            // either team can close
   if (type === "analysis_request") return "product";
+  if (type === "tech_request") return "tech";     // Tech owns every step
   // Buildable types — Product owns triage + client confirmation, Tech owns the build
   return {
     "New": "product",

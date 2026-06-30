@@ -57,6 +57,9 @@ def create_ticket(
     # crop or variety on a lead — Product then reviews and decides.
     if body.type in (TicketType.new_commodity, TicketType.new_variety) and current_user.role != UserRole.sales:
         raise HTTPException(403, "Only Sales can raise this ticket type")
+    # Tech Requests go straight to the Tech queue — any internal team can raise one.
+    if body.type == TicketType.tech_request and current_user.role == UserRole.admin:
+        raise HTTPException(403, "Admin cannot raise tickets")
 
     ticket = Ticket(
         lead_id=lead_id,

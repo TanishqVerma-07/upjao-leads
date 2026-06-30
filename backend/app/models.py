@@ -59,6 +59,7 @@ class TicketType(str, enum.Enum):
     new_variety = "new_variety"
     quality_mismatch = "quality_mismatch"
     accuracy_issue = "accuracy_issue"
+    tech_request = "tech_request"
 
 
 class TeamTarget(str, enum.Enum):
