@@ -5,7 +5,7 @@ class Settings(BaseSettings):
     DATABASE_URL: str = "sqlite:///./upjao.db"
     SECRET_KEY: str = "change-me-in-production"
     ALGORITHM: str = "HS256"
-    ACCESS_TOKEN_EXPIRE_MINUTES: int = 480
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = 720   # 12h — covers a full workday
 
     # SLA engine config (override via .env)
     SLA_HOURS_LIMIT: int = 48       # business hours before sample-request breach

@@ -65,8 +65,8 @@
     "semantic_hash": ""
   },
   "backend/app/models.py": {
-    "mtime": 1782222839.1420858,
-    "ast_hash": "d50dd1395fc9eb74c65e84a7c018912e",
+    "mtime": 1782218267.7395222,
+    "ast_hash": "566b14ad5d7dfe96b733a472e6439b43",
     "semantic_hash": ""
   },
   "backend/app/routers/__init__.py": {
@@ -110,8 +110,8 @@
     "semantic_hash": ""
   },
   "backend/app/routers/tickets.py": {
-    "mtime": 1782222981.839862,
-    "ast_hash": "31d205dc60fda97137818d1086770a4b",
+    "mtime": 1781877427.9847121,
+    "ast_hash": "07e7c431763fd24fef158d81e8dcf2d4",
     "semantic_hash": ""
   },
   "backend/app/routers/users.py": {
@@ -155,8 +155,8 @@
     "semantic_hash": ""
   },
   "backend/app/services/tickets.py": {
-    "mtime": 1782222949.8319995,
-    "ast_hash": "8d8b2949fc07413675cccbacb8dd49d0",
+    "mtime": 1782218344.0695243,
+    "ast_hash": "2462ea39b895870c7887739ed3bd79cb",
     "semantic_hash": ""
   },
   "backend/app/ws.py": {
@@ -165,8 +165,8 @@
     "semantic_hash": ""
   },
   "backend/seed.py": {
-    "mtime": 1782223177.691022,
-    "ast_hash": "f4a4b33c6263c002891ee1cd259017b2",
+    "mtime": 1782218760.0709436,
+    "ast_hash": "cea11b61b81b5ded18c64a3e279ad7fc",
     "semantic_hash": ""
   },
   "frontend/eslint.config.js": {
@@ -195,8 +195,8 @@
     "semantic_hash": ""
   },
   "frontend/src/components/CreateTicketModal.jsx": {
-    "mtime": 1782223002.6306503,
-    "ast_hash": "aec3891feedf157f50eed6c6665872a7",
+    "mtime": 1782218590.396752,
+    "ast_hash": "5df8a5d25074f9234c674af2dfca9dc3",
     "semantic_hash": ""
   },
   "frontend/src/components/FeedComposer.jsx": {
@@ -225,8 +225,8 @@
     "semantic_hash": ""
   },
   "frontend/src/components/TicketCard.jsx": {
-    "mtime": 1782223070.1017137,
-    "ast_hash": "d8fcda26f377acfd9e7f89f5c9c6fce0",
+    "mtime": 1782218580.130382,
+    "ast_hash": "49fbe358c80316e01a417cb841c34a64",
     "semantic_hash": ""
   },
   "frontend/src/context/AuthContext.jsx": {
@@ -265,8 +265,8 @@
     "semantic_hash": ""
   },
   "frontend/src/pages/admin/AnalyticsPage.jsx": {
-    "mtime": 1782223105.8439362,
-    "ast_hash": "eb78311be5529a2e740f906b02686044",
+    "mtime": 1781787978.52314,
+    "ast_hash": "3faef96008dc9e24ea17887c5466fb7c",
     "semantic_hash": ""
   },
   "frontend/src/pages/admin/ArchivePage.jsx": {

@@ -11,6 +11,12 @@ export default function LoginPage() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const [showPw, setShowPw] = useState(false);
+  // Set by api.js when a request 401s — show a one-time "session expired" notice.
+  const [expired] = useState(() => {
+    const flag = sessionStorage.getItem("upjao_expired");
+    if (flag) sessionStorage.removeItem("upjao_expired");
+    return !!flag;
+  });
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -45,6 +51,16 @@ export default function LoginPage() {
           <div style={{ fontSize: 22, fontWeight: 800, color: "#134E4A" }}>Upjao Leads</div>
           <div style={{ fontSize: 14, color: "#6B7280", marginTop: 4 }}>Sign in to your account</div>
         </div>
+
+        {expired && !error && (
+          <div role="status" style={{
+            background: "#FFFBEB", border: "1px solid #FDE68A",
+            borderRadius: 8, padding: "0.625rem 0.875rem",
+            color: "#92400E", fontSize: 13, marginBottom: "1rem",
+          }}>
+            Your session expired. Please sign in again.
+          </div>
+        )}
 
         <form onSubmit={handleSubmit} noValidate>
           <div style={{ marginBottom: "1.25rem" }}>

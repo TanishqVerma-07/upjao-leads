@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useCallback } from "react";
+import { createContext, useContext, useState, useCallback, useEffect } from "react";
 import { connectWS, disconnectWS } from "../ws";
 
 const AuthContext = createContext(null);
@@ -43,6 +43,20 @@ export function AuthProvider({ children }) {
     clearSession();
     disconnectWS();
     setUser(null);
+  }, []);
+
+  // When apiFetch sees a 401 on an authenticated request, it fires this event —
+  // clear the session so ProtectedRoute bounces the user to /login (which shows
+  // a "session expired" notice) instead of leaving them on a broken screen.
+  useEffect(() => {
+    function onExpired() {
+      _token = null;
+      clearSession();
+      disconnectWS();
+      setUser(null);
+    }
+    window.addEventListener("upjao:session-expired", onExpired);
+    return () => window.removeEventListener("upjao:session-expired", onExpired);
   }, []);
 
   return (

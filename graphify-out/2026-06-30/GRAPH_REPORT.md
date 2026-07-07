@@ -1,16 +1,16 @@
-# Graph Report - sales product  (2026-06-30)
+# Graph Report - sales product  (2026-06-23)
 
 ## Corpus Check
-- 76 files · ~34,363 words
+- 76 files · ~34,114 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 557 nodes · 1608 edges · 41 communities (40 shown, 1 thin omitted)
-- Extraction: 53% EXTRACTED · 47% INFERRED · 0% AMBIGUOUS · INFERRED: 759 edges (avg confidence: 0.51)
+- 559 nodes · 1630 edges · 42 communities (41 shown, 1 thin omitted)
+- Extraction: 52% EXTRACTED · 48% INFERRED · 0% AMBIGUOUS · INFERRED: 781 edges (avg confidence: 0.51)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `34d9abaf`
+- Built from commit: `a050c188`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -46,17 +46,18 @@
 - [[_COMMUNITY_Vite Logo Asset|Vite Logo Asset]]
 - [[_COMMUNITY_ESLint Config|ESLint Config]]
 - [[_COMMUNITY_Frontend README|Frontend README]]
+- [[_COMMUNITY_Community 39|Community 39]]
 - [[_COMMUNITY_Community 40|Community 40]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `UserRole` - 75 edges
-2. `User` - 57 edges
-3. `Lead` - 55 edges
-4. `Ticket` - 50 edges
-5. `Priority` - 47 edges
-6. `LeadStatus` - 47 edges
-7. `TicketType` - 47 edges
-8. `TeamTarget` - 43 edges
+1. `UserRole` - 77 edges
+2. `User` - 59 edges
+3. `Lead` - 57 edges
+4. `Ticket` - 52 edges
+5. `TicketType` - 49 edges
+6. `Priority` - 47 edges
+7. `LeadStatus` - 47 edges
+8. `TeamTarget` - 45 edges
 9. `EntityType` - 39 edges
 10. `WinProbability` - 33 edges
 
@@ -77,19 +78,19 @@
 - 1-file cycle: `backend/app/services/leads.py -> backend/app/services/leads.py`
 - 2-file cycle: `backend/app/models.py -> backend/app/services/sla.py -> backend/app/models.py`
 
-## Communities (41 total, 1 thin omitted)
+## Communities (42 total, 1 thin omitted)
 
 ### Community 0 - "Database Models & Lead/Ticket Logic"
-Cohesion: 0.06
-Nodes (35): Config, Settings, get_current_user(), require_role(), Session, User, UserRole, Session (+27 more)
+Cohesion: 0.05
+Nodes (46): Config, Settings, get_current_user(), require_role(), _enum(), Create a native_enum=False Enum column type for SQLite+Postgres compat., Session, User (+38 more)
 
 ### Community 1 - "API Schemas & Pydantic Models"
-Cohesion: 0.23
-Nodes (63): Capability, CapabilityMatch, Comment, CommentVisibility, EntityType, LeadStatus, Priority, TeamTarget (+55 more)
+Cohesion: 0.30
+Nodes (48): CapabilityMatch, LeadStatus, Priority, TeamTarget, TicketType, UserRole, WinProbability, AttachmentOut (+40 more)
 
 ### Community 2 - "Project Docs & Dependencies"
-Cohesion: 0.11
-Nodes (49): Attachment, AttachmentKind, _enum(), Lead, Notification, Append-only archive. Never UPDATE or DELETE rows from this table., Create a native_enum=False Enum column type for SQLite+Postgres compat., StatusHistory (+41 more)
+Cohesion: 0.17
+Nodes (43): Capability, Comment, CommentVisibility, EntityType, Lead, Notification, Append-only archive. Never UPDATE or DELETE rows from this table., StatusHistory (+35 more)
 
 ### Community 3 - "Auth, DB Config & Attachments Router"
 Cohesion: 0.06
@@ -100,8 +101,8 @@ Cohesion: 0.08
 Nodes (24): dependencies, lucide-react, react, react-dom, react-router-dom, devDependencies, eslint, @eslint/js (+16 more)
 
 ### Community 5 - "WebSocket & Notifications"
-Cohesion: 0.33
-Nodes (14): Session, Session, _build_queue(), product_queue(), sales_queue(), tech_queue(), create_ticket(), hold_until() (+6 more)
+Cohesion: 0.56
+Nodes (9): Session, User, create_ticket(), hold_until(), list_lead_tickets(), _ticket_out(), toggle_hold(), update_ticket_status() (+1 more)
 
 ### Community 6 - "Frontend Package & Build Config"
 Cohesion: 0.14
@@ -112,12 +113,12 @@ Cohesion: 0.10
 Nodes (20): 1. Create a New Canvas, 2. Add a Node to an Existing Canvas, 3. Connect Two Nodes, 4. Edit an Existing Canvas, Colors, Common Workflows, Complete Examples, Edges (+12 more)
 
 ### Community 8 - "SLA Engine & Notifications Router"
-Cohesion: 0.13
-Nodes (12): FeedComposer(), ProtectedRoute(), useAuth(), DashboardPage(), inputStyle, labelStyle, LoginPage(), CapabilitiesPage() (+4 more)
+Cohesion: 0.14
+Nodes (12): CreateTicketModal(), inp, sel, TYPE_LABELS, TYPES_BY_ROLE, FeedComposer(), ProtectedRoute(), useAuth() (+4 more)
 
 ### Community 9 - "Admin & Attachments UI"
-Cohesion: 0.29
-Nodes (5): CreateTicketModal(), inp, sel, TYPE_LABELS, TYPES_BY_ROLE
+Cohesion: 0.31
+Nodes (17): Attachment, AttachmentKind, Attachment, AttachmentOut, Session, User, delete_attachment(), download_attachment() (+9 more)
 
 ### Community 10 - "Sales Create Lead UI"
 Cohesion: 0.18
@@ -199,29 +200,33 @@ Nodes (4): Default Properties, Properties (Frontmatter) Reference, Property Type
 Cohesion: 0.50
 Nodes (3): Expanding the ESLint configuration, React Compiler, React + Vite
 
+### Community 39 - "Community 39"
+Cohesion: 0.25
+Nodes (5): CapabilitiesPage(), ghostBtn, inputStyle, labelStyle, primaryBtn
+
 ### Community 40 - "Community 40"
 Cohesion: 0.38
 Nodes (4): shutdown(), startup(), start_scheduler(), stop_scheduler()
 
 ## Knowledge Gaps
-- **189 isolated node(s):** `TYPES_BY_ROLE`, `TYPE_LABELS`, `inp`, `sel`, `TYPE_LABELS` (+184 more)
+- **189 isolated node(s):** `TYPES_BY_ROLE`, `TYPE_LABELS`, `inp`, `sel`, `NAV` (+184 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `UserRole` connect `API Schemas & Pydantic Models` to `Database Models & Lead/Ticket Logic`, `Project Docs & Dependencies`, `WebSocket & Notifications`, `WebSocket Connection Manager`, `App Init`?**
+- **Why does `UserRole` connect `API Schemas & Pydantic Models` to `Database Models & Lead/Ticket Logic`, `Project Docs & Dependencies`, `WebSocket & Notifications`, `Admin & Attachments UI`, `WebSocket Connection Manager`, `App Init`?**
   _High betweenness centrality (0.023) - this node is a cross-community bridge._
-- **Why does `User` connect `Project Docs & Dependencies` to `Database Models & Lead/Ticket Logic`, `API Schemas & Pydantic Models`, `WebSocket & Notifications`, `WebSocket Connection Manager`, `App Init`?**
-  _High betweenness centrality (0.019) - this node is a cross-community bridge._
+- **Why does `User` connect `Project Docs & Dependencies` to `Database Models & Lead/Ticket Logic`, `API Schemas & Pydantic Models`, `WebSocket & Notifications`, `Admin & Attachments UI`, `WebSocket Connection Manager`, `App Init`?**
+  _High betweenness centrality (0.020) - this node is a cross-community bridge._
 - **Why does `ConnectionManager` connect `Lead Detail Page` to `WebSocket Connection Manager`?**
   _High betweenness centrality (0.018) - this node is a cross-community bridge._
-- **Are the 73 inferred relationships involving `UserRole` (e.g. with `AttachmentOut` and `CapabilityCreate`) actually correct?**
-  _`UserRole` has 73 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 54 inferred relationships involving `User` (e.g. with `Attachment` and `AttachmentOut`) actually correct?**
-  _`User` has 54 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 52 inferred relationships involving `Lead` (e.g. with `Attachment` and `AttachmentOut`) actually correct?**
-  _`Lead` has 52 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 47 inferred relationships involving `Ticket` (e.g. with `Attachment` and `AttachmentOut`) actually correct?**
-  _`Ticket` has 47 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 75 inferred relationships involving `UserRole` (e.g. with `AttachmentOut` and `CapabilityCreate`) actually correct?**
+  _`UserRole` has 75 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 56 inferred relationships involving `User` (e.g. with `Attachment` and `AttachmentOut`) actually correct?**
+  _`User` has 56 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 54 inferred relationships involving `Lead` (e.g. with `Attachment` and `AttachmentOut`) actually correct?**
+  _`Lead` has 54 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 49 inferred relationships involving `Ticket` (e.g. with `Attachment` and `AttachmentOut`) actually correct?**
+  _`Ticket` has 49 INFERRED edges - model-reasoned connections that need verification._

@@ -4,13 +4,43 @@
   "graph": {},
   "nodes": [
     {
+      "label": "5c1d4e8a9f02_add_tech_role.py",
+      "file_type": "code",
+      "source_file": "backend/alembic/versions/5c1d4e8a9f02_add_tech_role.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "versions_5c1d4e8a9f02_add_tech_role",
+      "community": 41,
+      "norm_label": "5c1d4e8a9f02_add_tech_role.py"
+    },
+    {
+      "label": "upgrade()",
+      "file_type": "code",
+      "source_file": "backend/alembic/versions/5c1d4e8a9f02_add_tech_role.py",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "versions_5c1d4e8a9f02_add_tech_role_upgrade",
+      "community": 41,
+      "norm_label": "upgrade()"
+    },
+    {
+      "label": "downgrade()",
+      "file_type": "code",
+      "source_file": "backend/alembic/versions/5c1d4e8a9f02_add_tech_role.py",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "versions_5c1d4e8a9f02_add_tech_role_downgrade",
+      "community": 41,
+      "norm_label": "downgrade()"
+    },
+    {
       "label": "models.py",
       "file_type": "code",
       "source_file": "backend/app/models.py",
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_models",
-      "community": 2,
+      "community": 0,
       "norm_label": "models.py"
     },
     {
@@ -20,7 +50,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "app_models_utcnow",
-      "community": 2,
+      "community": 0,
       "norm_label": "_utcnow()"
     },
     {
@@ -97,7 +127,7 @@
       "label": "TeamTarget",
       "file_type": "code",
       "source_file": "backend/app/models.py",
-      "source_location": "L65",
+      "source_location": "L64",
       "_origin": "ast",
       "id": "app_models_teamtarget",
       "community": 1,
@@ -107,47 +137,47 @@
       "label": "CommentVisibility",
       "file_type": "code",
       "source_file": "backend/app/models.py",
-      "source_location": "L71",
+      "source_location": "L70",
       "_origin": "ast",
       "id": "app_models_commentvisibility",
-      "community": 1,
+      "community": 2,
       "norm_label": "commentvisibility"
     },
     {
       "label": "EntityType",
       "file_type": "code",
       "source_file": "backend/app/models.py",
-      "source_location": "L76",
+      "source_location": "L75",
       "_origin": "ast",
       "id": "app_models_entitytype",
-      "community": 1,
+      "community": 2,
       "norm_label": "entitytype"
     },
     {
       "label": "AttachmentKind",
       "file_type": "code",
       "source_file": "backend/app/models.py",
-      "source_location": "L81",
+      "source_location": "L80",
       "_origin": "ast",
       "id": "app_models_attachmentkind",
-      "community": 2,
+      "community": 9,
       "norm_label": "attachmentkind"
     },
     {
       "label": "_enum()",
       "file_type": "code",
       "source_file": "backend/app/models.py",
-      "source_location": "L88",
+      "source_location": "L87",
       "_origin": "ast",
       "id": "app_models_enum",
-      "community": 2,
+      "community": 0,
       "norm_label": "_enum()"
     },
     {
       "label": "User",
       "file_type": "code",
       "source_file": "backend/app/models.py",
-      "source_location": "L93",
+      "source_location": "L92",
       "_origin": "ast",
       "id": "app_models_user",
       "community": 2,
@@ -167,7 +197,7 @@
       "label": "Lead",
       "file_type": "code",
       "source_file": "backend/app/models.py",
-      "source_location": "L105",
+      "source_location": "L104",
       "_origin": "ast",
       "id": "app_models_lead",
       "community": 2,
@@ -177,7 +207,7 @@
       "label": "Ticket",
       "file_type": "code",
       "source_file": "backend/app/models.py",
-      "source_location": "L134",
+      "source_location": "L133",
       "_origin": "ast",
       "id": "app_models_ticket",
       "community": 2,
@@ -187,17 +217,17 @@
       "label": "Comment",
       "file_type": "code",
       "source_file": "backend/app/models.py",
-      "source_location": "L162",
+      "source_location": "L161",
       "_origin": "ast",
       "id": "app_models_comment",
-      "community": 1,
+      "community": 2,
       "norm_label": "comment"
     },
     {
       "label": "StatusHistory",
       "file_type": "code",
       "source_file": "backend/app/models.py",
-      "source_location": "L178",
+      "source_location": "L177",
       "_origin": "ast",
       "id": "app_models_statushistory",
       "community": 2,
@@ -207,27 +237,27 @@
       "label": "Capability",
       "file_type": "code",
       "source_file": "backend/app/models.py",
-      "source_location": "L194",
+      "source_location": "L193",
       "_origin": "ast",
       "id": "app_models_capability",
-      "community": 1,
+      "community": 2,
       "norm_label": "capability"
     },
     {
       "label": "Attachment",
       "file_type": "code",
       "source_file": "backend/app/models.py",
-      "source_location": "L207",
+      "source_location": "L206",
       "_origin": "ast",
       "id": "app_models_attachment",
-      "community": 2,
+      "community": 9,
       "norm_label": "attachment"
     },
     {
       "label": "Notification",
       "file_type": "code",
       "source_file": "backend/app/models.py",
-      "source_location": "L225",
+      "source_location": "L224",
       "_origin": "ast",
       "id": "app_models_notification",
       "community": 2,
@@ -237,191 +267,291 @@
       "label": "_block_status_history_update()",
       "file_type": "code",
       "source_file": "backend/app/models.py",
-      "source_location": "L243",
+      "source_location": "L242",
       "_origin": "ast",
       "id": "app_models_block_status_history_update",
-      "community": 2,
+      "community": 0,
       "norm_label": "_block_status_history_update()"
     },
     {
       "label": "_block_status_history_delete()",
       "file_type": "code",
       "source_file": "backend/app/models.py",
-      "source_location": "L248",
+      "source_location": "L247",
       "_origin": "ast",
       "id": "app_models_block_status_history_delete",
-      "community": 2,
+      "community": 0,
       "norm_label": "_block_status_history_delete()"
     },
     {
       "label": "Create a native_enum=False Enum column type for SQLite+Postgres compat.",
       "file_type": "rationale",
       "source_file": "backend/app/models.py",
-      "source_location": "L89",
+      "source_location": "L88",
       "_origin": "ast",
-      "id": "app_models_rationale_89",
-      "community": 2,
+      "id": "app_models_rationale_88",
+      "community": 0,
       "norm_label": "create a native_enum=false enum column type for sqlite+postgres compat."
     },
     {
       "label": "Append-only archive. Never UPDATE or DELETE rows from this table.",
       "file_type": "rationale",
       "source_file": "backend/app/models.py",
-      "source_location": "L179",
+      "source_location": "L178",
       "_origin": "ast",
-      "id": "app_models_rationale_179",
+      "id": "app_models_rationale_178",
       "community": 2,
       "norm_label": "append-only archive. never update or delete rows from this table."
     },
     {
-      "label": "tickets.py",
+      "label": "queues.py",
       "file_type": "code",
-      "source_file": "backend/app/routers/tickets.py",
+      "source_file": "backend/app/routers/queues.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "routers_tickets",
-      "community": 5,
-      "norm_label": "tickets.py"
+      "id": "routers_queues",
+      "community": 0,
+      "norm_label": "queues.py"
     },
     {
-      "label": "_ticket_out()",
+      "label": "_build_queue()",
       "file_type": "code",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L25",
+      "source_file": "backend/app/routers/queues.py",
+      "source_location": "L17",
       "_origin": "ast",
-      "id": "routers_tickets_ticket_out",
-      "community": 5,
-      "norm_label": "_ticket_out()"
+      "id": "routers_queues_build_queue",
+      "community": 0,
+      "norm_label": "_build_queue()"
     },
     {
       "label": "Session",
       "file_type": "code",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L25",
+      "source_file": "backend/app/routers/queues.py",
+      "source_location": "L17",
       "_origin": "ast",
-      "id": "backend_app_routers_tickets_py_session",
-      "community": 5,
+      "id": "backend_app_routers_queues_py_session",
+      "community": 0,
       "norm_label": "session"
     },
     {
-      "label": "Ticket",
+      "label": "TeamTarget",
       "file_type": "code",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L25",
+      "source_file": "backend/app/routers/queues.py",
+      "source_location": "L17",
       "_origin": "ast",
-      "id": "backend_app_routers_tickets_py_ticket",
+      "id": "backend_app_routers_queues_py_teamtarget",
       "community": 1,
-      "norm_label": "ticket"
+      "norm_label": "teamtarget"
     },
     {
       "label": "TicketOut",
       "file_type": "code",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L25",
+      "source_file": "backend/app/routers/queues.py",
+      "source_location": "L17",
       "_origin": "ast",
       "id": "ticketout",
       "community": 2,
       "norm_label": "ticketout"
     },
     {
-      "label": "create_ticket()",
+      "label": "sales_queue()",
       "file_type": "code",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L35",
+      "source_file": "backend/app/routers/queues.py",
+      "source_location": "L47",
       "_origin": "ast",
-      "id": "routers_tickets_create_ticket",
-      "community": 5,
-      "norm_label": "create_ticket()"
-    },
-    {
-      "label": "TicketCreate",
-      "file_type": "code",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L35",
-      "_origin": "ast",
-      "id": "ticketcreate",
-      "community": 1,
-      "norm_label": "ticketcreate"
+      "id": "routers_queues_sales_queue",
+      "community": 0,
+      "norm_label": "sales_queue()"
     },
     {
       "label": "User",
       "file_type": "code",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L35",
+      "source_file": "backend/app/routers/queues.py",
+      "source_location": "L47",
       "_origin": "ast",
       "id": "user",
-      "community": 5,
+      "community": 0,
       "norm_label": "user"
     },
     {
-      "label": "list_lead_tickets()",
+      "label": "product_queue()",
       "file_type": "code",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L93",
+      "source_file": "backend/app/routers/queues.py",
+      "source_location": "L55",
       "_origin": "ast",
-      "id": "routers_tickets_list_lead_tickets",
+      "id": "routers_queues_product_queue",
+      "community": 0,
+      "norm_label": "product_queue()"
+    },
+    {
+      "label": "tech_queue()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/queues.py",
+      "source_location": "L63",
+      "_origin": "ast",
+      "id": "routers_queues_tech_queue",
+      "community": 0,
+      "norm_label": "tech_queue()"
+    },
+    {
+      "label": "leads.py",
+      "file_type": "code",
+      "source_file": "backend/app/services/leads.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "services_leads",
+      "community": 11,
+      "norm_label": "leads.py"
+    },
+    {
+      "label": "compute_suggested_priority()",
+      "file_type": "code",
+      "source_file": "backend/app/services/leads.py",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "services_leads_compute_suggested_priority",
+      "community": 11,
+      "norm_label": "compute_suggested_priority()"
+    },
+    {
+      "label": "Decimal",
+      "file_type": "code",
+      "source_file": "backend/app/services/leads.py",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "decimal",
+      "community": 2,
+      "norm_label": "decimal"
+    },
+    {
+      "label": "WinProbability",
+      "file_type": "code",
+      "source_file": "backend/app/services/leads.py",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "winprobability",
+      "community": 2,
+      "norm_label": "winprobability"
+    },
+    {
+      "label": "Priority",
+      "file_type": "code",
+      "source_file": "backend/app/services/leads.py",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "priority",
+      "community": 2,
+      "norm_label": "priority"
+    },
+    {
+      "label": "compute_capability_match()",
+      "file_type": "code",
+      "source_file": "backend/app/services/leads.py",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "services_leads_compute_capability_match",
+      "community": 11,
+      "norm_label": "compute_capability_match()"
+    },
+    {
+      "label": "Session",
+      "file_type": "code",
+      "source_file": "backend/app/services/leads.py",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "backend_app_services_leads_py_session",
+      "community": 2,
+      "norm_label": "session"
+    },
+    {
+      "label": "CapabilityMatch",
+      "file_type": "code",
+      "source_file": "backend/app/services/leads.py",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "capabilitymatch",
+      "community": 2,
+      "norm_label": "capabilitymatch"
+    },
+    {
+      "label": "compute_lead_status()",
+      "file_type": "code",
+      "source_file": "backend/app/services/leads.py",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "services_leads_compute_lead_status",
+      "community": 2,
+      "norm_label": "compute_lead_status()"
+    },
+    {
+      "label": "Lead",
+      "file_type": "code",
+      "source_file": "backend/app/services/leads.py",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "lead",
+      "community": 2,
+      "norm_label": "lead"
+    },
+    {
+      "label": "LeadStatus",
+      "file_type": "code",
+      "source_file": "backend/app/services/leads.py",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "leadstatus",
+      "community": 2,
+      "norm_label": "leadstatus"
+    },
+    {
+      "label": "days_left()",
+      "file_type": "code",
+      "source_file": "backend/app/services/leads.py",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "services_leads_days_left",
+      "community": 11,
+      "norm_label": "days_left()"
+    },
+    {
+      "label": "date",
+      "file_type": "code",
+      "source_file": "backend/app/services/leads.py",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "date",
+      "community": 2,
+      "norm_label": "date"
+    },
+    {
+      "label": "archive()",
+      "file_type": "code",
+      "source_file": "backend/app/services/leads.py",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "services_leads_archive",
       "community": 5,
-      "norm_label": "list_lead_tickets()"
+      "norm_label": "archive()"
     },
     {
-      "label": "update_ticket_status()",
+      "label": "EntityType",
       "file_type": "code",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L105",
+      "source_file": "backend/app/services/leads.py",
+      "source_location": "L61",
       "_origin": "ast",
-      "id": "routers_tickets_update_ticket_status",
-      "community": 5,
-      "norm_label": "update_ticket_status()"
+      "id": "entitytype",
+      "community": 2,
+      "norm_label": "entitytype"
     },
     {
-      "label": "TicketStatusUpdate",
+      "label": "enrich()",
       "file_type": "code",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L105",
+      "source_file": "backend/app/services/leads.py",
+      "source_location": "L74",
       "_origin": "ast",
-      "id": "ticketstatusupdate",
-      "community": 1,
-      "norm_label": "ticketstatusupdate"
-    },
-    {
-      "label": "toggle_hold()",
-      "file_type": "code",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L127",
-      "_origin": "ast",
-      "id": "routers_tickets_toggle_hold",
-      "community": 5,
-      "norm_label": "toggle_hold()"
-    },
-    {
-      "label": "TicketHold",
-      "file_type": "code",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L127",
-      "_origin": "ast",
-      "id": "tickethold",
-      "community": 1,
-      "norm_label": "tickethold"
-    },
-    {
-      "label": "hold_until()",
-      "file_type": "code",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L148",
-      "_origin": "ast",
-      "id": "routers_tickets_hold_until",
-      "community": 5,
-      "norm_label": "hold_until()"
-    },
-    {
-      "label": "TicketHoldUntil",
-      "file_type": "code",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L148",
-      "_origin": "ast",
-      "id": "ticketholduntil",
-      "community": 1,
-      "norm_label": "ticketholduntil"
+      "id": "services_leads_enrich",
+      "community": 11,
+      "norm_label": "enrich()"
     },
     {
       "label": "tickets.py",
@@ -437,7 +567,7 @@
       "label": "default_to_team()",
       "file_type": "code",
       "source_file": "backend/app/services/tickets.py",
-      "source_location": "L114",
+      "source_location": "L104",
       "_origin": "ast",
       "id": "services_tickets_default_to_team",
       "community": 2,
@@ -447,7 +577,7 @@
       "label": "TicketType",
       "file_type": "code",
       "source_file": "backend/app/services/tickets.py",
-      "source_location": "L114",
+      "source_location": "L104",
       "_origin": "ast",
       "id": "tickettype",
       "community": 2,
@@ -457,9 +587,9 @@
       "label": "TeamTarget",
       "file_type": "code",
       "source_file": "backend/app/services/tickets.py",
-      "source_location": "L114",
+      "source_location": "L104",
       "_origin": "ast",
-      "id": "teamtarget",
+      "id": "backend_app_services_tickets_py_teamtarget",
       "community": 2,
       "norm_label": "teamtarget"
     },
@@ -467,7 +597,7 @@
       "label": "enrich_ticket()",
       "file_type": "code",
       "source_file": "backend/app/services/tickets.py",
-      "source_location": "L126",
+      "source_location": "L114",
       "_origin": "ast",
       "id": "services_tickets_enrich_ticket",
       "community": 2,
@@ -477,7 +607,7 @@
       "label": "Session",
       "file_type": "code",
       "source_file": "backend/app/services/tickets.py",
-      "source_location": "L126",
+      "source_location": "L114",
       "_origin": "ast",
       "id": "backend_app_services_tickets_py_session",
       "community": 2,
@@ -487,9 +617,9 @@
       "label": "Ticket",
       "file_type": "code",
       "source_file": "backend/app/services/tickets.py",
-      "source_location": "L126",
+      "source_location": "L114",
       "_origin": "ast",
-      "id": "backend_app_services_tickets_py_ticket",
+      "id": "ticket",
       "community": 2,
       "norm_label": "ticket"
     },
@@ -497,7 +627,7 @@
       "label": "_notify()",
       "file_type": "code",
       "source_file": "backend/app/services/tickets.py",
-      "source_location": "L137",
+      "source_location": "L125",
       "_origin": "ast",
       "id": "services_tickets_notify",
       "community": 2,
@@ -507,7 +637,7 @@
       "label": "advance_status()",
       "file_type": "code",
       "source_file": "backend/app/services/tickets.py",
-      "source_location": "L154",
+      "source_location": "L142",
       "_origin": "ast",
       "id": "services_tickets_advance_status",
       "community": 2,
@@ -517,7 +647,7 @@
       "label": "UserRole",
       "file_type": "code",
       "source_file": "backend/app/services/tickets.py",
-      "source_location": "L154",
+      "source_location": "L142",
       "_origin": "ast",
       "id": "userrole",
       "community": 2,
@@ -530,7 +660,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "backend_seed",
-      "community": 2,
+      "community": 0,
       "norm_label": "seed.py"
     },
     {
@@ -540,7 +670,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "backend_seed_hash_pw",
-      "community": 2,
+      "community": 0,
       "norm_label": "hash_pw()"
     },
     {
@@ -560,8 +690,28 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "backend_seed_rationale_1",
-      "community": 2,
+      "community": 0,
       "norm_label": "run from backend/: python seed.py creates demo users, capabilities, leads, ticke"
+    },
+    {
+      "label": "App.jsx",
+      "file_type": "code",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_app",
+      "community": 6,
+      "norm_label": "app.jsx"
+    },
+    {
+      "label": "App()",
+      "file_type": "code",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "src_app_app",
+      "community": 6,
+      "norm_label": "app()"
     },
     {
       "label": "CreateTicketModal.jsx",
@@ -570,7 +720,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_createticketmodal",
-      "community": 9,
+      "community": 8,
       "norm_label": "createticketmodal.jsx"
     },
     {
@@ -580,7 +730,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "components_createticketmodal_types_by_role",
-      "community": 9,
+      "community": 8,
       "norm_label": "types_by_role"
     },
     {
@@ -590,48 +740,88 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "components_createticketmodal_type_labels",
-      "community": 9,
+      "community": 8,
       "norm_label": "type_labels"
     },
     {
       "label": "CreateTicketModal()",
       "file_type": "code",
       "source_file": "frontend/src/components/CreateTicketModal.jsx",
-      "source_location": "L24",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "components_createticketmodal_createticketmodal",
-      "community": 9,
+      "community": 8,
       "norm_label": "createticketmodal()"
     },
     {
       "label": "Field()",
       "file_type": "code",
       "source_file": "frontend/src/components/CreateTicketModal.jsx",
-      "source_location": "L123",
+      "source_location": "L122",
       "_origin": "ast",
       "id": "components_createticketmodal_field",
-      "community": 9,
+      "community": 8,
       "norm_label": "field()"
     },
     {
       "label": "inp",
       "file_type": "code",
       "source_file": "frontend/src/components/CreateTicketModal.jsx",
-      "source_location": "L132",
+      "source_location": "L131",
       "_origin": "ast",
       "id": "components_createticketmodal_inp",
-      "community": 9,
+      "community": 8,
       "norm_label": "inp"
     },
     {
       "label": "sel",
       "file_type": "code",
       "source_file": "frontend/src/components/CreateTicketModal.jsx",
-      "source_location": "L133",
+      "source_location": "L132",
       "_origin": "ast",
       "id": "components_createticketmodal_sel",
-      "community": 9,
+      "community": 8,
       "norm_label": "sel"
+    },
+    {
+      "label": "Layout.jsx",
+      "file_type": "code",
+      "source_file": "frontend/src/components/Layout.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_layout",
+      "community": 6,
+      "norm_label": "layout.jsx"
+    },
+    {
+      "label": "NAV",
+      "file_type": "code",
+      "source_file": "frontend/src/components/Layout.jsx",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "components_layout_nav",
+      "community": 6,
+      "norm_label": "nav"
+    },
+    {
+      "label": "TYPE_ICON",
+      "file_type": "code",
+      "source_file": "frontend/src/components/Layout.jsx",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "components_layout_type_icon",
+      "community": 6,
+      "norm_label": "type_icon"
+    },
+    {
+      "label": "Layout()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/Layout.jsx",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "components_layout_layout",
+      "community": 6,
+      "norm_label": "layout()"
     },
     {
       "label": "TicketCard.jsx",
@@ -657,7 +847,7 @@
       "label": "TYPE_COLORS",
       "file_type": "code",
       "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L18",
+      "source_location": "L17",
       "_origin": "ast",
       "id": "components_ticketcard_type_colors",
       "community": 16,
@@ -667,7 +857,7 @@
       "label": "SAMPLE_SALES_OPTIONS",
       "file_type": "code",
       "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L30",
+      "source_location": "L28",
       "_origin": "ast",
       "id": "components_ticketcard_sample_sales_options",
       "community": 16,
@@ -677,7 +867,7 @@
       "label": "FORWARD_MAP",
       "file_type": "code",
       "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L39",
+      "source_location": "L37",
       "_origin": "ast",
       "id": "components_ticketcard_forward_map",
       "community": 16,
@@ -687,7 +877,7 @@
       "label": "nextStepRole()",
       "file_type": "code",
       "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L54",
+      "source_location": "L50",
       "_origin": "ast",
       "id": "components_ticketcard_nextsteprole",
       "community": 16,
@@ -697,7 +887,7 @@
       "label": "TERMINAL",
       "file_type": "code",
       "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L67",
+      "source_location": "L62",
       "_origin": "ast",
       "id": "components_ticketcard_terminal",
       "community": 16,
@@ -707,7 +897,7 @@
       "label": "TicketCard()",
       "file_type": "code",
       "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L69",
+      "source_location": "L64",
       "_origin": "ast",
       "id": "components_ticketcard_ticketcard",
       "community": 16,
@@ -717,7 +907,7 @@
       "label": "StatusTag()",
       "file_type": "code",
       "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L380",
+      "source_location": "L375",
       "_origin": "ast",
       "id": "components_ticketcard_statustag",
       "community": 16,
@@ -727,7 +917,7 @@
       "label": "pill()",
       "file_type": "code",
       "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L395",
+      "source_location": "L390",
       "_origin": "ast",
       "id": "components_ticketcard_pill",
       "community": 16,
@@ -737,7 +927,7 @@
       "label": "dropdownStyle()",
       "file_type": "code",
       "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L400",
+      "source_location": "L395",
       "_origin": "ast",
       "id": "components_ticketcard_dropdownstyle",
       "community": 16,
@@ -747,7 +937,7 @@
       "label": "applyBtn",
       "file_type": "code",
       "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L406",
+      "source_location": "L401",
       "_origin": "ast",
       "id": "components_ticketcard_applybtn",
       "community": 16,
@@ -757,411 +947,11 @@
       "label": "smallBtn()",
       "file_type": "code",
       "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L412",
+      "source_location": "L407",
       "_origin": "ast",
       "id": "components_ticketcard_smallbtn",
       "community": 16,
       "norm_label": "smallbtn()"
-    },
-    {
-      "label": "AnalyticsPage.jsx",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "admin_analyticspage",
-      "community": 22,
-      "norm_label": "analyticspage.jsx"
-    },
-    {
-      "label": "STATUS_COLORS",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
-      "source_location": "L5",
-      "_origin": "ast",
-      "id": "admin_analyticspage_status_colors",
-      "community": 22,
-      "norm_label": "status_colors"
-    },
-    {
-      "label": "PRIORITY_COLORS",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
-      "source_location": "L14",
-      "_origin": "ast",
-      "id": "admin_analyticspage_priority_colors",
-      "community": 22,
-      "norm_label": "priority_colors"
-    },
-    {
-      "label": "TYPE_LABELS",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
-      "source_location": "L16",
-      "_origin": "ast",
-      "id": "admin_analyticspage_type_labels",
-      "community": 22,
-      "norm_label": "type_labels"
-    },
-    {
-      "label": "AnalyticsPage()",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
-      "source_location": "L27",
-      "_origin": "ast",
-      "id": "admin_analyticspage_analyticspage",
-      "community": 22,
-      "norm_label": "analyticspage()"
-    },
-    {
-      "label": "StatCard()",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
-      "source_location": "L132",
-      "_origin": "ast",
-      "id": "admin_analyticspage_statcard",
-      "community": 22,
-      "norm_label": "statcard()"
-    },
-    {
-      "label": "ChartCard()",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
-      "source_location": "L143",
-      "_origin": "ast",
-      "id": "admin_analyticspage_chartcard",
-      "community": 22,
-      "norm_label": "chartcard()"
-    },
-    {
-      "label": "BarChart()",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
-      "source_location": "L152",
-      "_origin": "ast",
-      "id": "admin_analyticspage_barchart",
-      "community": 22,
-      "norm_label": "barchart()"
-    },
-    {
-      "label": "5c1d4e8a9f02_add_tech_role.py",
-      "file_type": "code",
-      "source_file": "backend/alembic/versions/5c1d4e8a9f02_add_tech_role.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 41,
-      "norm_label": "5c1d4e8a9f02_add_tech_role.py",
-      "id": "versions_5c1d4e8a9f02_add_tech_role"
-    },
-    {
-      "label": "upgrade()",
-      "file_type": "code",
-      "source_file": "backend/alembic/versions/5c1d4e8a9f02_add_tech_role.py",
-      "source_location": "L29",
-      "_origin": "ast",
-      "community": 41,
-      "norm_label": "upgrade()",
-      "id": "versions_5c1d4e8a9f02_add_tech_role_upgrade"
-    },
-    {
-      "label": "downgrade()",
-      "file_type": "code",
-      "source_file": "backend/alembic/versions/5c1d4e8a9f02_add_tech_role.py",
-      "source_location": "L52",
-      "_origin": "ast",
-      "community": 41,
-      "norm_label": "downgrade()",
-      "id": "versions_5c1d4e8a9f02_add_tech_role_downgrade"
-    },
-    {
-      "label": "queues.py",
-      "file_type": "code",
-      "source_file": "backend/app/routers/queues.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "queues.py",
-      "id": "routers_queues"
-    },
-    {
-      "label": "_build_queue()",
-      "file_type": "code",
-      "source_file": "backend/app/routers/queues.py",
-      "source_location": "L17",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "_build_queue()",
-      "id": "routers_queues_build_queue"
-    },
-    {
-      "label": "Session",
-      "file_type": "code",
-      "source_file": "backend/app/routers/queues.py",
-      "source_location": "L17",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "session",
-      "id": "backend_app_routers_queues_py_session"
-    },
-    {
-      "label": "TeamTarget",
-      "file_type": "code",
-      "source_file": "backend/app/routers/queues.py",
-      "source_location": "L17",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "teamtarget",
-      "id": "backend_app_routers_queues_py_teamtarget"
-    },
-    {
-      "label": "sales_queue()",
-      "file_type": "code",
-      "source_file": "backend/app/routers/queues.py",
-      "source_location": "L47",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "sales_queue()",
-      "id": "routers_queues_sales_queue"
-    },
-    {
-      "label": "product_queue()",
-      "file_type": "code",
-      "source_file": "backend/app/routers/queues.py",
-      "source_location": "L55",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "product_queue()",
-      "id": "routers_queues_product_queue"
-    },
-    {
-      "label": "tech_queue()",
-      "file_type": "code",
-      "source_file": "backend/app/routers/queues.py",
-      "source_location": "L63",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "tech_queue()",
-      "id": "routers_queues_tech_queue"
-    },
-    {
-      "label": "leads.py",
-      "file_type": "code",
-      "source_file": "backend/app/services/leads.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 11,
-      "norm_label": "leads.py",
-      "id": "services_leads"
-    },
-    {
-      "label": "compute_suggested_priority()",
-      "file_type": "code",
-      "source_file": "backend/app/services/leads.py",
-      "source_location": "L21",
-      "_origin": "ast",
-      "community": 11,
-      "norm_label": "compute_suggested_priority()",
-      "id": "services_leads_compute_suggested_priority"
-    },
-    {
-      "label": "Decimal",
-      "file_type": "code",
-      "source_file": "backend/app/services/leads.py",
-      "source_location": "L21",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "decimal",
-      "id": "decimal"
-    },
-    {
-      "label": "WinProbability",
-      "file_type": "code",
-      "source_file": "backend/app/services/leads.py",
-      "source_location": "L21",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "winprobability",
-      "id": "winprobability"
-    },
-    {
-      "label": "Priority",
-      "file_type": "code",
-      "source_file": "backend/app/services/leads.py",
-      "source_location": "L21",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "priority",
-      "id": "priority"
-    },
-    {
-      "label": "compute_capability_match()",
-      "file_type": "code",
-      "source_file": "backend/app/services/leads.py",
-      "source_location": "L34",
-      "_origin": "ast",
-      "community": 11,
-      "norm_label": "compute_capability_match()",
-      "id": "services_leads_compute_capability_match"
-    },
-    {
-      "label": "Session",
-      "file_type": "code",
-      "source_file": "backend/app/services/leads.py",
-      "source_location": "L34",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "session",
-      "id": "backend_app_services_leads_py_session"
-    },
-    {
-      "label": "CapabilityMatch",
-      "file_type": "code",
-      "source_file": "backend/app/services/leads.py",
-      "source_location": "L34",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "capabilitymatch",
-      "id": "capabilitymatch"
-    },
-    {
-      "label": "compute_lead_status()",
-      "file_type": "code",
-      "source_file": "backend/app/services/leads.py",
-      "source_location": "L43",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "compute_lead_status()",
-      "id": "services_leads_compute_lead_status"
-    },
-    {
-      "label": "Lead",
-      "file_type": "code",
-      "source_file": "backend/app/services/leads.py",
-      "source_location": "L43",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "lead",
-      "id": "lead"
-    },
-    {
-      "label": "LeadStatus",
-      "file_type": "code",
-      "source_file": "backend/app/services/leads.py",
-      "source_location": "L43",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "leadstatus",
-      "id": "leadstatus"
-    },
-    {
-      "label": "days_left()",
-      "file_type": "code",
-      "source_file": "backend/app/services/leads.py",
-      "source_location": "L57",
-      "_origin": "ast",
-      "community": 11,
-      "norm_label": "days_left()",
-      "id": "services_leads_days_left"
-    },
-    {
-      "label": "date",
-      "file_type": "code",
-      "source_file": "backend/app/services/leads.py",
-      "source_location": "L57",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "date",
-      "id": "date"
-    },
-    {
-      "label": "archive()",
-      "file_type": "code",
-      "source_file": "backend/app/services/leads.py",
-      "source_location": "L61",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "archive()",
-      "id": "services_leads_archive"
-    },
-    {
-      "label": "EntityType",
-      "file_type": "code",
-      "source_file": "backend/app/services/leads.py",
-      "source_location": "L61",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "entitytype",
-      "id": "entitytype"
-    },
-    {
-      "label": "enrich()",
-      "file_type": "code",
-      "source_file": "backend/app/services/leads.py",
-      "source_location": "L74",
-      "_origin": "ast",
-      "community": 11,
-      "norm_label": "enrich()",
-      "id": "services_leads_enrich"
-    },
-    {
-      "label": "App.jsx",
-      "file_type": "code",
-      "source_file": "frontend/src/App.jsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "app.jsx",
-      "id": "src_app"
-    },
-    {
-      "label": "App()",
-      "file_type": "code",
-      "source_file": "frontend/src/App.jsx",
-      "source_location": "L15",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "app()",
-      "id": "src_app_app"
-    },
-    {
-      "label": "Layout.jsx",
-      "file_type": "code",
-      "source_file": "frontend/src/components/Layout.jsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "layout.jsx",
-      "id": "components_layout"
-    },
-    {
-      "label": "NAV",
-      "file_type": "code",
-      "source_file": "frontend/src/components/Layout.jsx",
-      "source_location": "L8",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "nav",
-      "id": "components_layout_nav"
-    },
-    {
-      "label": "TYPE_ICON",
-      "file_type": "code",
-      "source_file": "frontend/src/components/Layout.jsx",
-      "source_location": "L32",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "type_icon",
-      "id": "components_layout_type_icon"
-    },
-    {
-      "label": "Layout()",
-      "file_type": "code",
-      "source_file": "frontend/src/components/Layout.jsx",
-      "source_location": "L40",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "layout()",
-      "id": "components_layout_layout"
     },
     {
       "label": "QueuePage.jsx",
@@ -1169,9 +959,9 @@
       "source_file": "frontend/src/pages/QueuePage.jsx",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "pages_queuepage",
       "community": 6,
-      "norm_label": "queuepage.jsx",
-      "id": "pages_queuepage"
+      "norm_label": "queuepage.jsx"
     },
     {
       "label": "QueuePage()",
@@ -1179,9 +969,9 @@
       "source_file": "frontend/src/pages/QueuePage.jsx",
       "source_location": "L10",
       "_origin": "ast",
+      "id": "pages_queuepage_queuepage",
       "community": 6,
-      "norm_label": "queuepage()",
-      "id": "pages_queuepage_queuepage"
+      "norm_label": "queuepage()"
     },
     {
       "label": "main.py",
@@ -1609,7 +1399,7 @@
       "source_file": "backend/app/routers/attachments.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 2,
+      "community": 9,
       "norm_label": "attachments.py",
       "id": "routers_attachments"
     },
@@ -1619,7 +1409,7 @@
       "source_file": "backend/app/routers/attachments.py",
       "source_location": "L22",
       "_origin": "ast",
-      "community": 2,
+      "community": 9,
       "norm_label": "_safe_name()",
       "id": "routers_attachments_safe_name"
     },
@@ -1629,7 +1419,7 @@
       "source_file": "backend/app/routers/attachments.py",
       "source_location": "L26",
       "_origin": "ast",
-      "community": 2,
+      "community": 9,
       "norm_label": "_save()",
       "id": "routers_attachments_save"
     },
@@ -1639,7 +1429,7 @@
       "source_file": "backend/app/routers/attachments.py",
       "source_location": "L26",
       "_origin": "ast",
-      "community": 2,
+      "community": 9,
       "norm_label": "uploadfile",
       "id": "uploadfile"
     },
@@ -1649,7 +1439,7 @@
       "source_file": "backend/app/routers/attachments.py",
       "source_location": "L39",
       "_origin": "ast",
-      "community": 2,
+      "community": 9,
       "norm_label": "_out()",
       "id": "routers_attachments_out"
     },
@@ -1659,7 +1449,7 @@
       "source_file": "backend/app/routers/attachments.py",
       "source_location": "L39",
       "_origin": "ast",
-      "community": 2,
+      "community": 9,
       "norm_label": "attachment",
       "id": "attachment"
     },
@@ -1669,7 +1459,7 @@
       "source_file": "backend/app/routers/attachments.py",
       "source_location": "L39",
       "_origin": "ast",
-      "community": 2,
+      "community": 9,
       "norm_label": "attachmentout",
       "id": "attachmentout"
     },
@@ -1679,7 +1469,7 @@
       "source_file": "backend/app/routers/attachments.py",
       "source_location": "L56",
       "_origin": "ast",
-      "community": 2,
+      "community": 9,
       "norm_label": "list_lead_attachments()",
       "id": "routers_attachments_list_lead_attachments"
     },
@@ -1689,7 +1479,7 @@
       "source_file": "backend/app/routers/attachments.py",
       "source_location": "L56",
       "_origin": "ast",
-      "community": 2,
+      "community": 9,
       "norm_label": "session",
       "id": "backend_app_routers_attachments_py_session"
     },
@@ -1699,7 +1489,7 @@
       "source_file": "backend/app/routers/attachments.py",
       "source_location": "L56",
       "_origin": "ast",
-      "community": 2,
+      "community": 9,
       "norm_label": "user",
       "id": "backend_app_routers_attachments_py_user"
     },
@@ -1709,7 +1499,7 @@
       "source_file": "backend/app/routers/attachments.py",
       "source_location": "L73",
       "_origin": "ast",
-      "community": 2,
+      "community": 9,
       "norm_label": "upload_lead_attachment()",
       "id": "routers_attachments_upload_lead_attachment"
     },
@@ -1719,7 +1509,7 @@
       "source_file": "backend/app/routers/attachments.py",
       "source_location": "L105",
       "_origin": "ast",
-      "community": 2,
+      "community": 9,
       "norm_label": "list_ticket_attachments()",
       "id": "routers_attachments_list_ticket_attachments"
     },
@@ -1729,7 +1519,7 @@
       "source_file": "backend/app/routers/attachments.py",
       "source_location": "L122",
       "_origin": "ast",
-      "community": 2,
+      "community": 9,
       "norm_label": "upload_ticket_attachment()",
       "id": "routers_attachments_upload_ticket_attachment"
     },
@@ -1739,7 +1529,7 @@
       "source_file": "backend/app/routers/attachments.py",
       "source_location": "L160",
       "_origin": "ast",
-      "community": 2,
+      "community": 9,
       "norm_label": "download_attachment()",
       "id": "routers_attachments_download_attachment"
     },
@@ -1749,7 +1539,7 @@
       "source_file": "backend/app/routers/attachments.py",
       "source_location": "L177",
       "_origin": "ast",
-      "community": 2,
+      "community": 9,
       "norm_label": "delete_attachment()",
       "id": "routers_attachments_delete_attachment"
     },
@@ -1759,7 +1549,7 @@
       "source_file": "backend/app/routers/attachments.py",
       "source_location": "L27",
       "_origin": "ast",
-      "community": 2,
+      "community": 9,
       "norm_label": "persist upload to disk. returns (relative_path, original_filename).",
       "id": "routers_attachments_rationale_27"
     },
@@ -1859,7 +1649,7 @@
       "source_file": "backend/app/routers/capabilities.py",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "capabilityout",
       "id": "capabilityout"
     },
@@ -1919,7 +1709,7 @@
       "source_file": "backend/app/routers/capabilities.py",
       "source_location": "L43",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "capabilitycreate",
       "id": "capabilitycreate"
     },
@@ -2242,6 +2032,156 @@
       "community": 0,
       "norm_label": "admin-only: run the sla check immediately (useful for testing).",
       "id": "routers_notifications_rationale_61"
+    },
+    {
+      "label": "tickets.py",
+      "file_type": "code",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 5,
+      "norm_label": "tickets.py",
+      "id": "routers_tickets"
+    },
+    {
+      "label": "_ticket_out()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L25",
+      "_origin": "ast",
+      "community": 5,
+      "norm_label": "_ticket_out()",
+      "id": "routers_tickets_ticket_out"
+    },
+    {
+      "label": "Session",
+      "file_type": "code",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L25",
+      "_origin": "ast",
+      "community": 5,
+      "norm_label": "session",
+      "id": "backend_app_routers_tickets_py_session"
+    },
+    {
+      "label": "Ticket",
+      "file_type": "code",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L25",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "ticket",
+      "id": "backend_app_routers_tickets_py_ticket"
+    },
+    {
+      "label": "TicketOut",
+      "file_type": "code",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L25",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "ticketout",
+      "id": "backend_app_routers_tickets_py_ticketout"
+    },
+    {
+      "label": "create_ticket()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L35",
+      "_origin": "ast",
+      "community": 5,
+      "norm_label": "create_ticket()",
+      "id": "routers_tickets_create_ticket"
+    },
+    {
+      "label": "TicketCreate",
+      "file_type": "code",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L35",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "ticketcreate",
+      "id": "ticketcreate"
+    },
+    {
+      "label": "User",
+      "file_type": "code",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L35",
+      "_origin": "ast",
+      "community": 5,
+      "norm_label": "user",
+      "id": "backend_app_routers_tickets_py_user"
+    },
+    {
+      "label": "list_lead_tickets()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L90",
+      "_origin": "ast",
+      "community": 5,
+      "norm_label": "list_lead_tickets()",
+      "id": "routers_tickets_list_lead_tickets"
+    },
+    {
+      "label": "update_ticket_status()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L102",
+      "_origin": "ast",
+      "community": 5,
+      "norm_label": "update_ticket_status()",
+      "id": "routers_tickets_update_ticket_status"
+    },
+    {
+      "label": "TicketStatusUpdate",
+      "file_type": "code",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L102",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "ticketstatusupdate",
+      "id": "ticketstatusupdate"
+    },
+    {
+      "label": "toggle_hold()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L124",
+      "_origin": "ast",
+      "community": 5,
+      "norm_label": "toggle_hold()",
+      "id": "routers_tickets_toggle_hold"
+    },
+    {
+      "label": "TicketHold",
+      "file_type": "code",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L124",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "tickethold",
+      "id": "tickethold"
+    },
+    {
+      "label": "hold_until()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L145",
+      "_origin": "ast",
+      "community": 5,
+      "norm_label": "hold_until()",
+      "id": "routers_tickets_hold_until"
+    },
+    {
+      "label": "TicketHoldUntil",
+      "file_type": "code",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L145",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "ticketholduntil",
+      "id": "ticketholduntil"
     },
     {
       "label": "users.py",
@@ -2699,7 +2639,7 @@
       "source_file": "backend/app/services/sla.py",
       "source_location": "L22",
       "_origin": "ast",
-      "community": 2,
+      "community": 0,
       "norm_label": "datetime",
       "id": "datetime"
     },
@@ -3744,6 +3684,86 @@
       "id": "pages_loginpage_inputstyle"
     },
     {
+      "label": "AnalyticsPage.jsx",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "analyticspage.jsx",
+      "id": "admin_analyticspage"
+    },
+    {
+      "label": "STATUS_COLORS",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
+      "source_location": "L5",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "status_colors",
+      "id": "admin_analyticspage_status_colors"
+    },
+    {
+      "label": "PRIORITY_COLORS",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
+      "source_location": "L14",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "priority_colors",
+      "id": "admin_analyticspage_priority_colors"
+    },
+    {
+      "label": "TYPE_LABELS",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
+      "source_location": "L16",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "type_labels",
+      "id": "admin_analyticspage_type_labels"
+    },
+    {
+      "label": "AnalyticsPage()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
+      "source_location": "L22",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "analyticspage()",
+      "id": "admin_analyticspage_analyticspage"
+    },
+    {
+      "label": "StatCard()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
+      "source_location": "L127",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "statcard()",
+      "id": "admin_analyticspage_statcard"
+    },
+    {
+      "label": "ChartCard()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
+      "source_location": "L138",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "chartcard()",
+      "id": "admin_analyticspage_chartcard"
+    },
+    {
+      "label": "BarChart()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
+      "source_location": "L147",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "barchart()",
+      "id": "admin_analyticspage_barchart"
+    },
+    {
       "label": "ArchivePage.jsx",
       "file_type": "code",
       "source_file": "frontend/src/pages/admin/ArchivePage.jsx",
@@ -3879,7 +3899,7 @@
       "source_file": "frontend/src/pages/product/CapabilitiesPage.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 8,
+      "community": 39,
       "norm_label": "capabilitiespage.jsx",
       "id": "product_capabilitiespage"
     },
@@ -3889,7 +3909,7 @@
       "source_file": "frontend/src/pages/product/CapabilitiesPage.jsx",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 8,
+      "community": 39,
       "norm_label": "capabilitiespage()",
       "id": "product_capabilitiespage_capabilitiespage"
     },
@@ -3899,7 +3919,7 @@
       "source_file": "frontend/src/pages/product/CapabilitiesPage.jsx",
       "source_location": "L163",
       "_origin": "ast",
-      "community": 8,
+      "community": 39,
       "norm_label": "section()",
       "id": "product_capabilitiespage_section"
     },
@@ -3909,7 +3929,7 @@
       "source_file": "frontend/src/pages/product/CapabilitiesPage.jsx",
       "source_location": "L181",
       "_origin": "ast",
-      "community": 8,
+      "community": 39,
       "norm_label": "caprow()",
       "id": "product_capabilitiespage_caprow"
     },
@@ -3919,7 +3939,7 @@
       "source_file": "frontend/src/pages/product/CapabilitiesPage.jsx",
       "source_location": "L249",
       "_origin": "ast",
-      "community": 8,
+      "community": 39,
       "norm_label": "primarybtn",
       "id": "product_capabilitiespage_primarybtn"
     },
@@ -3929,7 +3949,7 @@
       "source_file": "frontend/src/pages/product/CapabilitiesPage.jsx",
       "source_location": "L254",
       "_origin": "ast",
-      "community": 8,
+      "community": 39,
       "norm_label": "ghostbtn",
       "id": "product_capabilitiespage_ghostbtn"
     },
@@ -3939,7 +3959,7 @@
       "source_file": "frontend/src/pages/product/CapabilitiesPage.jsx",
       "source_location": "L258",
       "_origin": "ast",
-      "community": 8,
+      "community": 39,
       "norm_label": "labelstyle",
       "id": "product_capabilitiespage_labelstyle"
     },
@@ -3949,7 +3969,7 @@
       "source_file": "frontend/src/pages/product/CapabilitiesPage.jsx",
       "source_location": "L261",
       "_origin": "ast",
-      "community": 8,
+      "community": 39,
       "norm_label": "inputstyle",
       "id": "product_capabilitiespage_inputstyle"
     },
@@ -5576,6 +5596,26 @@
   ],
   "links": [
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/alembic/versions/5c1d4e8a9f02_add_tech_role.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "versions_5c1d4e8a9f02_add_tech_role",
+      "target": "versions_5c1d4e8a9f02_add_tech_role_downgrade",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/alembic/versions/5c1d4e8a9f02_add_tech_role.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "versions_5c1d4e8a9f02_add_tech_role",
+      "target": "versions_5c1d4e8a9f02_add_tech_role_upgrade",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -6478,6 +6518,26 @@
     {
       "relation": "uses",
       "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L8",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_ticketout",
+      "target": "app_models_userrole"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L8",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_user",
+      "target": "app_models_userrole"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
       "source_file": "backend/app/routers/users.py",
       "source_location": "L9",
       "weight": 0.8,
@@ -6531,9 +6591,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
-      "source": "backend_app_services_tickets_py_ticket",
-      "target": "app_models_userrole",
-      "confidence_score": 0.5
+      "confidence_score": 0.5,
+      "source": "backend_app_services_tickets_py_teamtarget",
+      "target": "app_models_userrole"
     },
     {
       "relation": "uses",
@@ -6641,7 +6701,7 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
-      "source": "teamtarget",
+      "source": "ticket",
       "target": "app_models_userrole",
       "confidence_score": 0.5
     },
@@ -6681,9 +6741,9 @@
       "source_file": "backend/app/routers/queues.py",
       "source_location": "L8",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "ticketout",
-      "target": "app_models_userrole"
+      "target": "app_models_userrole",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -6721,9 +6781,9 @@
       "source_file": "backend/app/routers/queues.py",
       "source_location": "L8",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "user",
-      "target": "app_models_userrole"
+      "target": "app_models_userrole",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -6741,9 +6801,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "userrole",
-      "target": "app_models_userrole"
+      "target": "app_models_userrole",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -7091,9 +7151,9 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L7",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "date",
-      "target": "app_models_winprobability"
+      "target": "app_models_winprobability",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -7121,9 +7181,9 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L7",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "lead",
-      "target": "app_models_winprobability"
+      "target": "app_models_winprobability",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -7481,9 +7541,9 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L7",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "date",
-      "target": "app_models_priority"
+      "target": "app_models_priority",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -7511,9 +7571,9 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L7",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "lead",
-      "target": "app_models_priority"
+      "target": "app_models_priority",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -7581,9 +7641,9 @@
       "source_file": "backend/app/routers/queues.py",
       "source_location": "L8",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "ticketout",
-      "target": "app_models_priority"
+      "target": "app_models_priority",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -7591,9 +7651,9 @@
       "source_file": "backend/app/routers/queues.py",
       "source_location": "L8",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "user",
-      "target": "app_models_priority"
+      "target": "app_models_priority",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -7851,9 +7911,9 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L7",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "date",
-      "target": "app_models_capabilitymatch"
+      "target": "app_models_capabilitymatch",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -7881,9 +7941,9 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L7",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "lead",
-      "target": "app_models_capabilitymatch"
+      "target": "app_models_capabilitymatch",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -8251,9 +8311,9 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L7",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "date",
-      "target": "app_models_leadstatus"
+      "target": "app_models_leadstatus",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -8281,9 +8341,9 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L7",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "lead",
-      "target": "app_models_leadstatus"
+      "target": "app_models_leadstatus",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -8658,6 +8718,26 @@
     {
       "relation": "uses",
       "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L8",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_ticketout",
+      "target": "app_models_tickettype"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L8",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_user",
+      "target": "app_models_tickettype"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
       "source_file": "backend/app/services/sla.py",
       "source_location": "L9",
       "weight": 0.8,
@@ -8701,9 +8781,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
-      "source": "backend_app_services_tickets_py_ticket",
-      "target": "app_models_tickettype",
-      "confidence_score": 0.5
+      "confidence_score": 0.5,
+      "source": "backend_app_services_tickets_py_teamtarget",
+      "target": "app_models_tickettype"
     },
     {
       "relation": "uses",
@@ -8731,7 +8811,7 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
-      "source": "teamtarget",
+      "source": "ticket",
       "target": "app_models_tickettype",
       "confidence_score": 0.5
     },
@@ -8771,9 +8851,9 @@
       "source_file": "backend/app/routers/queues.py",
       "source_location": "L8",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "ticketout",
-      "target": "app_models_tickettype"
+      "target": "app_models_tickettype",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -8801,9 +8881,9 @@
       "source_file": "backend/app/routers/queues.py",
       "source_location": "L8",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "user",
-      "target": "app_models_tickettype"
+      "target": "app_models_tickettype",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -8811,9 +8891,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "userrole",
-      "target": "app_models_tickettype"
+      "target": "app_models_tickettype",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -9078,6 +9158,26 @@
     {
       "relation": "uses",
       "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L8",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_ticketout",
+      "target": "app_models_teamtarget"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L8",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_user",
+      "target": "app_models_teamtarget"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
       "source_file": "backend/app/services/sla.py",
       "source_location": "L9",
       "weight": 0.8,
@@ -9121,9 +9221,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
-      "source": "backend_app_services_tickets_py_ticket",
-      "target": "app_models_teamtarget",
-      "confidence_score": 0.5
+      "confidence_score": 0.5,
+      "source": "backend_app_services_tickets_py_teamtarget",
+      "target": "app_models_teamtarget"
     },
     {
       "relation": "uses",
@@ -9141,7 +9241,7 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
-      "source": "teamtarget",
+      "source": "ticket",
       "target": "app_models_teamtarget",
       "confidence_score": 0.5
     },
@@ -9181,9 +9281,9 @@
       "source_file": "backend/app/routers/queues.py",
       "source_location": "L8",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "ticketout",
-      "target": "app_models_teamtarget"
+      "target": "app_models_teamtarget",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -9211,9 +9311,9 @@
       "source_file": "backend/app/routers/queues.py",
       "source_location": "L8",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "user",
-      "target": "app_models_teamtarget"
+      "target": "app_models_teamtarget",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -9221,9 +9321,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "userrole",
-      "target": "app_models_teamtarget"
+      "target": "app_models_teamtarget",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -9311,9 +9411,9 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L7",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "date",
-      "target": "app_models_commentvisibility"
+      "target": "app_models_commentvisibility",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -9341,9 +9441,9 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L7",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "lead",
-      "target": "app_models_commentvisibility"
+      "target": "app_models_commentvisibility",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -9529,6 +9629,26 @@
     {
       "relation": "uses",
       "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L8",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_ticketout",
+      "target": "app_models_entitytype"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L8",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_user",
+      "target": "app_models_entitytype"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
       "source_file": "backend/app/services/leads.py",
       "source_location": "L7",
       "weight": 0.8,
@@ -9552,9 +9672,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
-      "source": "backend_app_services_tickets_py_ticket",
-      "target": "app_models_entitytype",
-      "confidence_score": 0.5
+      "confidence_score": 0.5,
+      "source": "backend_app_services_tickets_py_teamtarget",
+      "target": "app_models_entitytype"
     },
     {
       "relation": "uses",
@@ -9582,9 +9702,9 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L7",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "date",
-      "target": "app_models_entitytype"
+      "target": "app_models_entitytype",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -9612,9 +9732,9 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L7",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "lead",
-      "target": "app_models_entitytype"
+      "target": "app_models_entitytype",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -9703,7 +9823,7 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
-      "source": "teamtarget",
+      "source": "ticket",
       "target": "app_models_entitytype",
       "confidence_score": 0.5
     },
@@ -9743,16 +9863,6 @@
       "source_file": "backend/app/routers/tickets.py",
       "source_location": "L8",
       "weight": 0.8,
-      "source": "ticketout",
-      "target": "app_models_entitytype",
-      "confidence_score": 0.5
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L8",
-      "weight": 0.8,
       "confidence_score": 0.5,
       "source": "ticketstatusupdate",
       "target": "app_models_entitytype"
@@ -9770,22 +9880,12 @@
     {
       "relation": "uses",
       "confidence": "INFERRED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L8",
-      "weight": 0.8,
-      "source": "user",
-      "target": "app_models_entitytype",
-      "confidence_score": 0.5
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "userrole",
-      "target": "app_models_entitytype"
+      "target": "app_models_entitytype",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -9873,9 +9973,9 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/models.py",
-      "source_location": "L89",
+      "source_location": "L88",
       "weight": 1.0,
-      "source": "app_models_rationale_89",
+      "source": "app_models_rationale_88",
       "target": "app_models_enum",
       "confidence_score": 1.0
     },
@@ -10132,6 +10232,26 @@
     {
       "relation": "uses",
       "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L8",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_ticketout",
+      "target": "app_models_user"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L8",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_user",
+      "target": "app_models_user"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
       "source_file": "backend/app/routers/users.py",
       "source_location": "L9",
       "weight": 0.8,
@@ -10195,9 +10315,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
-      "source": "backend_app_services_tickets_py_ticket",
-      "target": "app_models_user",
-      "confidence_score": 0.5
+      "confidence_score": 0.5,
+      "source": "backend_app_services_tickets_py_teamtarget",
+      "target": "app_models_user"
     },
     {
       "relation": "calls",
@@ -10326,7 +10446,7 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
-      "source": "teamtarget",
+      "source": "ticket",
       "target": "app_models_user",
       "confidence_score": 0.5
     },
@@ -10366,9 +10486,9 @@
       "source_file": "backend/app/routers/queues.py",
       "source_location": "L8",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "ticketout",
-      "target": "app_models_user"
+      "target": "app_models_user",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -10406,9 +10526,9 @@
       "source_file": "backend/app/routers/queues.py",
       "source_location": "L8",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "user",
-      "target": "app_models_user"
+      "target": "app_models_user",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -10426,9 +10546,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "userrole",
-      "target": "app_models_user"
+      "target": "app_models_user",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -10693,6 +10813,26 @@
     {
       "relation": "uses",
       "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L8",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_ticketout",
+      "target": "app_models_lead"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L8",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_user",
+      "target": "app_models_lead"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
       "source_file": "backend/app/services/leads.py",
       "source_location": "L7",
       "weight": 0.8,
@@ -10746,9 +10886,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
-      "source": "backend_app_services_tickets_py_ticket",
-      "target": "app_models_lead",
-      "confidence_score": 0.5
+      "confidence_score": 0.5,
+      "source": "backend_app_services_tickets_py_teamtarget",
+      "target": "app_models_lead"
     },
     {
       "relation": "calls",
@@ -10817,9 +10957,9 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L7",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "date",
-      "target": "app_models_lead"
+      "target": "app_models_lead",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -10857,9 +10997,9 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L7",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "lead",
-      "target": "app_models_lead"
+      "target": "app_models_lead",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -10937,7 +11077,7 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
-      "source": "teamtarget",
+      "source": "ticket",
       "target": "app_models_lead",
       "confidence_score": 0.5
     },
@@ -10977,9 +11117,9 @@
       "source_file": "backend/app/routers/queues.py",
       "source_location": "L8",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "ticketout",
-      "target": "app_models_lead"
+      "target": "app_models_lead",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -11017,9 +11157,9 @@
       "source_file": "backend/app/routers/queues.py",
       "source_location": "L8",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "user",
-      "target": "app_models_lead"
+      "target": "app_models_lead",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -11027,9 +11167,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "userrole",
-      "target": "app_models_lead"
+      "target": "app_models_lead",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -11204,6 +11344,26 @@
     {
       "relation": "uses",
       "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L8",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_ticketout",
+      "target": "app_models_ticket"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L8",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_user",
+      "target": "app_models_ticket"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
       "source_file": "backend/app/services/leads.py",
       "source_location": "L7",
       "weight": 0.8,
@@ -11257,9 +11417,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
-      "source": "backend_app_services_tickets_py_ticket",
-      "target": "app_models_ticket",
-      "confidence_score": 0.5
+      "confidence_score": 0.5,
+      "source": "backend_app_services_tickets_py_teamtarget",
+      "target": "app_models_ticket"
     },
     {
       "relation": "calls",
@@ -11298,9 +11458,9 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L7",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "date",
-      "target": "app_models_ticket"
+      "target": "app_models_ticket",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -11338,9 +11498,9 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L7",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "lead",
-      "target": "app_models_ticket"
+      "target": "app_models_ticket",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -11418,7 +11578,7 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
-      "source": "teamtarget",
+      "source": "ticket",
       "target": "app_models_ticket",
       "confidence_score": 0.5
     },
@@ -11458,9 +11618,9 @@
       "source_file": "backend/app/routers/queues.py",
       "source_location": "L8",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "ticketout",
-      "target": "app_models_ticket"
+      "target": "app_models_ticket",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -11498,9 +11658,9 @@
       "source_file": "backend/app/routers/queues.py",
       "source_location": "L8",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "user",
-      "target": "app_models_ticket"
+      "target": "app_models_ticket",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -11508,9 +11668,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "userrole",
-      "target": "app_models_ticket"
+      "target": "app_models_ticket",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -11619,9 +11779,9 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L7",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "date",
-      "target": "app_models_comment"
+      "target": "app_models_comment",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -11649,9 +11809,9 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L7",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "lead",
-      "target": "app_models_comment"
+      "target": "app_models_comment",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -11749,9 +11909,9 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/models.py",
-      "source_location": "L179",
+      "source_location": "L178",
       "weight": 1.0,
-      "source": "app_models_rationale_179",
+      "source": "app_models_rationale_178",
       "target": "app_models_statushistory",
       "confidence_score": 1.0
     },
@@ -11811,9 +11971,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
-      "source": "backend_app_services_tickets_py_ticket",
-      "target": "app_models_statushistory",
-      "confidence_score": 0.5
+      "confidence_score": 0.5,
+      "source": "backend_app_services_tickets_py_teamtarget",
+      "target": "app_models_statushistory"
     },
     {
       "relation": "calls",
@@ -11842,9 +12002,9 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L7",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "date",
-      "target": "app_models_statushistory"
+      "target": "app_models_statushistory",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -11872,9 +12032,9 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L7",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "lead",
-      "target": "app_models_statushistory"
+      "target": "app_models_statushistory",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -11923,7 +12083,7 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
-      "source": "teamtarget",
+      "source": "ticket",
       "target": "app_models_statushistory",
       "confidence_score": 0.5
     },
@@ -11943,9 +12103,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "userrole",
-      "target": "app_models_statushistory"
+      "target": "app_models_statushistory",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -12044,9 +12204,9 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L7",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "date",
-      "target": "app_models_capability"
+      "target": "app_models_capability",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -12074,9 +12234,9 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L7",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "lead",
-      "target": "app_models_capability"
+      "target": "app_models_capability",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -12204,9 +12364,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
-      "source": "backend_app_services_tickets_py_ticket",
-      "target": "app_models_notification",
-      "confidence_score": 0.5
+      "confidence_score": 0.5,
+      "source": "backend_app_services_tickets_py_teamtarget",
+      "target": "app_models_notification"
     },
     {
       "relation": "calls",
@@ -12246,7 +12406,7 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
-      "source": "teamtarget",
+      "source": "ticket",
       "target": "app_models_notification",
       "confidence_score": 0.5
     },
@@ -12266,1556 +12426,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
-      "confidence_score": 0.5,
       "source": "userrole",
-      "target": "app_models_notification"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_tickets",
-      "target": "app_database"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_tickets",
-      "target": "app_deps"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_tickets",
-      "target": "app_schemas"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L20",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_tickets",
-      "target": "app_ws"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L35",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_tickets",
-      "target": "routers_tickets_create_ticket"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L145",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_tickets",
-      "target": "routers_tickets_hold_until"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L90",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_tickets",
-      "target": "routers_tickets_list_lead_tickets"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L25",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_tickets",
-      "target": "routers_tickets_ticket_out"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L124",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_tickets",
-      "target": "routers_tickets_toggle_hold"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L102",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_tickets",
-      "target": "routers_tickets_update_ticket_status"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L86",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_tickets_create_ticket",
-      "target": "routers_tickets_ticket_out"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L161",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_tickets_hold_until",
-      "target": "routers_tickets_ticket_out"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L96",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_tickets_list_lead_tickets",
-      "target": "routers_tickets_ticket_out"
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L25",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_tickets_ticket_out",
-      "target": "backend_app_routers_tickets_py_session"
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L25",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_tickets_ticket_out",
-      "target": "backend_app_routers_tickets_py_ticket"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L28",
-      "weight": 1.0,
-      "source": "routers_tickets_ticket_out",
-      "target": "services_tickets_enrich_ticket"
-    },
-    {
-      "relation": "references",
-      "context": "return_type",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L25",
-      "weight": 1.0,
-      "source": "routers_tickets_ticket_out",
-      "target": "ticketout",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L139",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_tickets_toggle_hold",
-      "target": "routers_tickets_ticket_out"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L118",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_tickets_update_ticket_status",
-      "target": "routers_tickets_ticket_out"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L12",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "backend_app_routers_tickets_py_session",
-      "target": "app_schemas_ticketcreate"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L12",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "backend_app_routers_tickets_py_session",
-      "target": "app_schemas_tickethold"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L12",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "backend_app_routers_tickets_py_session",
-      "target": "app_schemas_ticketholduntil"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L12",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "backend_app_routers_tickets_py_session",
-      "target": "app_schemas_ticketout"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L12",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "backend_app_routers_tickets_py_session",
-      "target": "app_schemas_ticketstatusupdate"
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L35",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_tickets_create_ticket",
-      "target": "backend_app_routers_tickets_py_session"
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L145",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_tickets_hold_until",
-      "target": "backend_app_routers_tickets_py_session"
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L90",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_tickets_list_lead_tickets",
-      "target": "backend_app_routers_tickets_py_session"
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L124",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_tickets_toggle_hold",
-      "target": "backend_app_routers_tickets_py_session"
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L102",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_tickets_update_ticket_status",
-      "target": "backend_app_routers_tickets_py_session"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L12",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "backend_app_routers_tickets_py_ticket",
-      "target": "app_schemas_ticketcreate"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L12",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "backend_app_routers_tickets_py_ticket",
-      "target": "app_schemas_tickethold"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L12",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "backend_app_routers_tickets_py_ticket",
-      "target": "app_schemas_ticketholduntil"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L12",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "backend_app_routers_tickets_py_ticket",
-      "target": "app_schemas_ticketout"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L12",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "backend_app_routers_tickets_py_ticket",
-      "target": "app_schemas_ticketstatusupdate"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L61",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_tickets_create_ticket",
-      "target": "backend_app_routers_tickets_py_ticket"
-    },
-    {
-      "relation": "references",
-      "context": "generic_arg",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/queues.py",
-      "source_location": "L17",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_queues_build_queue",
-      "target": "ticketout"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L75",
-      "weight": 1.0,
-      "source": "routers_tickets_create_ticket",
-      "target": "services_leads_archive"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L80",
-      "weight": 1.0,
-      "source": "routers_tickets_create_ticket",
-      "target": "services_notifications_notify"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L45",
-      "weight": 1.0,
-      "source": "routers_tickets_create_ticket",
-      "target": "services_tickets_default_to_team"
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L35",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_tickets_create_ticket",
-      "target": "ticketcreate"
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L35",
-      "weight": 1.0,
-      "source": "routers_tickets_create_ticket",
-      "target": "user",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L12",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "ticketcreate",
-      "target": "app_schemas_ticketcreate"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L12",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "ticketcreate",
-      "target": "app_schemas_tickethold"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L12",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "ticketcreate",
-      "target": "app_schemas_ticketholduntil"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L12",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "ticketcreate",
-      "target": "app_schemas_ticketout"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L12",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "ticketcreate",
-      "target": "app_schemas_ticketstatusupdate"
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/queues.py",
-      "source_location": "L55",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_queues_product_queue",
-      "target": "user"
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/queues.py",
-      "source_location": "L47",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_queues_sales_queue",
-      "target": "user"
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/queues.py",
-      "source_location": "L63",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_queues_tech_queue",
-      "target": "user"
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L148",
-      "weight": 1.0,
-      "source": "routers_tickets_hold_until",
-      "target": "user",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L93",
-      "weight": 1.0,
-      "source": "routers_tickets_list_lead_tickets",
-      "target": "user",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L127",
-      "weight": 1.0,
-      "source": "routers_tickets_toggle_hold",
-      "target": "user",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L105",
-      "weight": 1.0,
-      "source": "routers_tickets_update_ticket_status",
-      "target": "user",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L112",
-      "weight": 1.0,
-      "source": "routers_tickets_update_ticket_status",
-      "target": "services_tickets_advance_status"
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L102",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_tickets_update_ticket_status",
-      "target": "ticketstatusupdate"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L12",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "ticketstatusupdate",
-      "target": "app_schemas_ticketcreate"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L12",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "ticketstatusupdate",
-      "target": "app_schemas_tickethold"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L12",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "ticketstatusupdate",
-      "target": "app_schemas_ticketholduntil"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L12",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "ticketstatusupdate",
-      "target": "app_schemas_ticketout"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L12",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "ticketstatusupdate",
-      "target": "app_schemas_ticketstatusupdate"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L136",
-      "weight": 1.0,
-      "source": "routers_tickets_toggle_hold",
-      "target": "services_leads_archive"
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L124",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_tickets_toggle_hold",
-      "target": "tickethold"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L12",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "tickethold",
-      "target": "app_schemas_ticketcreate"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L12",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "tickethold",
-      "target": "app_schemas_tickethold"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L12",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "tickethold",
-      "target": "app_schemas_ticketholduntil"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L12",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "tickethold",
-      "target": "app_schemas_ticketout"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L12",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "tickethold",
-      "target": "app_schemas_ticketstatusupdate"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L158",
-      "weight": 1.0,
-      "source": "routers_tickets_hold_until",
-      "target": "services_leads_archive"
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L145",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_tickets_hold_until",
-      "target": "ticketholduntil"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L12",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "ticketholduntil",
-      "target": "app_schemas_ticketcreate"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L12",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "ticketholduntil",
-      "target": "app_schemas_tickethold"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L12",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "ticketholduntil",
-      "target": "app_schemas_ticketholduntil"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L12",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "ticketholduntil",
-      "target": "app_schemas_ticketout"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/app/routers/tickets.py",
-      "source_location": "L12",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "ticketholduntil",
-      "target": "app_schemas_ticketstatusupdate"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/services/tickets.py",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_tickets",
-      "target": "datetime"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/services/tickets.py",
-      "source_location": "L124",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_tickets",
-      "target": "services_tickets_advance_status"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/services/tickets.py",
-      "source_location": "L83",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_tickets",
-      "target": "services_tickets_default_to_team"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/services/tickets.py",
-      "source_location": "L96",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_tickets",
-      "target": "services_tickets_enrich_ticket"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/services/tickets.py",
-      "source_location": "L107",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_tickets",
-      "target": "services_tickets_notify"
-    },
-    {
-      "relation": "references",
-      "context": "generic_arg",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/services/tickets.py",
-      "source_location": "L114",
-      "weight": 1.0,
-      "source": "services_tickets_default_to_team",
-      "target": "teamtarget",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/services/tickets.py",
-      "source_location": "L83",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_tickets_default_to_team",
-      "target": "tickettype"
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/services/tickets.py",
-      "source_location": "L137",
-      "weight": 1.0,
-      "source": "services_tickets_notify",
-      "target": "teamtarget",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "backend/app/routers/leads.py",
-      "source_location": "L25",
-      "weight": 1.0,
-      "source": "routers_leads_ticket_out",
-      "target": "services_tickets_enrich_ticket"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "backend/app/routers/queues.py",
-      "source_location": "L32",
-      "weight": 1.0,
-      "source": "routers_queues_build_queue",
-      "target": "services_tickets_enrich_ticket"
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/services/tickets.py",
-      "source_location": "L96",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_tickets_enrich_ticket",
-      "target": "backend_app_services_tickets_py_session"
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/services/tickets.py",
-      "source_location": "L126",
-      "weight": 1.0,
-      "source": "services_tickets_enrich_ticket",
-      "target": "backend_app_services_tickets_py_ticket",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "backend/app/services/tickets.py",
-      "source_location": "L100",
-      "weight": 1.0,
-      "source": "services_tickets_enrich_ticket",
-      "target": "services_leads_days_left"
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/services/tickets.py",
-      "source_location": "L124",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_tickets_advance_status",
-      "target": "backend_app_services_tickets_py_session"
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/services/tickets.py",
-      "source_location": "L107",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_tickets_notify",
-      "target": "backend_app_services_tickets_py_session"
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/services/tickets.py",
-      "source_location": "L154",
-      "weight": 1.0,
-      "source": "services_tickets_advance_status",
-      "target": "backend_app_services_tickets_py_ticket",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/services/tickets.py",
-      "source_location": "L173",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_tickets_advance_status",
-      "target": "services_tickets_notify"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "backend/app/services/tickets.py",
-      "source_location": "L142",
-      "weight": 1.0,
-      "source": "services_tickets_advance_status",
-      "target": "services_leads_archive"
-    },
-    {
-      "relation": "references",
-      "context": "generic_arg",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/services/tickets.py",
-      "source_location": "L142",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_tickets_advance_status",
-      "target": "userrole"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/seed.py",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "backend_seed",
-      "target": "app_database"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/seed.py",
-      "source_location": "L20",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "backend_seed",
-      "target": "backend_seed_hash_pw"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/seed.py",
-      "source_location": "L24",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "backend_seed",
-      "target": "backend_seed_seed"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/seed.py",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "backend_seed",
-      "target": "datetime"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/seed.py",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "backend_seed_rationale_1",
-      "target": "backend_seed"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/seed.py",
-      "source_location": "L29",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "backend_seed_seed",
-      "target": "backend_seed_hash_pw"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/CreateTicketModal.jsx",
-      "source_location": "L22",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_createticketmodal",
-      "target": "components_createticketmodal_createticketmodal"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/CreateTicketModal.jsx",
-      "source_location": "L121",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_createticketmodal",
-      "target": "components_createticketmodal_field"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/CreateTicketModal.jsx",
-      "source_location": "L130",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_createticketmodal",
-      "target": "components_createticketmodal_inp"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/CreateTicketModal.jsx",
-      "source_location": "L131",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_createticketmodal",
-      "target": "components_createticketmodal_sel"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/CreateTicketModal.jsx",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_createticketmodal",
-      "target": "components_createticketmodal_type_labels"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/CreateTicketModal.jsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_createticketmodal",
-      "target": "components_createticketmodal_types_by_role"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/CreateTicketModal.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_createticketmodal",
-      "target": "context_authcontext"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/CreateTicketModal.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_createticketmodal",
-      "target": "context_authcontext_useauth"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/CreateTicketModal.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_createticketmodal",
-      "target": "src_api"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/CreateTicketModal.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_createticketmodal",
-      "target": "src_api_apifetch"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/LeadDetailPage.jsx",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pages_leaddetailpage",
-      "target": "components_createticketmodal"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "frontend/src/components/CreateTicketModal.jsx",
-      "source_location": "L23",
-      "weight": 1.0,
-      "source": "components_createticketmodal_createticketmodal",
-      "target": "context_authcontext_useauth"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_ticketcard",
-      "target": "components_attachmentslist"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L390",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_ticketcard",
-      "target": "components_ticketcard_applybtn"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L384",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_ticketcard",
-      "target": "components_ticketcard_dropdownstyle"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L37",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_ticketcard",
-      "target": "components_ticketcard_forward_map"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L50",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_ticketcard",
-      "target": "components_ticketcard_nextsteprole"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L379",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_ticketcard",
-      "target": "components_ticketcard_pill"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L28",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_ticketcard",
-      "target": "components_ticketcard_sample_sales_options"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L396",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_ticketcard",
-      "target": "components_ticketcard_smallbtn"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L364",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_ticketcard",
-      "target": "components_ticketcard_statustag"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L51",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_ticketcard",
-      "target": "components_ticketcard_terminal"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L53",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_ticketcard",
-      "target": "components_ticketcard_ticketcard"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L17",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_ticketcard",
-      "target": "components_ticketcard_type_colors"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_ticketcard",
-      "target": "components_ticketcard_type_labels"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_ticketcard",
-      "target": "context_authcontext"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_ticketcard",
-      "target": "context_authcontext_useauth"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_ticketcard",
-      "target": "src_api"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_ticketcard",
-      "target": "src_api_apifetch"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/LeadDetailPage.jsx",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pages_leaddetailpage",
-      "target": "components_ticketcard"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/QueuePage.jsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pages_queuepage",
-      "target": "components_ticketcard"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L137",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_ticketcard_ticketcard",
-      "target": "components_ticketcard_nextsteprole"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L167",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_ticketcard_ticketcard",
-      "target": "components_ticketcard_dropdownstyle"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L157",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_ticketcard_ticketcard",
-      "target": "components_ticketcard_pill"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L269",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_ticketcard_ticketcard",
-      "target": "components_ticketcard_smallbtn"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L54",
-      "weight": 1.0,
-      "source": "components_ticketcard_ticketcard",
-      "target": "context_authcontext_useauth"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
-      "source_location": "L22",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "admin_analyticspage",
-      "target": "admin_analyticspage_analyticspage"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
-      "source_location": "L147",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "admin_analyticspage",
-      "target": "admin_analyticspage_barchart"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
-      "source_location": "L138",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "admin_analyticspage",
-      "target": "admin_analyticspage_chartcard"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
-      "source_location": "L14",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "admin_analyticspage",
-      "target": "admin_analyticspage_priority_colors"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
-      "source_location": "L127",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "admin_analyticspage",
-      "target": "admin_analyticspage_statcard"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "admin_analyticspage",
-      "target": "admin_analyticspage_status_colors"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
-      "source_location": "L16",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "admin_analyticspage",
-      "target": "admin_analyticspage_type_labels"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "admin_analyticspage",
-      "target": "src_api"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "admin_analyticspage",
-      "target": "src_api_apifetch"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/App.jsx",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_app",
-      "target": "admin_analyticspage"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/alembic/versions/5c1d4e8a9f02_add_tech_role.py",
-      "source_location": "L52",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "versions_5c1d4e8a9f02_add_tech_role",
-      "target": "versions_5c1d4e8a9f02_add_tech_role_downgrade"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/alembic/versions/5c1d4e8a9f02_add_tech_role.py",
-      "source_location": "L29",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "versions_5c1d4e8a9f02_add_tech_role",
-      "target": "versions_5c1d4e8a9f02_add_tech_role_upgrade"
+      "target": "app_models_notification",
+      "confidence_score": 0.5
     },
     {
       "relation": "imports_from",
@@ -13886,9 +12499,9 @@
       "source_file": "backend/app/routers/queues.py",
       "source_location": "L63",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "routers_queues",
-      "target": "routers_queues_tech_queue"
+      "target": "routers_queues_tech_queue",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -13911,6 +12524,28 @@
       "confidence_score": 1.0,
       "source": "routers_queues_build_queue",
       "target": "backend_app_routers_queues_py_teamtarget"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/routers/queues.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "routers_queues_build_queue",
+      "target": "services_tickets_enrich_ticket"
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/queues.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "routers_queues_build_queue",
+      "target": "ticketout",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -13941,9 +12576,9 @@
       "source_file": "backend/app/routers/queues.py",
       "source_location": "L67",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "routers_queues_tech_queue",
-      "target": "routers_queues_build_queue"
+      "target": "routers_queues_build_queue",
+      "confidence_score": 1.0
     },
     {
       "relation": "uses",
@@ -13984,9 +12619,9 @@
       "source_file": "backend/app/routers/queues.py",
       "source_location": "L63",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "routers_queues_tech_queue",
-      "target": "backend_app_routers_queues_py_session"
+      "target": "backend_app_routers_queues_py_session",
+      "confidence_score": 1.0
     },
     {
       "relation": "uses",
@@ -13997,6 +12632,39 @@
       "confidence_score": 0.5,
       "source": "backend_app_routers_queues_py_teamtarget",
       "target": "app_schemas_ticketout"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/queues.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "routers_queues_sales_queue",
+      "target": "user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/queues.py",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "routers_queues_product_queue",
+      "target": "user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/queues.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "routers_queues_tech_queue",
+      "target": "user",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -14252,9 +12920,9 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L43",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "services_leads_compute_lead_status",
-      "target": "lead"
+      "target": "lead",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -14274,9 +12942,9 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L74",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "services_leads_enrich",
-      "target": "lead"
+      "target": "lead",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -14285,9 +12953,9 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L57",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "services_leads_days_left",
-      "target": "date"
+      "target": "date",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -14316,6 +12984,17 @@
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
+      "source_file": "backend/app/services/tickets.py",
+      "source_location": "L100",
+      "weight": 1.0,
+      "source": "services_tickets_enrich_ticket",
+      "target": "services_leads_days_left"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
       "source_file": "backend/app/routers/leads.py",
       "source_location": "L77",
       "weight": 1.0,
@@ -14334,6 +13013,39 @@
       "target": "services_leads_archive"
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "routers_tickets_create_ticket",
+      "target": "services_leads_archive"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L158",
+      "weight": 1.0,
+      "source": "routers_tickets_hold_until",
+      "target": "services_leads_archive"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L136",
+      "weight": 1.0,
+      "source": "routers_tickets_toggle_hold",
+      "target": "services_leads_archive"
+    },
+    {
       "relation": "references",
       "context": "parameter_type",
       "confidence": "EXTRACTED",
@@ -14343,6 +13055,17 @@
       "confidence_score": 1.0,
       "source": "services_leads_archive",
       "target": "entitytype"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/services/tickets.py",
+      "source_location": "L142",
+      "weight": 1.0,
+      "source": "services_tickets_advance_status",
+      "target": "services_leads_archive"
     },
     {
       "relation": "calls",
@@ -14398,6 +13121,285 @@
       "weight": 1.0,
       "source": "routers_leads_update_lead",
       "target": "services_leads_enrich"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/tickets.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_tickets",
+      "target": "datetime"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/tickets.py",
+      "source_location": "L124",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_tickets",
+      "target": "services_tickets_advance_status"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/tickets.py",
+      "source_location": "L83",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_tickets",
+      "target": "services_tickets_default_to_team"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/tickets.py",
+      "source_location": "L96",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_tickets",
+      "target": "services_tickets_enrich_ticket"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/tickets.py",
+      "source_location": "L107",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_tickets",
+      "target": "services_tickets_notify"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "routers_tickets_create_ticket",
+      "target": "services_tickets_default_to_team"
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/tickets.py",
+      "source_location": "L83",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_tickets_default_to_team",
+      "target": "backend_app_services_tickets_py_teamtarget"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/tickets.py",
+      "source_location": "L83",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_tickets_default_to_team",
+      "target": "tickettype"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/tickets.py",
+      "source_location": "L107",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_tickets_notify",
+      "target": "backend_app_services_tickets_py_teamtarget"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/routers/leads.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "routers_leads_ticket_out",
+      "target": "services_tickets_enrich_ticket"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "routers_tickets_ticket_out",
+      "target": "services_tickets_enrich_ticket"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/tickets.py",
+      "source_location": "L96",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_tickets_enrich_ticket",
+      "target": "backend_app_services_tickets_py_session"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/tickets.py",
+      "source_location": "L114",
+      "weight": 1.0,
+      "source": "services_tickets_enrich_ticket",
+      "target": "ticket",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/tickets.py",
+      "source_location": "L124",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_tickets_advance_status",
+      "target": "backend_app_services_tickets_py_session"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/tickets.py",
+      "source_location": "L107",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_tickets_notify",
+      "target": "backend_app_services_tickets_py_session"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/tickets.py",
+      "source_location": "L142",
+      "weight": 1.0,
+      "source": "services_tickets_advance_status",
+      "target": "ticket",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/tickets.py",
+      "source_location": "L173",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_tickets_advance_status",
+      "target": "services_tickets_notify"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L112",
+      "weight": 1.0,
+      "source": "routers_tickets_update_ticket_status",
+      "target": "services_tickets_advance_status"
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/tickets.py",
+      "source_location": "L142",
+      "weight": 1.0,
+      "source": "services_tickets_advance_status",
+      "target": "userrole",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/seed.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_seed",
+      "target": "app_database"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/seed.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_seed",
+      "target": "backend_seed_hash_pw"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/seed.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_seed",
+      "target": "backend_seed_seed"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/seed.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_seed",
+      "target": "datetime"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/seed.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_seed_rationale_1",
+      "target": "backend_seed"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/seed.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_seed_seed",
+      "target": "backend_seed_hash_pw"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "admin_analyticspage"
     },
     {
       "relation": "imports_from",
@@ -14555,6 +13557,132 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/CreateTicketModal.jsx",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_createticketmodal",
+      "target": "components_createticketmodal_createticketmodal"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/CreateTicketModal.jsx",
+      "source_location": "L121",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_createticketmodal",
+      "target": "components_createticketmodal_field"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/CreateTicketModal.jsx",
+      "source_location": "L130",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_createticketmodal",
+      "target": "components_createticketmodal_inp"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/CreateTicketModal.jsx",
+      "source_location": "L131",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_createticketmodal",
+      "target": "components_createticketmodal_sel"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/CreateTicketModal.jsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_createticketmodal",
+      "target": "components_createticketmodal_type_labels"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/CreateTicketModal.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_createticketmodal",
+      "target": "components_createticketmodal_types_by_role"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/CreateTicketModal.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_createticketmodal",
+      "target": "context_authcontext"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/CreateTicketModal.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_createticketmodal",
+      "target": "context_authcontext_useauth"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/CreateTicketModal.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_createticketmodal",
+      "target": "src_api"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/CreateTicketModal.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_createticketmodal",
+      "target": "src_api_apifetch"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/LeadDetailPage.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_leaddetailpage",
+      "target": "components_createticketmodal"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/CreateTicketModal.jsx",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "components_createticketmodal_createticketmodal",
+      "target": "context_authcontext_useauth"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "frontend/src/components/Layout.jsx",
       "source_location": "L35",
       "weight": 1.0,
@@ -14657,6 +13785,258 @@
       "source_location": "L36",
       "weight": 1.0,
       "source": "components_layout_layout",
+      "target": "context_authcontext_useauth"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/TicketCard.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_ticketcard",
+      "target": "components_attachmentslist"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/TicketCard.jsx",
+      "source_location": "L390",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_ticketcard",
+      "target": "components_ticketcard_applybtn"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/TicketCard.jsx",
+      "source_location": "L384",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_ticketcard",
+      "target": "components_ticketcard_dropdownstyle"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/TicketCard.jsx",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_ticketcard",
+      "target": "components_ticketcard_forward_map"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/TicketCard.jsx",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "components_ticketcard",
+      "target": "components_ticketcard_nextsteprole",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/TicketCard.jsx",
+      "source_location": "L379",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_ticketcard",
+      "target": "components_ticketcard_pill"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/TicketCard.jsx",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_ticketcard",
+      "target": "components_ticketcard_sample_sales_options"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/TicketCard.jsx",
+      "source_location": "L396",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_ticketcard",
+      "target": "components_ticketcard_smallbtn"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/TicketCard.jsx",
+      "source_location": "L364",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_ticketcard",
+      "target": "components_ticketcard_statustag"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/TicketCard.jsx",
+      "source_location": "L51",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_ticketcard",
+      "target": "components_ticketcard_terminal"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/TicketCard.jsx",
+      "source_location": "L53",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_ticketcard",
+      "target": "components_ticketcard_ticketcard"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/TicketCard.jsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_ticketcard",
+      "target": "components_ticketcard_type_colors"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/TicketCard.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_ticketcard",
+      "target": "components_ticketcard_type_labels"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/TicketCard.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_ticketcard",
+      "target": "context_authcontext"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/TicketCard.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_ticketcard",
+      "target": "context_authcontext_useauth"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/TicketCard.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_ticketcard",
+      "target": "src_api"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/TicketCard.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_ticketcard",
+      "target": "src_api_apifetch"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/LeadDetailPage.jsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_leaddetailpage",
+      "target": "components_ticketcard"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/QueuePage.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_queuepage",
+      "target": "components_ticketcard"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/TicketCard.jsx",
+      "source_location": "L137",
+      "weight": 1.0,
+      "source": "components_ticketcard_ticketcard",
+      "target": "components_ticketcard_nextsteprole",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/TicketCard.jsx",
+      "source_location": "L167",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_ticketcard_ticketcard",
+      "target": "components_ticketcard_dropdownstyle"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/TicketCard.jsx",
+      "source_location": "L157",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_ticketcard_ticketcard",
+      "target": "components_ticketcard_pill"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/TicketCard.jsx",
+      "source_location": "L269",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_ticketcard_ticketcard",
+      "target": "components_ticketcard_smallbtn"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/TicketCard.jsx",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "components_ticketcard_ticketcard",
       "target": "context_authcontext_useauth"
     },
     {
@@ -15161,6 +14541,17 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets",
+      "target": "app_database"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "backend/app/routers/users.py",
       "source_location": "L7",
       "weight": 1.0,
@@ -15263,6 +14654,17 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "routers_notifications",
+      "target": "app_deps"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets",
       "target": "app_deps"
     },
     {
@@ -17912,6 +17314,752 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets",
+      "target": "app_schemas"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets",
+      "target": "app_ws"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets",
+      "target": "routers_tickets_create_ticket"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L145",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets",
+      "target": "routers_tickets_hold_until"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets",
+      "target": "routers_tickets_list_lead_tickets"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets",
+      "target": "routers_tickets_ticket_out"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L124",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets",
+      "target": "routers_tickets_toggle_hold"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L102",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets",
+      "target": "routers_tickets_update_ticket_status"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L86",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets_create_ticket",
+      "target": "routers_tickets_ticket_out"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L161",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets_hold_until",
+      "target": "routers_tickets_ticket_out"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L96",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets_list_lead_tickets",
+      "target": "routers_tickets_ticket_out"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets_ticket_out",
+      "target": "backend_app_routers_tickets_py_session"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets_ticket_out",
+      "target": "backend_app_routers_tickets_py_ticket"
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets_ticket_out",
+      "target": "backend_app_routers_tickets_py_ticketout"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L139",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets_toggle_hold",
+      "target": "routers_tickets_ticket_out"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L118",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets_update_ticket_status",
+      "target": "routers_tickets_ticket_out"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_session",
+      "target": "app_schemas_ticketcreate"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_session",
+      "target": "app_schemas_tickethold"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_session",
+      "target": "app_schemas_ticketholduntil"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_session",
+      "target": "app_schemas_ticketout"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_session",
+      "target": "app_schemas_ticketstatusupdate"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets_create_ticket",
+      "target": "backend_app_routers_tickets_py_session"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L145",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets_hold_until",
+      "target": "backend_app_routers_tickets_py_session"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets_list_lead_tickets",
+      "target": "backend_app_routers_tickets_py_session"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L124",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets_toggle_hold",
+      "target": "backend_app_routers_tickets_py_session"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L102",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets_update_ticket_status",
+      "target": "backend_app_routers_tickets_py_session"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_ticket",
+      "target": "app_schemas_ticketcreate"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_ticket",
+      "target": "app_schemas_tickethold"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_ticket",
+      "target": "app_schemas_ticketholduntil"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_ticket",
+      "target": "app_schemas_ticketout"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_ticket",
+      "target": "app_schemas_ticketstatusupdate"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets_create_ticket",
+      "target": "backend_app_routers_tickets_py_ticket"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_ticketout",
+      "target": "app_schemas_ticketcreate"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_ticketout",
+      "target": "app_schemas_tickethold"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_ticketout",
+      "target": "app_schemas_ticketholduntil"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_ticketout",
+      "target": "app_schemas_ticketout"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_ticketout",
+      "target": "app_schemas_ticketstatusupdate"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets_create_ticket",
+      "target": "backend_app_routers_tickets_py_user"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "routers_tickets_create_ticket",
+      "target": "services_notifications_notify"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets_create_ticket",
+      "target": "ticketcreate"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "ticketcreate",
+      "target": "app_schemas_ticketcreate"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "ticketcreate",
+      "target": "app_schemas_tickethold"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "ticketcreate",
+      "target": "app_schemas_ticketholduntil"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "ticketcreate",
+      "target": "app_schemas_ticketout"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "ticketcreate",
+      "target": "app_schemas_ticketstatusupdate"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_user",
+      "target": "app_schemas_ticketcreate"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_user",
+      "target": "app_schemas_tickethold"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_user",
+      "target": "app_schemas_ticketholduntil"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_user",
+      "target": "app_schemas_ticketout"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "backend_app_routers_tickets_py_user",
+      "target": "app_schemas_ticketstatusupdate"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L145",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets_hold_until",
+      "target": "backend_app_routers_tickets_py_user"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets_list_lead_tickets",
+      "target": "backend_app_routers_tickets_py_user"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L124",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets_toggle_hold",
+      "target": "backend_app_routers_tickets_py_user"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L102",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets_update_ticket_status",
+      "target": "backend_app_routers_tickets_py_user"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L102",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets_update_ticket_status",
+      "target": "ticketstatusupdate"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "ticketstatusupdate",
+      "target": "app_schemas_ticketcreate"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "ticketstatusupdate",
+      "target": "app_schemas_tickethold"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "ticketstatusupdate",
+      "target": "app_schemas_ticketholduntil"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "ticketstatusupdate",
+      "target": "app_schemas_ticketout"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "ticketstatusupdate",
+      "target": "app_schemas_ticketstatusupdate"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L124",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets_toggle_hold",
+      "target": "tickethold"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "tickethold",
+      "target": "app_schemas_ticketcreate"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "tickethold",
+      "target": "app_schemas_tickethold"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "tickethold",
+      "target": "app_schemas_ticketholduntil"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "tickethold",
+      "target": "app_schemas_ticketout"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "tickethold",
+      "target": "app_schemas_ticketstatusupdate"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L145",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_tickets_hold_until",
+      "target": "ticketholduntil"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "ticketholduntil",
+      "target": "app_schemas_ticketcreate"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "ticketholduntil",
+      "target": "app_schemas_tickethold"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "ticketholduntil",
+      "target": "app_schemas_ticketholduntil"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "ticketholduntil",
+      "target": "app_schemas_ticketout"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/app/routers/tickets.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "ticketholduntil",
+      "target": "app_schemas_ticketstatusupdate"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "backend/app/routers/users.py",
       "source_location": "L10",
       "weight": 1.0,
@@ -19305,6 +19453,17 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin_analyticspage",
+      "target": "src_api"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "frontend/src/pages/admin/ArchivePage.jsx",
       "source_location": "L2",
       "weight": 1.0,
@@ -19451,6 +19610,17 @@
       "confidence_score": 1.0,
       "source": "src_api",
       "target": "src_api_downloadfile"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin_analyticspage",
+      "target": "src_api_apifetch"
     },
     {
       "relation": "imports",
@@ -20413,6 +20583,76 @@
       "confidence_score": 1.0,
       "source": "pages_loginpage",
       "target": "pages_loginpage_loginpage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin_analyticspage",
+      "target": "admin_analyticspage_analyticspage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
+      "source_location": "L147",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin_analyticspage",
+      "target": "admin_analyticspage_barchart"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
+      "source_location": "L138",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin_analyticspage",
+      "target": "admin_analyticspage_chartcard"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin_analyticspage",
+      "target": "admin_analyticspage_priority_colors"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
+      "source_location": "L127",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin_analyticspage",
+      "target": "admin_analyticspage_statcard"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin_analyticspage",
+      "target": "admin_analyticspage_status_colors"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin_analyticspage",
+      "target": "admin_analyticspage_type_labels"
     },
     {
       "relation": "contains",
@@ -22077,5 +22317,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "34d9abaff98f568f100ff52986aac264208c7c6c"
+  "built_at_commit": "a050c18884f850272d91d42a7a8e734ac2ac3a75"
 }
