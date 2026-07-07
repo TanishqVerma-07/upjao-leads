@@ -1,16 +1,16 @@
-# Graph Report - sales product  (2026-07-07)
+# Graph Report - sales product  (2026-06-30)
 
 ## Corpus Check
-- 76 files · ~34,682 words
+- 76 files · ~34,363 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 560 nodes · 1616 edges · 44 communities (43 shown, 1 thin omitted)
+- 557 nodes · 1608 edges · 41 communities (40 shown, 1 thin omitted)
 - Extraction: 53% EXTRACTED · 47% INFERRED · 0% AMBIGUOUS · INFERRED: 759 edges (avg confidence: 0.51)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `b589b732`
+- Built from commit: `34d9abaf`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -46,10 +46,7 @@
 - [[_COMMUNITY_Vite Logo Asset|Vite Logo Asset]]
 - [[_COMMUNITY_ESLint Config|ESLint Config]]
 - [[_COMMUNITY_Frontend README|Frontend README]]
-- [[_COMMUNITY_Community 39|Community 39]]
 - [[_COMMUNITY_Community 40|Community 40]]
-- [[_COMMUNITY_Community 42|Community 42]]
-- [[_COMMUNITY_Community 43|Community 43]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `UserRole` - 75 edges
@@ -70,29 +67,29 @@
   backend/app/services/notifications.py → backend/app/models.py
 - `Notification` --uses--> `Notification`  [INFERRED]
   backend/app/services/notifications.py → backend/app/models.py
-- `CreateTicketModal()` --calls--> `useAuth()`  [EXTRACTED]
-  frontend/src/components/CreateTicketModal.jsx → frontend/src/context/AuthContext.jsx
-- `Layout()` --calls--> `useAuth()`  [EXTRACTED]
-  frontend/src/components/Layout.jsx → frontend/src/context/AuthContext.jsx
+- `Attachment` --uses--> `UserRole`  [INFERRED]
+  backend/app/routers/attachments.py → backend/app/models.py
+- `AttachmentOut` --uses--> `UserRole`  [INFERRED]
+  backend/app/routers/attachments.py → backend/app/models.py
 
 ## Import Cycles
 - 1-file cycle: `backend/app/services/sla.py -> backend/app/services/sla.py`
 - 1-file cycle: `backend/app/services/leads.py -> backend/app/services/leads.py`
 - 2-file cycle: `backend/app/models.py -> backend/app/services/sla.py -> backend/app/models.py`
 
-## Communities (44 total, 1 thin omitted)
+## Communities (41 total, 1 thin omitted)
 
 ### Community 0 - "Database Models & Lead/Ticket Logic"
 Cohesion: 0.06
 Nodes (35): Config, Settings, get_current_user(), require_role(), Session, User, UserRole, Session (+27 more)
 
 ### Community 1 - "API Schemas & Pydantic Models"
-Cohesion: 0.31
-Nodes (47): CapabilityMatch, LeadStatus, Priority, TeamTarget, TicketType, UserRole, WinProbability, AttachmentOut (+39 more)
+Cohesion: 0.23
+Nodes (63): Capability, CapabilityMatch, Comment, CommentVisibility, EntityType, LeadStatus, Priority, TeamTarget (+55 more)
 
 ### Community 2 - "Project Docs & Dependencies"
-Cohesion: 0.13
-Nodes (51): Capability, Comment, CommentVisibility, EntityType, _enum(), Lead, Notification, Append-only archive. Never UPDATE or DELETE rows from this table. (+43 more)
+Cohesion: 0.11
+Nodes (49): Attachment, AttachmentKind, _enum(), Lead, Notification, Append-only archive. Never UPDATE or DELETE rows from this table., Create a native_enum=False Enum column type for SQLite+Postgres compat., StatusHistory (+41 more)
 
 ### Community 3 - "Auth, DB Config & Attachments Router"
 Cohesion: 0.06
@@ -103,32 +100,32 @@ Cohesion: 0.08
 Nodes (24): dependencies, lucide-react, react, react-dom, react-router-dom, devDependencies, eslint, @eslint/js (+16 more)
 
 ### Community 5 - "WebSocket & Notifications"
-Cohesion: 0.34
-Nodes (13): Session, Session, _build_queue(), product_queue(), sales_queue(), tech_queue(), create_ticket(), hold_until() (+5 more)
+Cohesion: 0.33
+Nodes (14): Session, Session, _build_queue(), product_queue(), sales_queue(), tech_queue(), create_ticket(), hold_until() (+6 more)
 
 ### Community 6 - "Frontend Package & Build Config"
-Cohesion: 0.13
-Nodes (13): Layout(), NAV, TYPE_ICON, ProtectedRoute(), AuthContext, AuthProvider(), loadSession(), QueuePage() (+5 more)
+Cohesion: 0.14
+Nodes (12): Layout(), NAV, TYPE_ICON, AuthContext, AuthProvider(), loadSession(), QueuePage(), addWSListener() (+4 more)
 
 ### Community 7 - "Layout & Auth Context"
 Cohesion: 0.10
 Nodes (20): 1. Create a New Canvas, 2. Add a Node to an Existing Canvas, 3. Connect Two Nodes, 4. Edit an Existing Canvas, Colors, Common Workflows, Complete Examples, Edges (+12 more)
 
 ### Community 8 - "SLA Engine & Notifications Router"
-Cohesion: 0.31
-Nodes (6): FeedComposer(), useAuth(), DashboardPage(), inputStyle, labelStyle, LoginPage()
+Cohesion: 0.13
+Nodes (12): FeedComposer(), ProtectedRoute(), useAuth(), DashboardPage(), inputStyle, labelStyle, LoginPage(), CapabilitiesPage() (+4 more)
 
 ### Community 9 - "Admin & Attachments UI"
 Cohesion: 0.29
 Nodes (5): CreateTicketModal(), inp, sel, TYPE_LABELS, TYPES_BY_ROLE
 
 ### Community 10 - "Sales Create Lead UI"
-Cohesion: 0.29
-Nodes (10): iconBtn, KIND_COLORS, KIND_LABEL, getToken(), apiFetch(), apiUpload(), downloadFile(), fetchWithRetry() (+2 more)
+Cohesion: 0.18
+Nodes (10): ENTITY_COLORS, pageBtn, sel, iconBtn, KIND_COLORS, KIND_LABEL, getToken(), apiFetch() (+2 more)
 
 ### Community 11 - "WebSocket Connection Manager"
-Cohesion: 0.23
-Nodes (18): Session, User, Session, Notification, capability_hint(), create_comment(), create_lead(), get_feed() (+10 more)
+Cohesion: 0.20
+Nodes (20): Session, User, Session, Notification, capability_hint(), create_comment(), create_lead(), get_feed() (+12 more)
 
 ### Community 12 - "Lead Status Badges & Leads Page"
 Cohesion: 0.13
@@ -202,33 +199,21 @@ Nodes (4): Default Properties, Properties (Frontmatter) Reference, Property Type
 Cohesion: 0.50
 Nodes (3): Expanding the ESLint configuration, React Compiler, React + Vite
 
-### Community 39 - "Community 39"
-Cohesion: 0.31
-Nodes (17): Attachment, AttachmentKind, Attachment, AttachmentOut, Session, User, delete_attachment(), download_attachment() (+9 more)
-
 ### Community 40 - "Community 40"
 Cohesion: 0.38
 Nodes (4): shutdown(), startup(), start_scheduler(), stop_scheduler()
 
-### Community 42 - "Community 42"
-Cohesion: 0.25
-Nodes (5): CapabilitiesPage(), ghostBtn, inputStyle, labelStyle, primaryBtn
-
-### Community 43 - "Community 43"
-Cohesion: 0.33
-Nodes (3): ENTITY_COLORS, pageBtn, sel
-
 ## Knowledge Gaps
-- **189 isolated node(s):** `Config`, `AuthContext`, `labelStyle`, `inputStyle`, `TYPES_BY_ROLE` (+184 more)
+- **189 isolated node(s):** `TYPES_BY_ROLE`, `TYPE_LABELS`, `inp`, `sel`, `TYPE_LABELS` (+184 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `UserRole` connect `API Schemas & Pydantic Models` to `Database Models & Lead/Ticket Logic`, `Project Docs & Dependencies`, `WebSocket & Notifications`, `Community 39`, `WebSocket Connection Manager`, `App Init`?**
+- **Why does `UserRole` connect `API Schemas & Pydantic Models` to `Database Models & Lead/Ticket Logic`, `Project Docs & Dependencies`, `WebSocket & Notifications`, `WebSocket Connection Manager`, `App Init`?**
   _High betweenness centrality (0.023) - this node is a cross-community bridge._
-- **Why does `User` connect `Project Docs & Dependencies` to `Database Models & Lead/Ticket Logic`, `API Schemas & Pydantic Models`, `WebSocket & Notifications`, `Community 39`, `WebSocket Connection Manager`, `App Init`?**
+- **Why does `User` connect `Project Docs & Dependencies` to `Database Models & Lead/Ticket Logic`, `API Schemas & Pydantic Models`, `WebSocket & Notifications`, `WebSocket Connection Manager`, `App Init`?**
   _High betweenness centrality (0.019) - this node is a cross-community bridge._
 - **Why does `ConnectionManager` connect `Lead Detail Page` to `WebSocket Connection Manager`?**
   _High betweenness centrality (0.018) - this node is a cross-community bridge._
