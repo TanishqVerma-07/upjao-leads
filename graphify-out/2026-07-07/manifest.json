@@ -45,8 +45,8 @@
     "semantic_hash": ""
   },
   "backend/app/config.py": {
-    "mtime": 1781959086.2257667,
-    "ast_hash": "a9bd3e3eaad4af9b50ec3f90bbf3cf6b",
+    "mtime": 1783414120.8044384,
+    "ast_hash": "5f2fe09998eddc8052c2924e04d66b11",
     "semantic_hash": ""
   },
   "backend/app/database.py": {
@@ -185,8 +185,8 @@
     "semantic_hash": ""
   },
   "frontend/src/api.js": {
-    "mtime": 1781787327.9013486,
-    "ast_hash": "5602ee7741d29559f303c7c3cd5240a3",
+    "mtime": 1783411875.4845395,
+    "ast_hash": "e77401846b9307f46bbf2154fcacf30d",
     "semantic_hash": ""
   },
   "frontend/src/components/AttachmentsList.jsx": {
@@ -230,8 +230,8 @@
     "semantic_hash": ""
   },
   "frontend/src/context/AuthContext.jsx": {
-    "mtime": 1781765448.0570111,
-    "ast_hash": "8df506b5835080dc41cbf20a6fdf0b9d",
+    "mtime": 1783411894.959414,
+    "ast_hash": "131ba8246390133153d38ecc215a00ea",
     "semantic_hash": ""
   },
   "frontend/src/main.jsx": {
@@ -255,8 +255,8 @@
     "semantic_hash": ""
   },
   "frontend/src/pages/LoginPage.jsx": {
-    "mtime": 1781758651.7037005,
-    "ast_hash": "a903ebd1a5528acc675a2c1c102a45e4",
+    "mtime": 1783411911.4401112,
+    "ast_hash": "9aec4ca056297c058b73996f483251c8",
     "semantic_hash": ""
   },
   "frontend/src/pages/QueuePage.jsx": {

@@ -5,7 +5,9 @@ class Settings(BaseSettings):
     DATABASE_URL: str = "sqlite:///./upjao.db"
     SECRET_KEY: str = "change-me-in-production"
     ALGORITHM: str = "HS256"
-    ACCESS_TOKEN_EXPIRE_MINUTES: int = 720   # 12h — covers a full workday
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = 43200   # 30 days — sessions persist; token
+    # lives in sessionStorage (clears on browser close), so users aren't logged
+    # out mid-work and only sign in again after fully closing the browser.
 
     # SLA engine config (override via .env)
     SLA_HOURS_LIMIT: int = 48       # business hours before sample-request breach

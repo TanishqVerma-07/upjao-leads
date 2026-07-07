@@ -23,21 +23,6 @@ function clearSession() {
 // In-memory token for apiFetch — seeded from sessionStorage on first load
 let _token = loadSession()?.token ?? null;
 
-// Read the `exp` (seconds since epoch) claim out of a JWT without verifying it —
-// used only to schedule a proactive client-side logout when the token lapses.
-function tokenExpiryMs(token) {
-  try {
-    let b64 = token.split(".")[1].replace(/-/g, "+").replace(/_/g, "/");
-    while (b64.length % 4) b64 += "=";                 // restore base64 padding
-    const payload = JSON.parse(atob(b64));
-    return payload.exp ? payload.exp * 1000 : null;
-  } catch { return null; }
-}
-
-function fireExpired() {
-  window.dispatchEvent(new Event("upjao:session-expired"));
-}
-
 export function AuthProvider({ children }) {
   const saved = loadSession();
   const [user, setUser] = useState(saved?.user ?? null);
@@ -60,9 +45,10 @@ export function AuthProvider({ children }) {
     setUser(null);
   }, []);
 
-  // When apiFetch sees a 401 on an authenticated request, it fires this event —
-  // clear the session so ProtectedRoute bounces the user to /login (which shows
-  // a "session expired" notice) instead of leaving them on a broken screen.
+  // Safety net only: if the server ever rejects our token (a genuine auth
+  // failure — not normal expiry, since tokens are long-lived), clear the broken
+  // session so the user can sign in again instead of being stuck on an errored
+  // screen. This does NOT fire during normal use.
   useEffect(() => {
     function onExpired() {
       _token = null;
@@ -74,19 +60,6 @@ export function AuthProvider({ children }) {
     window.addEventListener("upjao:session-expired", onExpired);
     return () => window.removeEventListener("upjao:session-expired", onExpired);
   }, []);
-
-  // Proactive logout: even if the user is idle (no requests), schedule a logout
-  // for the exact moment the token's `exp` passes, so an expired session never
-  // sits open. Re-runs whenever the logged-in user changes.
-  useEffect(() => {
-    if (!user || !_token) return;
-    const exp = tokenExpiryMs(_token);
-    if (!exp) return;
-    const ms = exp - Date.now();
-    if (ms <= 0) { fireExpired(); return; }
-    const timer = setTimeout(fireExpired, ms);
-    return () => clearTimeout(timer);
-  }, [user]);
 
   return (
     <AuthContext.Provider value={{ user, login, logout }}>

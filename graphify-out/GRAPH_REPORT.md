@@ -1,23 +1,22 @@
 # Graph Report - sales product  (2026-07-07)
 
 ## Corpus Check
-- 76 files · ~34,682 words
+- 76 files · ~34,846 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 560 nodes · 1616 edges · 44 communities (43 shown, 1 thin omitted)
+- 562 nodes · 1618 edges · 42 communities (41 shown, 1 thin omitted)
 - Extraction: 53% EXTRACTED · 47% INFERRED · 0% AMBIGUOUS · INFERRED: 759 edges (avg confidence: 0.51)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `b589b732`
+- Built from commit: `2e5b787c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - [[_COMMUNITY_Database Models & LeadTicket Logic|Database Models & Lead/Ticket Logic]]
 - [[_COMMUNITY_API Schemas & Pydantic Models|API Schemas & Pydantic Models]]
-- [[_COMMUNITY_Project Docs & Dependencies|Project Docs & Dependencies]]
 - [[_COMMUNITY_Auth, DB Config & Attachments Router|Auth, DB Config & Attachments Router]]
 - [[_COMMUNITY_User Auth Middleware & RBAC|User Auth Middleware & RBAC]]
 - [[_COMMUNITY_WebSocket & Notifications|WebSocket & Notifications]]
@@ -49,7 +48,6 @@
 - [[_COMMUNITY_Community 39|Community 39]]
 - [[_COMMUNITY_Community 40|Community 40]]
 - [[_COMMUNITY_Community 42|Community 42]]
-- [[_COMMUNITY_Community 43|Community 43]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `UserRole` - 75 edges
@@ -64,8 +62,6 @@
 10. `WinProbability` - 33 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `WebSocket` --uses--> `User`  [INFERRED]
-  backend/app/routers/ws_router.py → backend/app/models.py
 - `Session` --uses--> `Notification`  [INFERRED]
   backend/app/services/notifications.py → backend/app/models.py
 - `Notification` --uses--> `Notification`  [INFERRED]
@@ -74,25 +70,23 @@
   frontend/src/components/CreateTicketModal.jsx → frontend/src/context/AuthContext.jsx
 - `Layout()` --calls--> `useAuth()`  [EXTRACTED]
   frontend/src/components/Layout.jsx → frontend/src/context/AuthContext.jsx
+- `LeadsPage()` --calls--> `useAuth()`  [EXTRACTED]
+  frontend/src/pages/LeadsPage.jsx → frontend/src/context/AuthContext.jsx
 
 ## Import Cycles
 - 1-file cycle: `backend/app/services/sla.py -> backend/app/services/sla.py`
 - 1-file cycle: `backend/app/services/leads.py -> backend/app/services/leads.py`
 - 2-file cycle: `backend/app/models.py -> backend/app/services/sla.py -> backend/app/models.py`
 
-## Communities (44 total, 1 thin omitted)
+## Communities (42 total, 1 thin omitted)
 
 ### Community 0 - "Database Models & Lead/Ticket Logic"
-Cohesion: 0.06
-Nodes (35): Config, Settings, get_current_user(), require_role(), Session, User, UserRole, Session (+27 more)
+Cohesion: 0.05
+Nodes (62): Config, Settings, get_current_user(), require_role(), _enum(), Notification, Append-only archive. Never UPDATE or DELETE rows from this table., Create a native_enum=False Enum column type for SQLite+Postgres compat. (+54 more)
 
 ### Community 1 - "API Schemas & Pydantic Models"
-Cohesion: 0.31
-Nodes (47): CapabilityMatch, LeadStatus, Priority, TeamTarget, TicketType, UserRole, WinProbability, AttachmentOut (+39 more)
-
-### Community 2 - "Project Docs & Dependencies"
-Cohesion: 0.13
-Nodes (51): Capability, Comment, CommentVisibility, EntityType, _enum(), Lead, Notification, Append-only archive. Never UPDATE or DELETE rows from this table. (+43 more)
+Cohesion: 0.22
+Nodes (68): Capability, CapabilityMatch, Comment, CommentVisibility, EntityType, Lead, LeadStatus, Priority (+60 more)
 
 ### Community 3 - "Auth, DB Config & Attachments Router"
 Cohesion: 0.06
@@ -103,20 +97,20 @@ Cohesion: 0.08
 Nodes (24): dependencies, lucide-react, react, react-dom, react-router-dom, devDependencies, eslint, @eslint/js (+16 more)
 
 ### Community 5 - "WebSocket & Notifications"
-Cohesion: 0.34
-Nodes (13): Session, Session, _build_queue(), product_queue(), sales_queue(), tech_queue(), create_ticket(), hold_until() (+5 more)
+Cohesion: 0.33
+Nodes (14): Session, Session, _build_queue(), product_queue(), sales_queue(), tech_queue(), create_ticket(), hold_until() (+6 more)
 
 ### Community 6 - "Frontend Package & Build Config"
-Cohesion: 0.13
-Nodes (13): Layout(), NAV, TYPE_ICON, ProtectedRoute(), AuthContext, AuthProvider(), loadSession(), QueuePage() (+5 more)
+Cohesion: 0.14
+Nodes (12): Layout(), NAV, TYPE_ICON, AuthContext, AuthProvider(), loadSession(), QueuePage(), addWSListener() (+4 more)
 
 ### Community 7 - "Layout & Auth Context"
 Cohesion: 0.10
 Nodes (20): 1. Create a New Canvas, 2. Add a Node to an Existing Canvas, 3. Connect Two Nodes, 4. Edit an Existing Canvas, Colors, Common Workflows, Complete Examples, Edges (+12 more)
 
 ### Community 8 - "SLA Engine & Notifications Router"
-Cohesion: 0.31
-Nodes (6): FeedComposer(), useAuth(), DashboardPage(), inputStyle, labelStyle, LoginPage()
+Cohesion: 0.25
+Nodes (7): FeedComposer(), ProtectedRoute(), useAuth(), DashboardPage(), inputStyle, labelStyle, LoginPage()
 
 ### Community 9 - "Admin & Attachments UI"
 Cohesion: 0.29
@@ -127,8 +121,8 @@ Cohesion: 0.29
 Nodes (10): iconBtn, KIND_COLORS, KIND_LABEL, getToken(), apiFetch(), apiUpload(), downloadFile(), fetchWithRetry() (+2 more)
 
 ### Community 11 - "WebSocket Connection Manager"
-Cohesion: 0.23
-Nodes (18): Session, User, Session, Notification, capability_hint(), create_comment(), create_lead(), get_feed() (+10 more)
+Cohesion: 0.20
+Nodes (20): Session, User, Session, Notification, capability_hint(), create_comment(), create_lead(), get_feed() (+12 more)
 
 ### Community 12 - "Lead Status Badges & Leads Page"
 Cohesion: 0.13
@@ -171,8 +165,8 @@ Cohesion: 0.20
 Nodes (9): Embed Audio, Embed Bases, Embed Images, Embed Lists, Embed Notes, Embed PDF, Embed Search Results, Embeds Reference (+1 more)
 
 ### Community 22 - "Migration: partial_note field"
-Cohesion: 0.25
-Nodes (3): PRIORITY_COLORS, STATUS_COLORS, TYPE_LABELS
+Cohesion: 0.12
+Nodes (6): PRIORITY_COLORS, STATUS_COLORS, TYPE_LABELS, ENTITY_COLORS, pageBtn, sel
 
 ### Community 23 - "Migration: Initial Schema"
 Cohesion: 0.25
@@ -214,21 +208,17 @@ Nodes (4): shutdown(), startup(), start_scheduler(), stop_scheduler()
 Cohesion: 0.25
 Nodes (5): CapabilitiesPage(), ghostBtn, inputStyle, labelStyle, primaryBtn
 
-### Community 43 - "Community 43"
-Cohesion: 0.33
-Nodes (3): ENTITY_COLORS, pageBtn, sel
-
 ## Knowledge Gaps
-- **189 isolated node(s):** `Config`, `AuthContext`, `labelStyle`, `inputStyle`, `TYPES_BY_ROLE` (+184 more)
+- **189 isolated node(s):** `AuthContext`, `Config`, `labelStyle`, `inputStyle`, `TYPES_BY_ROLE` (+184 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `UserRole` connect `API Schemas & Pydantic Models` to `Database Models & Lead/Ticket Logic`, `Project Docs & Dependencies`, `WebSocket & Notifications`, `Community 39`, `WebSocket Connection Manager`, `App Init`?**
-  _High betweenness centrality (0.023) - this node is a cross-community bridge._
-- **Why does `User` connect `Project Docs & Dependencies` to `Database Models & Lead/Ticket Logic`, `API Schemas & Pydantic Models`, `WebSocket & Notifications`, `Community 39`, `WebSocket Connection Manager`, `App Init`?**
+- **Why does `UserRole` connect `API Schemas & Pydantic Models` to `Database Models & Lead/Ticket Logic`, `WebSocket & Notifications`, `Community 39`, `WebSocket Connection Manager`, `App Init`?**
+  _High betweenness centrality (0.022) - this node is a cross-community bridge._
+- **Why does `User` connect `Database Models & Lead/Ticket Logic` to `API Schemas & Pydantic Models`, `WebSocket & Notifications`, `Community 39`, `WebSocket Connection Manager`, `App Init`?**
   _High betweenness centrality (0.019) - this node is a cross-community bridge._
 - **Why does `ConnectionManager` connect `Lead Detail Page` to `WebSocket Connection Manager`?**
   _High betweenness centrality (0.018) - this node is a cross-community bridge._

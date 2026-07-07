@@ -4,14 +4,244 @@
   "graph": {},
   "nodes": [
     {
+      "label": "config.py",
+      "file_type": "code",
+      "source_file": "backend/app/config.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_config",
+      "community": 0,
+      "norm_label": "config.py"
+    },
+    {
+      "label": "Settings",
+      "file_type": "code",
+      "source_file": "backend/app/config.py",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "app_config_settings",
+      "community": 0,
+      "norm_label": "settings"
+    },
+    {
+      "label": "BaseSettings",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "basesettings",
+      "community": 0,
+      "norm_label": "basesettings"
+    },
+    {
+      "label": "Config",
+      "file_type": "code",
+      "source_file": "backend/app/config.py",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "app_config_config",
+      "community": 0,
+      "norm_label": "config"
+    },
+    {
+      "label": "api.js",
+      "file_type": "code",
+      "source_file": "frontend/src/api.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_api",
+      "community": 10,
+      "norm_label": "api.js"
+    },
+    {
+      "label": "notifySessionExpired()",
+      "file_type": "code",
+      "source_file": "frontend/src/api.js",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "src_api_notifysessionexpired",
+      "community": 10,
+      "norm_label": "notifysessionexpired()"
+    },
+    {
+      "label": "sleep()",
+      "file_type": "code",
+      "source_file": "frontend/src/api.js",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "src_api_sleep",
+      "community": 10,
+      "norm_label": "sleep()"
+    },
+    {
+      "label": "fetchWithRetry()",
+      "file_type": "code",
+      "source_file": "frontend/src/api.js",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "src_api_fetchwithretry",
+      "community": 10,
+      "norm_label": "fetchwithretry()"
+    },
+    {
+      "label": "apiFetch()",
+      "file_type": "code",
+      "source_file": "frontend/src/api.js",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "src_api_apifetch",
+      "community": 10,
+      "norm_label": "apifetch()"
+    },
+    {
+      "label": "apiUpload()",
+      "file_type": "code",
+      "source_file": "frontend/src/api.js",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "src_api_apiupload",
+      "community": 10,
+      "norm_label": "apiupload()"
+    },
+    {
+      "label": "downloadFile()",
+      "file_type": "code",
+      "source_file": "frontend/src/api.js",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "src_api_downloadfile",
+      "community": 10,
+      "norm_label": "downloadfile()"
+    },
+    {
+      "label": "AuthContext.jsx",
+      "file_type": "code",
+      "source_file": "frontend/src/context/AuthContext.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "context_authcontext",
+      "community": 6,
+      "norm_label": "authcontext.jsx"
+    },
+    {
+      "label": "AuthContext",
+      "file_type": "code",
+      "source_file": "frontend/src/context/AuthContext.jsx",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "context_authcontext_authcontext",
+      "community": 6,
+      "norm_label": "authcontext"
+    },
+    {
+      "label": "loadSession()",
+      "file_type": "code",
+      "source_file": "frontend/src/context/AuthContext.jsx",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "context_authcontext_loadsession",
+      "community": 6,
+      "norm_label": "loadsession()"
+    },
+    {
+      "label": "saveSession()",
+      "file_type": "code",
+      "source_file": "frontend/src/context/AuthContext.jsx",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "context_authcontext_savesession",
+      "community": 6,
+      "norm_label": "savesession()"
+    },
+    {
+      "label": "clearSession()",
+      "file_type": "code",
+      "source_file": "frontend/src/context/AuthContext.jsx",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "context_authcontext_clearsession",
+      "community": 6,
+      "norm_label": "clearsession()"
+    },
+    {
+      "label": "AuthProvider()",
+      "file_type": "code",
+      "source_file": "frontend/src/context/AuthContext.jsx",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "context_authcontext_authprovider",
+      "community": 6,
+      "norm_label": "authprovider()"
+    },
+    {
+      "label": "useAuth()",
+      "file_type": "code",
+      "source_file": "frontend/src/context/AuthContext.jsx",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "context_authcontext_useauth",
+      "community": 8,
+      "norm_label": "useauth()"
+    },
+    {
+      "label": "getToken()",
+      "file_type": "code",
+      "source_file": "frontend/src/context/AuthContext.jsx",
+      "source_location": "L73",
+      "_origin": "ast",
+      "id": "context_authcontext_gettoken",
+      "community": 10,
+      "norm_label": "gettoken()"
+    },
+    {
+      "label": "LoginPage.jsx",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/LoginPage.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pages_loginpage",
+      "community": 8,
+      "norm_label": "loginpage.jsx"
+    },
+    {
+      "label": "LoginPage()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/LoginPage.jsx",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "pages_loginpage_loginpage",
+      "community": 8,
+      "norm_label": "loginpage()"
+    },
+    {
+      "label": "labelStyle",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/LoginPage.jsx",
+      "source_location": "L120",
+      "_origin": "ast",
+      "id": "pages_loginpage_labelstyle",
+      "community": 8,
+      "norm_label": "labelstyle"
+    },
+    {
+      "label": "inputStyle",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/LoginPage.jsx",
+      "source_location": "L125",
+      "_origin": "ast",
+      "id": "pages_loginpage_inputstyle",
+      "community": 8,
+      "norm_label": "inputstyle"
+    },
+    {
       "label": "models.py",
       "file_type": "code",
       "source_file": "backend/app/models.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "app_models",
       "community": 2,
-      "norm_label": "models.py"
+      "norm_label": "models.py",
+      "id": "app_models"
     },
     {
       "label": "_utcnow()",
@@ -19,9 +249,9 @@
       "source_file": "backend/app/models.py",
       "source_location": "L13",
       "_origin": "ast",
-      "id": "app_models_utcnow",
       "community": 2,
-      "norm_label": "_utcnow()"
+      "norm_label": "_utcnow()",
+      "id": "app_models_utcnow"
     },
     {
       "label": "UserRole",
@@ -29,9 +259,9 @@
       "source_file": "backend/app/models.py",
       "source_location": "L19",
       "_origin": "ast",
-      "id": "app_models_userrole",
       "community": 1,
-      "norm_label": "userrole"
+      "norm_label": "userrole",
+      "id": "app_models_userrole"
     },
     {
       "label": "str",
@@ -39,9 +269,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "str",
       "community": 1,
-      "norm_label": "str"
+      "norm_label": "str",
+      "id": "str"
     },
     {
       "label": "WinProbability",
@@ -49,9 +279,9 @@
       "source_file": "backend/app/models.py",
       "source_location": "L26",
       "_origin": "ast",
-      "id": "app_models_winprobability",
       "community": 1,
-      "norm_label": "winprobability"
+      "norm_label": "winprobability",
+      "id": "app_models_winprobability"
     },
     {
       "label": "Priority",
@@ -59,9 +289,9 @@
       "source_file": "backend/app/models.py",
       "source_location": "L32",
       "_origin": "ast",
-      "id": "app_models_priority",
       "community": 1,
-      "norm_label": "priority"
+      "norm_label": "priority",
+      "id": "app_models_priority"
     },
     {
       "label": "CapabilityMatch",
@@ -69,9 +299,9 @@
       "source_file": "backend/app/models.py",
       "source_location": "L39",
       "_origin": "ast",
-      "id": "app_models_capabilitymatch",
       "community": 1,
-      "norm_label": "capabilitymatch"
+      "norm_label": "capabilitymatch",
+      "id": "app_models_capabilitymatch"
     },
     {
       "label": "LeadStatus",
@@ -79,9 +309,9 @@
       "source_file": "backend/app/models.py",
       "source_location": "L45",
       "_origin": "ast",
-      "id": "app_models_leadstatus",
       "community": 1,
-      "norm_label": "leadstatus"
+      "norm_label": "leadstatus",
+      "id": "app_models_leadstatus"
     },
     {
       "label": "TicketType",
@@ -89,9 +319,9 @@
       "source_file": "backend/app/models.py",
       "source_location": "L54",
       "_origin": "ast",
-      "id": "app_models_tickettype",
       "community": 1,
-      "norm_label": "tickettype"
+      "norm_label": "tickettype",
+      "id": "app_models_tickettype"
     },
     {
       "label": "TeamTarget",
@@ -99,9 +329,9 @@
       "source_file": "backend/app/models.py",
       "source_location": "L65",
       "_origin": "ast",
-      "id": "app_models_teamtarget",
       "community": 1,
-      "norm_label": "teamtarget"
+      "norm_label": "teamtarget",
+      "id": "app_models_teamtarget"
     },
     {
       "label": "CommentVisibility",
@@ -109,9 +339,9 @@
       "source_file": "backend/app/models.py",
       "source_location": "L71",
       "_origin": "ast",
-      "id": "app_models_commentvisibility",
-      "community": 1,
-      "norm_label": "commentvisibility"
+      "community": 2,
+      "norm_label": "commentvisibility",
+      "id": "app_models_commentvisibility"
     },
     {
       "label": "EntityType",
@@ -119,9 +349,9 @@
       "source_file": "backend/app/models.py",
       "source_location": "L76",
       "_origin": "ast",
-      "id": "app_models_entitytype",
-      "community": 1,
-      "norm_label": "entitytype"
+      "community": 2,
+      "norm_label": "entitytype",
+      "id": "app_models_entitytype"
     },
     {
       "label": "AttachmentKind",
@@ -129,9 +359,9 @@
       "source_file": "backend/app/models.py",
       "source_location": "L81",
       "_origin": "ast",
-      "id": "app_models_attachmentkind",
-      "community": 2,
-      "norm_label": "attachmentkind"
+      "community": 39,
+      "norm_label": "attachmentkind",
+      "id": "app_models_attachmentkind"
     },
     {
       "label": "_enum()",
@@ -139,9 +369,9 @@
       "source_file": "backend/app/models.py",
       "source_location": "L88",
       "_origin": "ast",
-      "id": "app_models_enum",
       "community": 2,
-      "norm_label": "_enum()"
+      "norm_label": "_enum()",
+      "id": "app_models_enum"
     },
     {
       "label": "User",
@@ -149,9 +379,9 @@
       "source_file": "backend/app/models.py",
       "source_location": "L93",
       "_origin": "ast",
-      "id": "app_models_user",
       "community": 2,
-      "norm_label": "user"
+      "norm_label": "user",
+      "id": "app_models_user"
     },
     {
       "label": "Base",
@@ -159,9 +389,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "base",
       "community": 2,
-      "norm_label": "base"
+      "norm_label": "base",
+      "id": "base"
     },
     {
       "label": "Lead",
@@ -169,9 +399,9 @@
       "source_file": "backend/app/models.py",
       "source_location": "L105",
       "_origin": "ast",
-      "id": "app_models_lead",
       "community": 2,
-      "norm_label": "lead"
+      "norm_label": "lead",
+      "id": "app_models_lead"
     },
     {
       "label": "Ticket",
@@ -179,9 +409,9 @@
       "source_file": "backend/app/models.py",
       "source_location": "L134",
       "_origin": "ast",
-      "id": "app_models_ticket",
       "community": 2,
-      "norm_label": "ticket"
+      "norm_label": "ticket",
+      "id": "app_models_ticket"
     },
     {
       "label": "Comment",
@@ -189,9 +419,9 @@
       "source_file": "backend/app/models.py",
       "source_location": "L162",
       "_origin": "ast",
-      "id": "app_models_comment",
-      "community": 1,
-      "norm_label": "comment"
+      "community": 2,
+      "norm_label": "comment",
+      "id": "app_models_comment"
     },
     {
       "label": "StatusHistory",
@@ -199,9 +429,9 @@
       "source_file": "backend/app/models.py",
       "source_location": "L178",
       "_origin": "ast",
-      "id": "app_models_statushistory",
       "community": 2,
-      "norm_label": "statushistory"
+      "norm_label": "statushistory",
+      "id": "app_models_statushistory"
     },
     {
       "label": "Capability",
@@ -209,9 +439,9 @@
       "source_file": "backend/app/models.py",
       "source_location": "L194",
       "_origin": "ast",
-      "id": "app_models_capability",
-      "community": 1,
-      "norm_label": "capability"
+      "community": 2,
+      "norm_label": "capability",
+      "id": "app_models_capability"
     },
     {
       "label": "Attachment",
@@ -219,9 +449,9 @@
       "source_file": "backend/app/models.py",
       "source_location": "L207",
       "_origin": "ast",
-      "id": "app_models_attachment",
-      "community": 2,
-      "norm_label": "attachment"
+      "community": 39,
+      "norm_label": "attachment",
+      "id": "app_models_attachment"
     },
     {
       "label": "Notification",
@@ -229,9 +459,9 @@
       "source_file": "backend/app/models.py",
       "source_location": "L225",
       "_origin": "ast",
-      "id": "app_models_notification",
       "community": 2,
-      "norm_label": "notification"
+      "norm_label": "notification",
+      "id": "app_models_notification"
     },
     {
       "label": "_block_status_history_update()",
@@ -239,9 +469,9 @@
       "source_file": "backend/app/models.py",
       "source_location": "L243",
       "_origin": "ast",
-      "id": "app_models_block_status_history_update",
       "community": 2,
-      "norm_label": "_block_status_history_update()"
+      "norm_label": "_block_status_history_update()",
+      "id": "app_models_block_status_history_update"
     },
     {
       "label": "_block_status_history_delete()",
@@ -249,9 +479,9 @@
       "source_file": "backend/app/models.py",
       "source_location": "L248",
       "_origin": "ast",
-      "id": "app_models_block_status_history_delete",
       "community": 2,
-      "norm_label": "_block_status_history_delete()"
+      "norm_label": "_block_status_history_delete()",
+      "id": "app_models_block_status_history_delete"
     },
     {
       "label": "Create a native_enum=False Enum column type for SQLite+Postgres compat.",
@@ -259,9 +489,9 @@
       "source_file": "backend/app/models.py",
       "source_location": "L89",
       "_origin": "ast",
-      "id": "app_models_rationale_89",
       "community": 2,
-      "norm_label": "create a native_enum=false enum column type for sqlite+postgres compat."
+      "norm_label": "create a native_enum=false enum column type for sqlite+postgres compat.",
+      "id": "app_models_rationale_89"
     },
     {
       "label": "Append-only archive. Never UPDATE or DELETE rows from this table.",
@@ -269,9 +499,9 @@
       "source_file": "backend/app/models.py",
       "source_location": "L179",
       "_origin": "ast",
-      "id": "app_models_rationale_179",
       "community": 2,
-      "norm_label": "append-only archive. never update or delete rows from this table."
+      "norm_label": "append-only archive. never update or delete rows from this table.",
+      "id": "app_models_rationale_179"
     },
     {
       "label": "tickets.py",
@@ -279,9 +509,9 @@
       "source_file": "backend/app/routers/tickets.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "routers_tickets",
       "community": 5,
-      "norm_label": "tickets.py"
+      "norm_label": "tickets.py",
+      "id": "routers_tickets"
     },
     {
       "label": "_ticket_out()",
@@ -289,9 +519,9 @@
       "source_file": "backend/app/routers/tickets.py",
       "source_location": "L25",
       "_origin": "ast",
-      "id": "routers_tickets_ticket_out",
       "community": 5,
-      "norm_label": "_ticket_out()"
+      "norm_label": "_ticket_out()",
+      "id": "routers_tickets_ticket_out"
     },
     {
       "label": "Session",
@@ -299,9 +529,9 @@
       "source_file": "backend/app/routers/tickets.py",
       "source_location": "L25",
       "_origin": "ast",
-      "id": "backend_app_routers_tickets_py_session",
       "community": 5,
-      "norm_label": "session"
+      "norm_label": "session",
+      "id": "backend_app_routers_tickets_py_session"
     },
     {
       "label": "Ticket",
@@ -309,9 +539,9 @@
       "source_file": "backend/app/routers/tickets.py",
       "source_location": "L25",
       "_origin": "ast",
-      "id": "backend_app_routers_tickets_py_ticket",
       "community": 1,
-      "norm_label": "ticket"
+      "norm_label": "ticket",
+      "id": "backend_app_routers_tickets_py_ticket"
     },
     {
       "label": "TicketOut",
@@ -319,9 +549,9 @@
       "source_file": "backend/app/routers/tickets.py",
       "source_location": "L25",
       "_origin": "ast",
-      "id": "ticketout",
       "community": 2,
-      "norm_label": "ticketout"
+      "norm_label": "ticketout",
+      "id": "ticketout"
     },
     {
       "label": "create_ticket()",
@@ -329,9 +559,9 @@
       "source_file": "backend/app/routers/tickets.py",
       "source_location": "L35",
       "_origin": "ast",
-      "id": "routers_tickets_create_ticket",
       "community": 5,
-      "norm_label": "create_ticket()"
+      "norm_label": "create_ticket()",
+      "id": "routers_tickets_create_ticket"
     },
     {
       "label": "TicketCreate",
@@ -339,9 +569,9 @@
       "source_file": "backend/app/routers/tickets.py",
       "source_location": "L35",
       "_origin": "ast",
-      "id": "ticketcreate",
       "community": 1,
-      "norm_label": "ticketcreate"
+      "norm_label": "ticketcreate",
+      "id": "ticketcreate"
     },
     {
       "label": "User",
@@ -349,9 +579,9 @@
       "source_file": "backend/app/routers/tickets.py",
       "source_location": "L35",
       "_origin": "ast",
-      "id": "user",
       "community": 5,
-      "norm_label": "user"
+      "norm_label": "user",
+      "id": "user"
     },
     {
       "label": "list_lead_tickets()",
@@ -359,9 +589,9 @@
       "source_file": "backend/app/routers/tickets.py",
       "source_location": "L93",
       "_origin": "ast",
-      "id": "routers_tickets_list_lead_tickets",
       "community": 5,
-      "norm_label": "list_lead_tickets()"
+      "norm_label": "list_lead_tickets()",
+      "id": "routers_tickets_list_lead_tickets"
     },
     {
       "label": "update_ticket_status()",
@@ -369,9 +599,9 @@
       "source_file": "backend/app/routers/tickets.py",
       "source_location": "L105",
       "_origin": "ast",
-      "id": "routers_tickets_update_ticket_status",
       "community": 5,
-      "norm_label": "update_ticket_status()"
+      "norm_label": "update_ticket_status()",
+      "id": "routers_tickets_update_ticket_status"
     },
     {
       "label": "TicketStatusUpdate",
@@ -379,9 +609,9 @@
       "source_file": "backend/app/routers/tickets.py",
       "source_location": "L105",
       "_origin": "ast",
-      "id": "ticketstatusupdate",
       "community": 1,
-      "norm_label": "ticketstatusupdate"
+      "norm_label": "ticketstatusupdate",
+      "id": "ticketstatusupdate"
     },
     {
       "label": "toggle_hold()",
@@ -389,9 +619,9 @@
       "source_file": "backend/app/routers/tickets.py",
       "source_location": "L127",
       "_origin": "ast",
-      "id": "routers_tickets_toggle_hold",
       "community": 5,
-      "norm_label": "toggle_hold()"
+      "norm_label": "toggle_hold()",
+      "id": "routers_tickets_toggle_hold"
     },
     {
       "label": "TicketHold",
@@ -399,9 +629,9 @@
       "source_file": "backend/app/routers/tickets.py",
       "source_location": "L127",
       "_origin": "ast",
-      "id": "tickethold",
       "community": 1,
-      "norm_label": "tickethold"
+      "norm_label": "tickethold",
+      "id": "tickethold"
     },
     {
       "label": "hold_until()",
@@ -409,9 +639,9 @@
       "source_file": "backend/app/routers/tickets.py",
       "source_location": "L148",
       "_origin": "ast",
-      "id": "routers_tickets_hold_until",
       "community": 5,
-      "norm_label": "hold_until()"
+      "norm_label": "hold_until()",
+      "id": "routers_tickets_hold_until"
     },
     {
       "label": "TicketHoldUntil",
@@ -419,9 +649,9 @@
       "source_file": "backend/app/routers/tickets.py",
       "source_location": "L148",
       "_origin": "ast",
-      "id": "ticketholduntil",
       "community": 1,
-      "norm_label": "ticketholduntil"
+      "norm_label": "ticketholduntil",
+      "id": "ticketholduntil"
     },
     {
       "label": "tickets.py",
@@ -429,9 +659,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "services_tickets",
       "community": 2,
-      "norm_label": "tickets.py"
+      "norm_label": "tickets.py",
+      "id": "services_tickets"
     },
     {
       "label": "default_to_team()",
@@ -439,9 +669,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L114",
       "_origin": "ast",
-      "id": "services_tickets_default_to_team",
       "community": 2,
-      "norm_label": "default_to_team()"
+      "norm_label": "default_to_team()",
+      "id": "services_tickets_default_to_team"
     },
     {
       "label": "TicketType",
@@ -449,9 +679,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L114",
       "_origin": "ast",
-      "id": "tickettype",
       "community": 2,
-      "norm_label": "tickettype"
+      "norm_label": "tickettype",
+      "id": "tickettype"
     },
     {
       "label": "TeamTarget",
@@ -459,9 +689,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L114",
       "_origin": "ast",
-      "id": "teamtarget",
       "community": 2,
-      "norm_label": "teamtarget"
+      "norm_label": "teamtarget",
+      "id": "teamtarget"
     },
     {
       "label": "enrich_ticket()",
@@ -469,9 +699,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L126",
       "_origin": "ast",
-      "id": "services_tickets_enrich_ticket",
       "community": 2,
-      "norm_label": "enrich_ticket()"
+      "norm_label": "enrich_ticket()",
+      "id": "services_tickets_enrich_ticket"
     },
     {
       "label": "Session",
@@ -479,9 +709,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L126",
       "_origin": "ast",
-      "id": "backend_app_services_tickets_py_session",
       "community": 2,
-      "norm_label": "session"
+      "norm_label": "session",
+      "id": "backend_app_services_tickets_py_session"
     },
     {
       "label": "Ticket",
@@ -489,9 +719,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L126",
       "_origin": "ast",
-      "id": "backend_app_services_tickets_py_ticket",
       "community": 2,
-      "norm_label": "ticket"
+      "norm_label": "ticket",
+      "id": "backend_app_services_tickets_py_ticket"
     },
     {
       "label": "_notify()",
@@ -499,9 +729,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L137",
       "_origin": "ast",
-      "id": "services_tickets_notify",
       "community": 2,
-      "norm_label": "_notify()"
+      "norm_label": "_notify()",
+      "id": "services_tickets_notify"
     },
     {
       "label": "advance_status()",
@@ -509,9 +739,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L154",
       "_origin": "ast",
-      "id": "services_tickets_advance_status",
       "community": 2,
-      "norm_label": "advance_status()"
+      "norm_label": "advance_status()",
+      "id": "services_tickets_advance_status"
     },
     {
       "label": "UserRole",
@@ -519,9 +749,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L154",
       "_origin": "ast",
-      "id": "userrole",
       "community": 2,
-      "norm_label": "userrole"
+      "norm_label": "userrole",
+      "id": "userrole"
     },
     {
       "label": "seed.py",
@@ -529,9 +759,9 @@
       "source_file": "backend/seed.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "backend_seed",
       "community": 2,
-      "norm_label": "seed.py"
+      "norm_label": "seed.py",
+      "id": "backend_seed"
     },
     {
       "label": "hash_pw()",
@@ -539,9 +769,9 @@
       "source_file": "backend/seed.py",
       "source_location": "L20",
       "_origin": "ast",
-      "id": "backend_seed_hash_pw",
       "community": 2,
-      "norm_label": "hash_pw()"
+      "norm_label": "hash_pw()",
+      "id": "backend_seed_hash_pw"
     },
     {
       "label": "seed()",
@@ -549,9 +779,9 @@
       "source_file": "backend/seed.py",
       "source_location": "L24",
       "_origin": "ast",
-      "id": "backend_seed_seed",
       "community": 2,
-      "norm_label": "seed()"
+      "norm_label": "seed()",
+      "id": "backend_seed_seed"
     },
     {
       "label": "Run from backend/: python seed.py Creates demo users, capabilities, leads, ticke",
@@ -559,9 +789,9 @@
       "source_file": "backend/seed.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "backend_seed_rationale_1",
       "community": 2,
-      "norm_label": "run from backend/: python seed.py creates demo users, capabilities, leads, ticke"
+      "norm_label": "run from backend/: python seed.py creates demo users, capabilities, leads, ticke",
+      "id": "backend_seed_rationale_1"
     },
     {
       "label": "CreateTicketModal.jsx",
@@ -569,9 +799,9 @@
       "source_file": "frontend/src/components/CreateTicketModal.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "components_createticketmodal",
       "community": 9,
-      "norm_label": "createticketmodal.jsx"
+      "norm_label": "createticketmodal.jsx",
+      "id": "components_createticketmodal"
     },
     {
       "label": "TYPES_BY_ROLE",
@@ -579,9 +809,9 @@
       "source_file": "frontend/src/components/CreateTicketModal.jsx",
       "source_location": "L6",
       "_origin": "ast",
-      "id": "components_createticketmodal_types_by_role",
       "community": 9,
-      "norm_label": "types_by_role"
+      "norm_label": "types_by_role",
+      "id": "components_createticketmodal_types_by_role"
     },
     {
       "label": "TYPE_LABELS",
@@ -589,9 +819,9 @@
       "source_file": "frontend/src/components/CreateTicketModal.jsx",
       "source_location": "L13",
       "_origin": "ast",
-      "id": "components_createticketmodal_type_labels",
       "community": 9,
-      "norm_label": "type_labels"
+      "norm_label": "type_labels",
+      "id": "components_createticketmodal_type_labels"
     },
     {
       "label": "CreateTicketModal()",
@@ -599,9 +829,9 @@
       "source_file": "frontend/src/components/CreateTicketModal.jsx",
       "source_location": "L24",
       "_origin": "ast",
-      "id": "components_createticketmodal_createticketmodal",
       "community": 9,
-      "norm_label": "createticketmodal()"
+      "norm_label": "createticketmodal()",
+      "id": "components_createticketmodal_createticketmodal"
     },
     {
       "label": "Field()",
@@ -609,9 +839,9 @@
       "source_file": "frontend/src/components/CreateTicketModal.jsx",
       "source_location": "L123",
       "_origin": "ast",
-      "id": "components_createticketmodal_field",
       "community": 9,
-      "norm_label": "field()"
+      "norm_label": "field()",
+      "id": "components_createticketmodal_field"
     },
     {
       "label": "inp",
@@ -619,9 +849,9 @@
       "source_file": "frontend/src/components/CreateTicketModal.jsx",
       "source_location": "L132",
       "_origin": "ast",
-      "id": "components_createticketmodal_inp",
       "community": 9,
-      "norm_label": "inp"
+      "norm_label": "inp",
+      "id": "components_createticketmodal_inp"
     },
     {
       "label": "sel",
@@ -629,9 +859,9 @@
       "source_file": "frontend/src/components/CreateTicketModal.jsx",
       "source_location": "L133",
       "_origin": "ast",
-      "id": "components_createticketmodal_sel",
       "community": 9,
-      "norm_label": "sel"
+      "norm_label": "sel",
+      "id": "components_createticketmodal_sel"
     },
     {
       "label": "TicketCard.jsx",
@@ -639,9 +869,9 @@
       "source_file": "frontend/src/components/TicketCard.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "components_ticketcard",
       "community": 16,
-      "norm_label": "ticketcard.jsx"
+      "norm_label": "ticketcard.jsx",
+      "id": "components_ticketcard"
     },
     {
       "label": "TYPE_LABELS",
@@ -649,9 +879,9 @@
       "source_file": "frontend/src/components/TicketCard.jsx",
       "source_location": "L7",
       "_origin": "ast",
-      "id": "components_ticketcard_type_labels",
       "community": 16,
-      "norm_label": "type_labels"
+      "norm_label": "type_labels",
+      "id": "components_ticketcard_type_labels"
     },
     {
       "label": "TYPE_COLORS",
@@ -659,9 +889,9 @@
       "source_file": "frontend/src/components/TicketCard.jsx",
       "source_location": "L18",
       "_origin": "ast",
-      "id": "components_ticketcard_type_colors",
       "community": 16,
-      "norm_label": "type_colors"
+      "norm_label": "type_colors",
+      "id": "components_ticketcard_type_colors"
     },
     {
       "label": "SAMPLE_SALES_OPTIONS",
@@ -669,9 +899,9 @@
       "source_file": "frontend/src/components/TicketCard.jsx",
       "source_location": "L30",
       "_origin": "ast",
-      "id": "components_ticketcard_sample_sales_options",
       "community": 16,
-      "norm_label": "sample_sales_options"
+      "norm_label": "sample_sales_options",
+      "id": "components_ticketcard_sample_sales_options"
     },
     {
       "label": "FORWARD_MAP",
@@ -679,9 +909,9 @@
       "source_file": "frontend/src/components/TicketCard.jsx",
       "source_location": "L39",
       "_origin": "ast",
-      "id": "components_ticketcard_forward_map",
       "community": 16,
-      "norm_label": "forward_map"
+      "norm_label": "forward_map",
+      "id": "components_ticketcard_forward_map"
     },
     {
       "label": "nextStepRole()",
@@ -689,9 +919,9 @@
       "source_file": "frontend/src/components/TicketCard.jsx",
       "source_location": "L54",
       "_origin": "ast",
-      "id": "components_ticketcard_nextsteprole",
       "community": 16,
-      "norm_label": "nextsteprole()"
+      "norm_label": "nextsteprole()",
+      "id": "components_ticketcard_nextsteprole"
     },
     {
       "label": "TERMINAL",
@@ -699,9 +929,9 @@
       "source_file": "frontend/src/components/TicketCard.jsx",
       "source_location": "L67",
       "_origin": "ast",
-      "id": "components_ticketcard_terminal",
       "community": 16,
-      "norm_label": "terminal"
+      "norm_label": "terminal",
+      "id": "components_ticketcard_terminal"
     },
     {
       "label": "TicketCard()",
@@ -709,9 +939,9 @@
       "source_file": "frontend/src/components/TicketCard.jsx",
       "source_location": "L69",
       "_origin": "ast",
-      "id": "components_ticketcard_ticketcard",
       "community": 16,
-      "norm_label": "ticketcard()"
+      "norm_label": "ticketcard()",
+      "id": "components_ticketcard_ticketcard"
     },
     {
       "label": "StatusTag()",
@@ -719,9 +949,9 @@
       "source_file": "frontend/src/components/TicketCard.jsx",
       "source_location": "L380",
       "_origin": "ast",
-      "id": "components_ticketcard_statustag",
       "community": 16,
-      "norm_label": "statustag()"
+      "norm_label": "statustag()",
+      "id": "components_ticketcard_statustag"
     },
     {
       "label": "pill()",
@@ -729,9 +959,9 @@
       "source_file": "frontend/src/components/TicketCard.jsx",
       "source_location": "L395",
       "_origin": "ast",
-      "id": "components_ticketcard_pill",
       "community": 16,
-      "norm_label": "pill()"
+      "norm_label": "pill()",
+      "id": "components_ticketcard_pill"
     },
     {
       "label": "dropdownStyle()",
@@ -739,9 +969,9 @@
       "source_file": "frontend/src/components/TicketCard.jsx",
       "source_location": "L400",
       "_origin": "ast",
-      "id": "components_ticketcard_dropdownstyle",
       "community": 16,
-      "norm_label": "dropdownstyle()"
+      "norm_label": "dropdownstyle()",
+      "id": "components_ticketcard_dropdownstyle"
     },
     {
       "label": "applyBtn",
@@ -749,9 +979,9 @@
       "source_file": "frontend/src/components/TicketCard.jsx",
       "source_location": "L406",
       "_origin": "ast",
-      "id": "components_ticketcard_applybtn",
       "community": 16,
-      "norm_label": "applybtn"
+      "norm_label": "applybtn",
+      "id": "components_ticketcard_applybtn"
     },
     {
       "label": "smallBtn()",
@@ -759,9 +989,9 @@
       "source_file": "frontend/src/components/TicketCard.jsx",
       "source_location": "L412",
       "_origin": "ast",
-      "id": "components_ticketcard_smallbtn",
       "community": 16,
-      "norm_label": "smallbtn()"
+      "norm_label": "smallbtn()",
+      "id": "components_ticketcard_smallbtn"
     },
     {
       "label": "AnalyticsPage.jsx",
@@ -769,9 +999,9 @@
       "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "admin_analyticspage",
       "community": 22,
-      "norm_label": "analyticspage.jsx"
+      "norm_label": "analyticspage.jsx",
+      "id": "admin_analyticspage"
     },
     {
       "label": "STATUS_COLORS",
@@ -779,9 +1009,9 @@
       "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "admin_analyticspage_status_colors",
       "community": 22,
-      "norm_label": "status_colors"
+      "norm_label": "status_colors",
+      "id": "admin_analyticspage_status_colors"
     },
     {
       "label": "PRIORITY_COLORS",
@@ -789,9 +1019,9 @@
       "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
       "source_location": "L14",
       "_origin": "ast",
-      "id": "admin_analyticspage_priority_colors",
       "community": 22,
-      "norm_label": "priority_colors"
+      "norm_label": "priority_colors",
+      "id": "admin_analyticspage_priority_colors"
     },
     {
       "label": "TYPE_LABELS",
@@ -799,9 +1029,9 @@
       "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
       "source_location": "L16",
       "_origin": "ast",
-      "id": "admin_analyticspage_type_labels",
       "community": 22,
-      "norm_label": "type_labels"
+      "norm_label": "type_labels",
+      "id": "admin_analyticspage_type_labels"
     },
     {
       "label": "AnalyticsPage()",
@@ -809,9 +1039,9 @@
       "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
       "source_location": "L27",
       "_origin": "ast",
-      "id": "admin_analyticspage_analyticspage",
       "community": 22,
-      "norm_label": "analyticspage()"
+      "norm_label": "analyticspage()",
+      "id": "admin_analyticspage_analyticspage"
     },
     {
       "label": "StatCard()",
@@ -819,9 +1049,9 @@
       "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
       "source_location": "L132",
       "_origin": "ast",
-      "id": "admin_analyticspage_statcard",
       "community": 22,
-      "norm_label": "statcard()"
+      "norm_label": "statcard()",
+      "id": "admin_analyticspage_statcard"
     },
     {
       "label": "ChartCard()",
@@ -829,9 +1059,9 @@
       "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
       "source_location": "L143",
       "_origin": "ast",
-      "id": "admin_analyticspage_chartcard",
       "community": 22,
-      "norm_label": "chartcard()"
+      "norm_label": "chartcard()",
+      "id": "admin_analyticspage_chartcard"
     },
     {
       "label": "BarChart()",
@@ -839,9 +1069,9 @@
       "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
       "source_location": "L152",
       "_origin": "ast",
-      "id": "admin_analyticspage_barchart",
       "community": 22,
-      "norm_label": "barchart()"
+      "norm_label": "barchart()",
+      "id": "admin_analyticspage_barchart"
     },
     {
       "label": "5c1d4e8a9f02_add_tech_role.py",
@@ -949,7 +1179,7 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 11,
+      "community": 2,
       "norm_label": "leads.py",
       "id": "services_leads"
     },
@@ -959,7 +1189,7 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L21",
       "_origin": "ast",
-      "community": 11,
+      "community": 2,
       "norm_label": "compute_suggested_priority()",
       "id": "services_leads_compute_suggested_priority"
     },
@@ -969,7 +1199,7 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L21",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "decimal",
       "id": "decimal"
     },
@@ -979,7 +1209,7 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L21",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "winprobability",
       "id": "winprobability"
     },
@@ -989,7 +1219,7 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L21",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "priority",
       "id": "priority"
     },
@@ -1009,7 +1239,7 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L34",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "session",
       "id": "backend_app_services_leads_py_session"
     },
@@ -1019,7 +1249,7 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L34",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "capabilitymatch",
       "id": "capabilitymatch"
     },
@@ -1029,7 +1259,7 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L43",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "compute_lead_status()",
       "id": "services_leads_compute_lead_status"
     },
@@ -1039,7 +1269,7 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L43",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "lead",
       "id": "lead"
     },
@@ -1049,7 +1279,7 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L43",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "leadstatus",
       "id": "leadstatus"
     },
@@ -1059,7 +1289,7 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L57",
       "_origin": "ast",
-      "community": 11,
+      "community": 2,
       "norm_label": "days_left()",
       "id": "services_leads_days_left"
     },
@@ -1069,7 +1299,7 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L57",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "date",
       "id": "date"
     },
@@ -1079,7 +1309,7 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L61",
       "_origin": "ast",
-      "community": 5,
+      "community": 2,
       "norm_label": "archive()",
       "id": "services_leads_archive"
     },
@@ -1089,7 +1319,7 @@
       "source_file": "backend/app/services/leads.py",
       "source_location": "L61",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "entitytype",
       "id": "entitytype"
     },
@@ -1384,46 +1614,6 @@
       "id": "app_init"
     },
     {
-      "label": "config.py",
-      "file_type": "code",
-      "source_file": "backend/app/config.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "config.py",
-      "id": "app_config"
-    },
-    {
-      "label": "Settings",
-      "file_type": "code",
-      "source_file": "backend/app/config.py",
-      "source_location": "L4",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "settings",
-      "id": "app_config_settings"
-    },
-    {
-      "label": "BaseSettings",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "basesettings",
-      "id": "basesettings"
-    },
-    {
-      "label": "Config",
-      "file_type": "code",
-      "source_file": "backend/app/config.py",
-      "source_location": "L18",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "config",
-      "id": "app_config_config"
-    },
-    {
       "label": "database.py",
       "file_type": "code",
       "source_file": "backend/app/database.py",
@@ -1609,7 +1799,7 @@
       "source_file": "backend/app/routers/attachments.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 2,
+      "community": 39,
       "norm_label": "attachments.py",
       "id": "routers_attachments"
     },
@@ -1619,7 +1809,7 @@
       "source_file": "backend/app/routers/attachments.py",
       "source_location": "L22",
       "_origin": "ast",
-      "community": 2,
+      "community": 39,
       "norm_label": "_safe_name()",
       "id": "routers_attachments_safe_name"
     },
@@ -1629,7 +1819,7 @@
       "source_file": "backend/app/routers/attachments.py",
       "source_location": "L26",
       "_origin": "ast",
-      "community": 2,
+      "community": 39,
       "norm_label": "_save()",
       "id": "routers_attachments_save"
     },
@@ -1639,7 +1829,7 @@
       "source_file": "backend/app/routers/attachments.py",
       "source_location": "L26",
       "_origin": "ast",
-      "community": 2,
+      "community": 39,
       "norm_label": "uploadfile",
       "id": "uploadfile"
     },
@@ -1649,7 +1839,7 @@
       "source_file": "backend/app/routers/attachments.py",
       "source_location": "L39",
       "_origin": "ast",
-      "community": 2,
+      "community": 39,
       "norm_label": "_out()",
       "id": "routers_attachments_out"
     },
@@ -1659,7 +1849,7 @@
       "source_file": "backend/app/routers/attachments.py",
       "source_location": "L39",
       "_origin": "ast",
-      "community": 2,
+      "community": 39,
       "norm_label": "attachment",
       "id": "attachment"
     },
@@ -1669,7 +1859,7 @@
       "source_file": "backend/app/routers/attachments.py",
       "source_location": "L39",
       "_origin": "ast",
-      "community": 2,
+      "community": 39,
       "norm_label": "attachmentout",
       "id": "attachmentout"
     },
@@ -1679,7 +1869,7 @@
       "source_file": "backend/app/routers/attachments.py",
       "source_location": "L56",
       "_origin": "ast",
-      "community": 2,
+      "community": 39,
       "norm_label": "list_lead_attachments()",
       "id": "routers_attachments_list_lead_attachments"
     },
@@ -1689,7 +1879,7 @@
       "source_file": "backend/app/routers/attachments.py",
       "source_location": "L56",
       "_origin": "ast",
-      "community": 2,
+      "community": 39,
       "norm_label": "session",
       "id": "backend_app_routers_attachments_py_session"
     },
@@ -1699,7 +1889,7 @@
       "source_file": "backend/app/routers/attachments.py",
       "source_location": "L56",
       "_origin": "ast",
-      "community": 2,
+      "community": 39,
       "norm_label": "user",
       "id": "backend_app_routers_attachments_py_user"
     },
@@ -1709,7 +1899,7 @@
       "source_file": "backend/app/routers/attachments.py",
       "source_location": "L73",
       "_origin": "ast",
-      "community": 2,
+      "community": 39,
       "norm_label": "upload_lead_attachment()",
       "id": "routers_attachments_upload_lead_attachment"
     },
@@ -1719,7 +1909,7 @@
       "source_file": "backend/app/routers/attachments.py",
       "source_location": "L105",
       "_origin": "ast",
-      "community": 2,
+      "community": 39,
       "norm_label": "list_ticket_attachments()",
       "id": "routers_attachments_list_ticket_attachments"
     },
@@ -1729,7 +1919,7 @@
       "source_file": "backend/app/routers/attachments.py",
       "source_location": "L122",
       "_origin": "ast",
-      "community": 2,
+      "community": 39,
       "norm_label": "upload_ticket_attachment()",
       "id": "routers_attachments_upload_ticket_attachment"
     },
@@ -1739,7 +1929,7 @@
       "source_file": "backend/app/routers/attachments.py",
       "source_location": "L160",
       "_origin": "ast",
-      "community": 2,
+      "community": 39,
       "norm_label": "download_attachment()",
       "id": "routers_attachments_download_attachment"
     },
@@ -1749,7 +1939,7 @@
       "source_file": "backend/app/routers/attachments.py",
       "source_location": "L177",
       "_origin": "ast",
-      "community": 2,
+      "community": 39,
       "norm_label": "delete_attachment()",
       "id": "routers_attachments_delete_attachment"
     },
@@ -1759,7 +1949,7 @@
       "source_file": "backend/app/routers/attachments.py",
       "source_location": "L27",
       "_origin": "ast",
-      "community": 2,
+      "community": 39,
       "norm_label": "persist upload to disk. returns (relative_path, original_filename).",
       "id": "routers_attachments_rationale_27"
     },
@@ -1859,7 +2049,7 @@
       "source_file": "backend/app/routers/capabilities.py",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "capabilityout",
       "id": "capabilityout"
     },
@@ -1919,7 +2109,7 @@
       "source_file": "backend/app/routers/capabilities.py",
       "source_location": "L43",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "capabilitycreate",
       "id": "capabilitycreate"
     },
@@ -3204,46 +3394,6 @@
       "id": "frontend_package_devdependencies_vite"
     },
     {
-      "label": "api.js",
-      "file_type": "code",
-      "source_file": "frontend/src/api.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 10,
-      "norm_label": "api.js",
-      "id": "src_api"
-    },
-    {
-      "label": "apiFetch()",
-      "file_type": "code",
-      "source_file": "frontend/src/api.js",
-      "source_location": "L5",
-      "_origin": "ast",
-      "community": 10,
-      "norm_label": "apifetch()",
-      "id": "src_api_apifetch"
-    },
-    {
-      "label": "apiUpload()",
-      "file_type": "code",
-      "source_file": "frontend/src/api.js",
-      "source_location": "L19",
-      "_origin": "ast",
-      "community": 10,
-      "norm_label": "apiupload()",
-      "id": "src_api_apiupload"
-    },
-    {
-      "label": "downloadFile()",
-      "file_type": "code",
-      "source_file": "frontend/src/api.js",
-      "source_location": "L38",
-      "_origin": "ast",
-      "community": 10,
-      "norm_label": "downloadfile()",
-      "id": "src_api_downloadfile"
-    },
-    {
       "label": "AttachmentsList.jsx",
       "file_type": "code",
       "source_file": "frontend/src/components/AttachmentsList.jsx",
@@ -3349,7 +3499,7 @@
       "source_file": "frontend/src/components/ProtectedRoute.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "norm_label": "protectedroute.jsx",
       "id": "components_protectedroute"
     },
@@ -3359,7 +3509,7 @@
       "source_file": "frontend/src/components/ProtectedRoute.jsx",
       "source_location": "L4",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "norm_label": "protectedroute()",
       "id": "components_protectedroute_protectedroute"
     },
@@ -3392,86 +3542,6 @@
       "community": 15,
       "norm_label": "statusbadge()",
       "id": "components_statusbadge_statusbadge"
-    },
-    {
-      "label": "AuthContext.jsx",
-      "file_type": "code",
-      "source_file": "frontend/src/context/AuthContext.jsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "authcontext.jsx",
-      "id": "context_authcontext"
-    },
-    {
-      "label": "AuthContext",
-      "file_type": "code",
-      "source_file": "frontend/src/context/AuthContext.jsx",
-      "source_location": "L4",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "authcontext",
-      "id": "context_authcontext_authcontext"
-    },
-    {
-      "label": "loadSession()",
-      "file_type": "code",
-      "source_file": "frontend/src/context/AuthContext.jsx",
-      "source_location": "L8",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "loadsession()",
-      "id": "context_authcontext_loadsession"
-    },
-    {
-      "label": "saveSession()",
-      "file_type": "code",
-      "source_file": "frontend/src/context/AuthContext.jsx",
-      "source_location": "L15",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "savesession()",
-      "id": "context_authcontext_savesession"
-    },
-    {
-      "label": "clearSession()",
-      "file_type": "code",
-      "source_file": "frontend/src/context/AuthContext.jsx",
-      "source_location": "L19",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "clearsession()",
-      "id": "context_authcontext_clearsession"
-    },
-    {
-      "label": "AuthProvider()",
-      "file_type": "code",
-      "source_file": "frontend/src/context/AuthContext.jsx",
-      "source_location": "L26",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "authprovider()",
-      "id": "context_authcontext_authprovider"
-    },
-    {
-      "label": "useAuth()",
-      "file_type": "code",
-      "source_file": "frontend/src/context/AuthContext.jsx",
-      "source_location": "L55",
-      "_origin": "ast",
-      "community": 8,
-      "norm_label": "useauth()",
-      "id": "context_authcontext_useauth"
-    },
-    {
-      "label": "getToken()",
-      "file_type": "code",
-      "source_file": "frontend/src/context/AuthContext.jsx",
-      "source_location": "L59",
-      "_origin": "ast",
-      "community": 10,
-      "norm_label": "gettoken()",
-      "id": "context_authcontext_gettoken"
     },
     {
       "label": "main.jsx",
@@ -3704,52 +3774,12 @@
       "id": "pages_leadspage_filterinput"
     },
     {
-      "label": "LoginPage.jsx",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/LoginPage.jsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 8,
-      "norm_label": "loginpage.jsx",
-      "id": "pages_loginpage"
-    },
-    {
-      "label": "LoginPage()",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/LoginPage.jsx",
-      "source_location": "L6",
-      "_origin": "ast",
-      "community": 8,
-      "norm_label": "loginpage()",
-      "id": "pages_loginpage_loginpage"
-    },
-    {
-      "label": "labelStyle",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/LoginPage.jsx",
-      "source_location": "L104",
-      "_origin": "ast",
-      "community": 8,
-      "norm_label": "labelstyle",
-      "id": "pages_loginpage_labelstyle"
-    },
-    {
-      "label": "inputStyle",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/LoginPage.jsx",
-      "source_location": "L109",
-      "_origin": "ast",
-      "community": 8,
-      "norm_label": "inputstyle",
-      "id": "pages_loginpage_inputstyle"
-    },
-    {
       "label": "ArchivePage.jsx",
       "file_type": "code",
       "source_file": "frontend/src/pages/admin/ArchivePage.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 10,
+      "community": 43,
       "norm_label": "archivepage.jsx",
       "id": "admin_archivepage"
     },
@@ -3759,7 +3789,7 @@
       "source_file": "frontend/src/pages/admin/ArchivePage.jsx",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 10,
+      "community": 43,
       "norm_label": "entity_colors",
       "id": "admin_archivepage_entity_colors"
     },
@@ -3769,7 +3799,7 @@
       "source_file": "frontend/src/pages/admin/ArchivePage.jsx",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 10,
+      "community": 43,
       "norm_label": "archivepage()",
       "id": "admin_archivepage_archivepage"
     },
@@ -3779,7 +3809,7 @@
       "source_file": "frontend/src/pages/admin/ArchivePage.jsx",
       "source_location": "L171",
       "_origin": "ast",
-      "community": 10,
+      "community": 43,
       "norm_label": "filterfield()",
       "id": "admin_archivepage_filterfield"
     },
@@ -3789,7 +3819,7 @@
       "source_file": "frontend/src/pages/admin/ArchivePage.jsx",
       "source_location": "L180",
       "_origin": "ast",
-      "community": 10,
+      "community": 43,
       "norm_label": "sel",
       "id": "admin_archivepage_sel"
     },
@@ -3799,7 +3829,7 @@
       "source_file": "frontend/src/pages/admin/ArchivePage.jsx",
       "source_location": "L181",
       "_origin": "ast",
-      "community": 10,
+      "community": 43,
       "norm_label": "pagebtn",
       "id": "admin_archivepage_pagebtn"
     },
@@ -3879,7 +3909,7 @@
       "source_file": "frontend/src/pages/product/CapabilitiesPage.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 8,
+      "community": 42,
       "norm_label": "capabilitiespage.jsx",
       "id": "product_capabilitiespage"
     },
@@ -3889,7 +3919,7 @@
       "source_file": "frontend/src/pages/product/CapabilitiesPage.jsx",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 8,
+      "community": 42,
       "norm_label": "capabilitiespage()",
       "id": "product_capabilitiespage_capabilitiespage"
     },
@@ -3899,7 +3929,7 @@
       "source_file": "frontend/src/pages/product/CapabilitiesPage.jsx",
       "source_location": "L163",
       "_origin": "ast",
-      "community": 8,
+      "community": 42,
       "norm_label": "section()",
       "id": "product_capabilitiespage_section"
     },
@@ -3909,7 +3939,7 @@
       "source_file": "frontend/src/pages/product/CapabilitiesPage.jsx",
       "source_location": "L181",
       "_origin": "ast",
-      "community": 8,
+      "community": 42,
       "norm_label": "caprow()",
       "id": "product_capabilitiespage_caprow"
     },
@@ -3919,7 +3949,7 @@
       "source_file": "frontend/src/pages/product/CapabilitiesPage.jsx",
       "source_location": "L249",
       "_origin": "ast",
-      "community": 8,
+      "community": 42,
       "norm_label": "primarybtn",
       "id": "product_capabilitiespage_primarybtn"
     },
@@ -3929,7 +3959,7 @@
       "source_file": "frontend/src/pages/product/CapabilitiesPage.jsx",
       "source_location": "L254",
       "_origin": "ast",
-      "community": 8,
+      "community": 42,
       "norm_label": "ghostbtn",
       "id": "product_capabilitiespage_ghostbtn"
     },
@@ -3939,7 +3969,7 @@
       "source_file": "frontend/src/pages/product/CapabilitiesPage.jsx",
       "source_location": "L258",
       "_origin": "ast",
-      "community": 8,
+      "community": 42,
       "norm_label": "labelstyle",
       "id": "product_capabilitiespage_labelstyle"
     },
@@ -3949,7 +3979,7 @@
       "source_file": "frontend/src/pages/product/CapabilitiesPage.jsx",
       "source_location": "L261",
       "_origin": "ast",
-      "community": 8,
+      "community": 42,
       "norm_label": "inputstyle",
       "id": "product_capabilitiespage_inputstyle"
     },
@@ -5576,6 +5606,1197 @@
   ],
   "links": [
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/alembic/env.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "alembic_env",
+      "target": "app_config"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/config.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_config",
+      "target": "app_config_config"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/config.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_config",
+      "target": "app_config_settings"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/database.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_database",
+      "target": "app_config"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/deps.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_deps",
+      "target": "app_config"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/main.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_main",
+      "target": "app_config"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/attachments.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_attachments",
+      "target": "app_config"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/auth.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_auth",
+      "target": "app_config"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/ws_router.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routers_ws_router",
+      "target": "app_config"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/sla.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_sla",
+      "target": "app_config"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/config.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_config_settings",
+      "target": "basesettings"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin_analyticspage",
+      "target": "src_api"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/ArchivePage.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin_archivepage",
+      "target": "src_api"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/UsersPage.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin_userspage",
+      "target": "src_api"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/AttachmentsList.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_attachmentslist",
+      "target": "src_api"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/CreateTicketModal.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_createticketmodal",
+      "target": "src_api"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/FeedComposer.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_feedcomposer",
+      "target": "src_api"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/Layout.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_layout",
+      "target": "src_api"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/TicketCard.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_ticketcard",
+      "target": "src_api"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/LeadDetailPage.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_leaddetailpage",
+      "target": "src_api"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/LeadsPage.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_leadspage",
+      "target": "src_api"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/LoginPage.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_loginpage",
+      "target": "src_api"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/QueuePage.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_queuepage",
+      "target": "src_api"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/product/CapabilitiesPage.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "product_capabilitiespage",
+      "target": "src_api"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/sales/CreateLeadPage.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sales_createleadpage",
+      "target": "src_api"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_api",
+      "target": "context_authcontext"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_api",
+      "target": "context_authcontext_gettoken"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_api",
+      "target": "src_api_apifetch"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_api",
+      "target": "src_api_apiupload"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api.js",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_api",
+      "target": "src_api_downloadfile"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_api",
+      "target": "src_api_fetchwithretry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_api",
+      "target": "src_api_notifysessionexpired",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "src_api",
+      "target": "src_api_sleep",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api.js",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "src_api_apifetch",
+      "target": "src_api_notifysessionexpired",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api.js",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "src_api_apiupload",
+      "target": "src_api_notifysessionexpired",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api.js",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "src_api_downloadfile",
+      "target": "src_api_notifysessionexpired",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "src_api_fetchwithretry",
+      "target": "src_api_sleep",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api.js",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "src_api_apifetch",
+      "target": "src_api_fetchwithretry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin_analyticspage",
+      "target": "src_api_apifetch"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/ArchivePage.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin_archivepage",
+      "target": "src_api_apifetch"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/UsersPage.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin_userspage",
+      "target": "src_api_apifetch"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/AttachmentsList.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_attachmentslist",
+      "target": "src_api_apifetch"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/CreateTicketModal.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_createticketmodal",
+      "target": "src_api_apifetch"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/FeedComposer.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_feedcomposer",
+      "target": "src_api_apifetch"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/Layout.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_layout",
+      "target": "src_api_apifetch"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/TicketCard.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_ticketcard",
+      "target": "src_api_apifetch"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/LeadDetailPage.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_leaddetailpage",
+      "target": "src_api_apifetch"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/LeadsPage.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_leadspage",
+      "target": "src_api_apifetch"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/LoginPage.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_loginpage",
+      "target": "src_api_apifetch"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/QueuePage.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_queuepage",
+      "target": "src_api_apifetch"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/product/CapabilitiesPage.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "product_capabilitiespage",
+      "target": "src_api_apifetch"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/sales/CreateLeadPage.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sales_createleadpage",
+      "target": "src_api_apifetch"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/api.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_api_apifetch",
+      "target": "context_authcontext_gettoken"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/AttachmentsList.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_attachmentslist",
+      "target": "src_api_apiupload"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/api.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "src_api_apiupload",
+      "target": "context_authcontext_gettoken"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/AttachmentsList.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_attachmentslist",
+      "target": "src_api_downloadfile"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/api.js",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "src_api_downloadfile",
+      "target": "context_authcontext_gettoken"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/CreateTicketModal.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_createticketmodal",
+      "target": "context_authcontext"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/FeedComposer.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_feedcomposer",
+      "target": "context_authcontext"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/Layout.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_layout",
+      "target": "context_authcontext"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/ProtectedRoute.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_protectedroute",
+      "target": "context_authcontext"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/TicketCard.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_ticketcard",
+      "target": "context_authcontext"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/context/AuthContext.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "context_authcontext",
+      "target": "context_authcontext_authcontext"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/context/AuthContext.jsx",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "context_authcontext",
+      "target": "context_authcontext_authprovider"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/context/AuthContext.jsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "context_authcontext",
+      "target": "context_authcontext_clearsession"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/context/AuthContext.jsx",
+      "source_location": "L59",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "context_authcontext",
+      "target": "context_authcontext_gettoken"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/context/AuthContext.jsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "context_authcontext",
+      "target": "context_authcontext_loadsession"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/context/AuthContext.jsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "context_authcontext",
+      "target": "context_authcontext_savesession"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/context/AuthContext.jsx",
+      "source_location": "L55",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "context_authcontext",
+      "target": "context_authcontext_useauth"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/context/AuthContext.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "context_authcontext",
+      "target": "src_ws"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/context/AuthContext.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "context_authcontext",
+      "target": "src_ws_connectws"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/context/AuthContext.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "context_authcontext",
+      "target": "src_ws_disconnectws"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/DashboardPage.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_dashboardpage",
+      "target": "context_authcontext"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/LeadDetailPage.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_leaddetailpage",
+      "target": "context_authcontext"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/LeadsPage.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_leadspage",
+      "target": "context_authcontext"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/LoginPage.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_loginpage",
+      "target": "context_authcontext"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/QueuePage.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_queuepage",
+      "target": "context_authcontext"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/product/CapabilitiesPage.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "product_capabilitiespage",
+      "target": "context_authcontext"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "context_authcontext"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/context/AuthContext.jsx",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "context_authcontext_authprovider",
+      "target": "context_authcontext_loadsession"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/context/AuthContext.jsx",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "context_authcontext_authprovider",
+      "target": "src_ws_connectws"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "context_authcontext_authprovider"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/CreateTicketModal.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_createticketmodal",
+      "target": "context_authcontext_useauth"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/CreateTicketModal.jsx",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "components_createticketmodal_createticketmodal",
+      "target": "context_authcontext_useauth"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/FeedComposer.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_feedcomposer",
+      "target": "context_authcontext_useauth"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/FeedComposer.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "components_feedcomposer_feedcomposer",
+      "target": "context_authcontext_useauth"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/Layout.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_layout",
+      "target": "context_authcontext_useauth"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/Layout.jsx",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "components_layout_layout",
+      "target": "context_authcontext_useauth"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/ProtectedRoute.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_protectedroute",
+      "target": "context_authcontext_useauth"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/ProtectedRoute.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "components_protectedroute_protectedroute",
+      "target": "context_authcontext_useauth"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/TicketCard.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_ticketcard",
+      "target": "context_authcontext_useauth"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/TicketCard.jsx",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "components_ticketcard_ticketcard",
+      "target": "context_authcontext_useauth"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/DashboardPage.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_dashboardpage",
+      "target": "context_authcontext_useauth"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/pages/DashboardPage.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "pages_dashboardpage_dashboardpage",
+      "target": "context_authcontext_useauth"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/LeadDetailPage.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_leaddetailpage",
+      "target": "context_authcontext_useauth"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/pages/LeadDetailPage.jsx",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "pages_leaddetailpage_leaddetailpage",
+      "target": "context_authcontext_useauth"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/LeadsPage.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_leadspage",
+      "target": "context_authcontext_useauth"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/pages/LeadsPage.jsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "pages_leadspage_leadspage",
+      "target": "context_authcontext_useauth"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/LoginPage.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_loginpage",
+      "target": "context_authcontext_useauth"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/pages/LoginPage.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "pages_loginpage_loginpage",
+      "target": "context_authcontext_useauth"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/QueuePage.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_queuepage",
+      "target": "context_authcontext_useauth"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/pages/QueuePage.jsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "pages_queuepage_queuepage",
+      "target": "context_authcontext_useauth"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/product/CapabilitiesPage.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "product_capabilitiespage",
+      "target": "context_authcontext_useauth"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/pages/product/CapabilitiesPage.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "product_capabilitiespage_capabilitiespage",
+      "target": "context_authcontext_useauth"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/ws.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_ws",
+      "target": "context_authcontext_gettoken"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/ws.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_ws_connect",
+      "target": "context_authcontext_gettoken"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/LoginPage.jsx",
+      "source_location": "L109",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_loginpage",
+      "target": "pages_loginpage_inputstyle"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/LoginPage.jsx",
+      "source_location": "L104",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_loginpage",
+      "target": "pages_loginpage_labelstyle"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/LoginPage.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_loginpage",
+      "target": "pages_loginpage_loginpage"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "pages_loginpage"
+    },
+    {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -6531,9 +7752,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "backend_app_services_tickets_py_ticket",
-      "target": "app_models_userrole",
-      "confidence_score": 0.5
+      "target": "app_models_userrole"
     },
     {
       "relation": "uses",
@@ -6641,9 +7862,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "teamtarget",
-      "target": "app_models_userrole",
-      "confidence_score": 0.5
+      "target": "app_models_userrole"
     },
     {
       "relation": "uses",
@@ -8701,9 +9922,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "backend_app_services_tickets_py_ticket",
-      "target": "app_models_tickettype",
-      "confidence_score": 0.5
+      "target": "app_models_tickettype"
     },
     {
       "relation": "uses",
@@ -8731,9 +9952,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "teamtarget",
-      "target": "app_models_tickettype",
-      "confidence_score": 0.5
+      "target": "app_models_tickettype"
     },
     {
       "relation": "uses",
@@ -9121,9 +10342,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "backend_app_services_tickets_py_ticket",
-      "target": "app_models_teamtarget",
-      "confidence_score": 0.5
+      "target": "app_models_teamtarget"
     },
     {
       "relation": "uses",
@@ -9141,9 +10362,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "teamtarget",
-      "target": "app_models_teamtarget",
-      "confidence_score": 0.5
+      "target": "app_models_teamtarget"
     },
     {
       "relation": "uses",
@@ -9552,9 +10773,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "backend_app_services_tickets_py_ticket",
-      "target": "app_models_entitytype",
-      "confidence_score": 0.5
+      "target": "app_models_entitytype"
     },
     {
       "relation": "uses",
@@ -9703,9 +10924,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "teamtarget",
-      "target": "app_models_entitytype",
-      "confidence_score": 0.5
+      "target": "app_models_entitytype"
     },
     {
       "relation": "uses",
@@ -9743,9 +10964,9 @@
       "source_file": "backend/app/routers/tickets.py",
       "source_location": "L8",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "ticketout",
-      "target": "app_models_entitytype",
-      "confidence_score": 0.5
+      "target": "app_models_entitytype"
     },
     {
       "relation": "uses",
@@ -9773,9 +10994,9 @@
       "source_file": "backend/app/routers/tickets.py",
       "source_location": "L8",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "user",
-      "target": "app_models_entitytype",
-      "confidence_score": 0.5
+      "target": "app_models_entitytype"
     },
     {
       "relation": "uses",
@@ -9875,9 +11096,9 @@
       "source_file": "backend/app/models.py",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_models_rationale_89",
-      "target": "app_models_enum",
-      "confidence_score": 1.0
+      "target": "app_models_enum"
     },
     {
       "relation": "inherits",
@@ -10195,9 +11416,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "backend_app_services_tickets_py_ticket",
-      "target": "app_models_user",
-      "confidence_score": 0.5
+      "target": "app_models_user"
     },
     {
       "relation": "calls",
@@ -10326,9 +11547,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "teamtarget",
-      "target": "app_models_user",
-      "confidence_score": 0.5
+      "target": "app_models_user"
     },
     {
       "relation": "uses",
@@ -10746,9 +11967,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "backend_app_services_tickets_py_ticket",
-      "target": "app_models_lead",
-      "confidence_score": 0.5
+      "target": "app_models_lead"
     },
     {
       "relation": "calls",
@@ -10937,9 +12158,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "teamtarget",
-      "target": "app_models_lead",
-      "confidence_score": 0.5
+      "target": "app_models_lead"
     },
     {
       "relation": "uses",
@@ -11257,9 +12478,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "backend_app_services_tickets_py_ticket",
-      "target": "app_models_ticket",
-      "confidence_score": 0.5
+      "target": "app_models_ticket"
     },
     {
       "relation": "calls",
@@ -11418,9 +12639,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "teamtarget",
-      "target": "app_models_ticket",
-      "confidence_score": 0.5
+      "target": "app_models_ticket"
     },
     {
       "relation": "uses",
@@ -11751,9 +12972,9 @@
       "source_file": "backend/app/models.py",
       "source_location": "L179",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_models_rationale_179",
-      "target": "app_models_statushistory",
-      "confidence_score": 1.0
+      "target": "app_models_statushistory"
     },
     {
       "relation": "uses",
@@ -11811,9 +13032,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "backend_app_services_tickets_py_ticket",
-      "target": "app_models_statushistory",
-      "confidence_score": 0.5
+      "target": "app_models_statushistory"
     },
     {
       "relation": "calls",
@@ -11923,9 +13144,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "teamtarget",
-      "target": "app_models_statushistory",
-      "confidence_score": 0.5
+      "target": "app_models_statushistory"
     },
     {
       "relation": "uses",
@@ -12204,9 +13425,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "backend_app_services_tickets_py_ticket",
-      "target": "app_models_notification",
-      "confidence_score": 0.5
+      "target": "app_models_notification"
     },
     {
       "relation": "calls",
@@ -12246,9 +13467,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L7",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "teamtarget",
-      "target": "app_models_notification",
-      "confidence_score": 0.5
+      "target": "app_models_notification"
     },
     {
       "relation": "uses",
@@ -12447,9 +13668,9 @@
       "source_file": "backend/app/routers/tickets.py",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "routers_tickets_ticket_out",
-      "target": "ticketout",
-      "confidence_score": 1.0
+      "target": "ticketout"
     },
     {
       "relation": "calls",
@@ -12701,9 +13922,9 @@
       "source_file": "backend/app/routers/tickets.py",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "routers_tickets_create_ticket",
-      "target": "user",
-      "confidence_score": 1.0
+      "target": "user"
     },
     {
       "relation": "uses",
@@ -12795,9 +14016,9 @@
       "source_file": "backend/app/routers/tickets.py",
       "source_location": "L148",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "routers_tickets_hold_until",
-      "target": "user",
-      "confidence_score": 1.0
+      "target": "user"
     },
     {
       "relation": "references",
@@ -12806,9 +14027,9 @@
       "source_file": "backend/app/routers/tickets.py",
       "source_location": "L93",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "routers_tickets_list_lead_tickets",
-      "target": "user",
-      "confidence_score": 1.0
+      "target": "user"
     },
     {
       "relation": "references",
@@ -12817,9 +14038,9 @@
       "source_file": "backend/app/routers/tickets.py",
       "source_location": "L127",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "routers_tickets_toggle_hold",
-      "target": "user",
-      "confidence_score": 1.0
+      "target": "user"
     },
     {
       "relation": "references",
@@ -12828,9 +14049,9 @@
       "source_file": "backend/app/routers/tickets.py",
       "source_location": "L105",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "routers_tickets_update_ticket_status",
-      "target": "user",
-      "confidence_score": 1.0
+      "target": "user"
     },
     {
       "relation": "calls",
@@ -13106,9 +14327,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L114",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_tickets_default_to_team",
-      "target": "teamtarget",
-      "confidence_score": 1.0
+      "target": "teamtarget"
     },
     {
       "relation": "references",
@@ -13128,9 +14349,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L137",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_tickets_notify",
-      "target": "teamtarget",
-      "confidence_score": 1.0
+      "target": "teamtarget"
     },
     {
       "relation": "calls",
@@ -13172,9 +14393,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L126",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_tickets_enrich_ticket",
-      "target": "backend_app_services_tickets_py_ticket",
-      "confidence_score": 1.0
+      "target": "backend_app_services_tickets_py_ticket"
     },
     {
       "relation": "calls",
@@ -13216,9 +14437,9 @@
       "source_file": "backend/app/services/tickets.py",
       "source_location": "L154",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_tickets_advance_status",
-      "target": "backend_app_services_tickets_py_ticket",
-      "confidence_score": 1.0
+      "target": "backend_app_services_tickets_py_ticket"
     },
     {
       "relation": "calls",
@@ -13380,67 +14601,12 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/CreateTicketModal.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_createticketmodal",
-      "target": "context_authcontext"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/CreateTicketModal.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_createticketmodal",
-      "target": "context_authcontext_useauth"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/CreateTicketModal.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_createticketmodal",
-      "target": "src_api"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/CreateTicketModal.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_createticketmodal",
-      "target": "src_api_apifetch"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "frontend/src/pages/LeadDetailPage.jsx",
       "source_location": "L9",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "pages_leaddetailpage",
       "target": "components_createticketmodal"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "frontend/src/components/CreateTicketModal.jsx",
-      "source_location": "L23",
-      "weight": 1.0,
-      "source": "components_createticketmodal_createticketmodal",
-      "target": "context_authcontext_useauth"
     },
     {
       "relation": "imports_from",
@@ -13577,50 +14743,6 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_ticketcard",
-      "target": "context_authcontext"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_ticketcard",
-      "target": "context_authcontext_useauth"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_ticketcard",
-      "target": "src_api"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_ticketcard",
-      "target": "src_api_apifetch"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "frontend/src/pages/LeadDetailPage.jsx",
       "source_location": "L8",
       "weight": 1.0,
@@ -13682,17 +14804,6 @@
       "confidence_score": 1.0,
       "source": "components_ticketcard_ticketcard",
       "target": "components_ticketcard_smallbtn"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "frontend/src/components/TicketCard.jsx",
-      "source_location": "L54",
-      "weight": 1.0,
-      "source": "components_ticketcard_ticketcard",
-      "target": "context_authcontext_useauth"
     },
     {
       "relation": "contains",
@@ -13763,28 +14874,6 @@
       "confidence_score": 1.0,
       "source": "admin_analyticspage",
       "target": "admin_analyticspage_type_labels"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "admin_analyticspage",
-      "target": "src_api"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "admin_analyticspage",
-      "target": "src_api_apifetch"
     },
     {
       "relation": "imports_from",
@@ -14448,28 +15537,6 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/App.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_app",
-      "target": "context_authcontext"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/App.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_app",
-      "target": "context_authcontext_authprovider"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/App.jsx",
       "source_location": "L7",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -14486,17 +15553,6 @@
       "confidence_score": 1.0,
       "source": "src_app",
       "target": "pages_leadspage"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/App.jsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_app",
-      "target": "pages_loginpage"
     },
     {
       "relation": "imports_from",
@@ -14587,50 +15643,6 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/components/Layout.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_layout",
-      "target": "context_authcontext"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/Layout.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_layout",
-      "target": "context_authcontext_useauth"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/Layout.jsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_layout",
-      "target": "src_api"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/Layout.jsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_layout",
-      "target": "src_api_apifetch"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/Layout.jsx",
       "source_location": "L4",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -14649,17 +15661,6 @@
       "target": "src_ws_addwslistener"
     },
     {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "frontend/src/components/Layout.jsx",
-      "source_location": "L36",
-      "weight": 1.0,
-      "source": "components_layout_layout",
-      "target": "context_authcontext_useauth"
-    },
-    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -14669,28 +15670,6 @@
       "confidence_score": 1.0,
       "source": "pages_queuepage",
       "target": "components_prioritybadge"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/QueuePage.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pages_queuepage",
-      "target": "context_authcontext"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/QueuePage.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pages_queuepage",
-      "target": "context_authcontext_useauth"
     },
     {
       "relation": "contains",
@@ -14707,28 +15686,6 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/pages/QueuePage.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pages_queuepage",
-      "target": "src_api"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/QueuePage.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pages_queuepage",
-      "target": "src_api_apifetch"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/QueuePage.jsx",
       "source_location": "L5",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -14745,28 +15702,6 @@
       "confidence_score": 1.0,
       "source": "pages_queuepage",
       "target": "src_ws_addwslistener"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "frontend/src/pages/QueuePage.jsx",
-      "source_location": "L11",
-      "weight": 1.0,
-      "source": "pages_queuepage_queuepage",
-      "target": "context_authcontext_useauth"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/main.py",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "app_main",
-      "target": "app_config"
     },
     {
       "relation": "contains",
@@ -14907,17 +15842,6 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "backend/alembic/env.py",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "alembic_env",
-      "target": "app_config"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/alembic/env.py",
       "source_location": "L11",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -14963,102 +15887,6 @@
       "confidence_score": 1.0,
       "source": "versions_959d099f05e3_initial_schema",
       "target": "versions_959d099f05e3_initial_schema_upgrade"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/config.py",
-      "source_location": "L18",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "app_config",
-      "target": "app_config_config"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/config.py",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "app_config",
-      "target": "app_config_settings"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/database.py",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "app_database",
-      "target": "app_config"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/deps.py",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "app_deps",
-      "target": "app_config"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/attachments.py",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_attachments",
-      "target": "app_config"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/auth.py",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_auth",
-      "target": "app_config"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/ws_router.py",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routers_ws_router",
-      "target": "app_config"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/services/sla.py",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_sla",
-      "target": "app_config"
-    },
-    {
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/config.py",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "app_config_settings",
-      "target": "basesettings"
     },
     {
       "relation": "contains",
@@ -19302,311 +20130,6 @@
       "target": "frontend_package_devdependencies_vitejs_plugin_react"
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/admin/ArchivePage.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "admin_archivepage",
-      "target": "src_api"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/admin/UsersPage.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "admin_userspage",
-      "target": "src_api"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/AttachmentsList.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_attachmentslist",
-      "target": "src_api"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/FeedComposer.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_feedcomposer",
-      "target": "src_api"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/LeadDetailPage.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pages_leaddetailpage",
-      "target": "src_api"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/LeadsPage.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pages_leadspage",
-      "target": "src_api"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/LoginPage.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pages_loginpage",
-      "target": "src_api"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/product/CapabilitiesPage.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "product_capabilitiespage",
-      "target": "src_api"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/sales/CreateLeadPage.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "sales_createleadpage",
-      "target": "src_api"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/api.js",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_api",
-      "target": "context_authcontext"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/api.js",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_api",
-      "target": "context_authcontext_gettoken"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/api.js",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_api",
-      "target": "src_api_apifetch"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/api.js",
-      "source_location": "L19",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_api",
-      "target": "src_api_apiupload"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/api.js",
-      "source_location": "L38",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_api",
-      "target": "src_api_downloadfile"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/admin/ArchivePage.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "admin_archivepage",
-      "target": "src_api_apifetch"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/admin/UsersPage.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "admin_userspage",
-      "target": "src_api_apifetch"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/AttachmentsList.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_attachmentslist",
-      "target": "src_api_apifetch"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/FeedComposer.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_feedcomposer",
-      "target": "src_api_apifetch"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/LeadDetailPage.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pages_leaddetailpage",
-      "target": "src_api_apifetch"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/LeadsPage.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pages_leadspage",
-      "target": "src_api_apifetch"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/LoginPage.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pages_loginpage",
-      "target": "src_api_apifetch"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/product/CapabilitiesPage.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "product_capabilitiespage",
-      "target": "src_api_apifetch"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/sales/CreateLeadPage.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "sales_createleadpage",
-      "target": "src_api_apifetch"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "frontend/src/api.js",
-      "source_location": "L6",
-      "weight": 1.0,
-      "source": "src_api_apifetch",
-      "target": "context_authcontext_gettoken"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/AttachmentsList.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_attachmentslist",
-      "target": "src_api_apiupload"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "frontend/src/api.js",
-      "source_location": "L20",
-      "weight": 1.0,
-      "source": "src_api_apiupload",
-      "target": "context_authcontext_gettoken"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/AttachmentsList.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_attachmentslist",
-      "target": "src_api_downloadfile"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "frontend/src/api.js",
-      "source_location": "L39",
-      "weight": 1.0,
-      "source": "src_api_downloadfile",
-      "target": "context_authcontext_gettoken"
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/components/AttachmentsList.jsx",
@@ -19671,45 +20194,12 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/FeedComposer.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_feedcomposer",
-      "target": "context_authcontext"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/FeedComposer.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_feedcomposer",
-      "target": "context_authcontext_useauth"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "frontend/src/pages/LeadDetailPage.jsx",
       "source_location": "L10",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "pages_leaddetailpage",
       "target": "components_feedcomposer"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "frontend/src/components/FeedComposer.jsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "source": "components_feedcomposer_feedcomposer",
-      "target": "context_authcontext_useauth"
     },
     {
       "relation": "contains",
@@ -19764,39 +20254,6 @@
       "target": "components_protectedroute_protectedroute"
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/ProtectedRoute.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_protectedroute",
-      "target": "context_authcontext"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/ProtectedRoute.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_protectedroute",
-      "target": "context_authcontext_useauth"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "frontend/src/components/ProtectedRoute.jsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "components_protectedroute_protectedroute",
-      "target": "context_authcontext_useauth"
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/components/StatusBadge.jsx",
@@ -19837,318 +20294,6 @@
       "confidence_score": 1.0,
       "source": "pages_leadspage",
       "target": "components_statusbadge"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/context/AuthContext.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "context_authcontext",
-      "target": "context_authcontext_authcontext"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/context/AuthContext.jsx",
-      "source_location": "L26",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "context_authcontext",
-      "target": "context_authcontext_authprovider"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/context/AuthContext.jsx",
-      "source_location": "L19",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "context_authcontext",
-      "target": "context_authcontext_clearsession"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/context/AuthContext.jsx",
-      "source_location": "L59",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "context_authcontext",
-      "target": "context_authcontext_gettoken"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/context/AuthContext.jsx",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "context_authcontext",
-      "target": "context_authcontext_loadsession"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/context/AuthContext.jsx",
-      "source_location": "L15",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "context_authcontext",
-      "target": "context_authcontext_savesession"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/context/AuthContext.jsx",
-      "source_location": "L55",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "context_authcontext",
-      "target": "context_authcontext_useauth"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/context/AuthContext.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "context_authcontext",
-      "target": "src_ws"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/context/AuthContext.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "context_authcontext",
-      "target": "src_ws_connectws"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/context/AuthContext.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "context_authcontext",
-      "target": "src_ws_disconnectws"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/DashboardPage.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pages_dashboardpage",
-      "target": "context_authcontext"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/LeadDetailPage.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pages_leaddetailpage",
-      "target": "context_authcontext"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/LeadsPage.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pages_leadspage",
-      "target": "context_authcontext"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/LoginPage.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pages_loginpage",
-      "target": "context_authcontext"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/product/CapabilitiesPage.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "product_capabilitiespage",
-      "target": "context_authcontext"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/context/AuthContext.jsx",
-      "source_location": "L27",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "context_authcontext_authprovider",
-      "target": "context_authcontext_loadsession"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "frontend/src/context/AuthContext.jsx",
-      "source_location": "L31",
-      "weight": 1.0,
-      "source": "context_authcontext_authprovider",
-      "target": "src_ws_connectws"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/DashboardPage.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pages_dashboardpage",
-      "target": "context_authcontext_useauth"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "frontend/src/pages/DashboardPage.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "pages_dashboardpage_dashboardpage",
-      "target": "context_authcontext_useauth"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/LeadDetailPage.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pages_leaddetailpage",
-      "target": "context_authcontext_useauth"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "frontend/src/pages/LeadDetailPage.jsx",
-      "source_location": "L43",
-      "weight": 1.0,
-      "source": "pages_leaddetailpage_leaddetailpage",
-      "target": "context_authcontext_useauth"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/LeadsPage.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pages_leadspage",
-      "target": "context_authcontext_useauth"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "frontend/src/pages/LeadsPage.jsx",
-      "source_location": "L13",
-      "weight": 1.0,
-      "source": "pages_leadspage_leadspage",
-      "target": "context_authcontext_useauth"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/LoginPage.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pages_loginpage",
-      "target": "context_authcontext_useauth"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "frontend/src/pages/LoginPage.jsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "source": "pages_loginpage_loginpage",
-      "target": "context_authcontext_useauth"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/product/CapabilitiesPage.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "product_capabilitiespage",
-      "target": "context_authcontext_useauth"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "frontend/src/pages/product/CapabilitiesPage.jsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "source": "product_capabilitiespage_capabilitiespage",
-      "target": "context_authcontext_useauth"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/ws.js",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_ws",
-      "target": "context_authcontext_gettoken"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/ws.js",
-      "source_location": "L16",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_ws_connect",
-      "target": "context_authcontext_gettoken"
     },
     {
       "relation": "contains",
@@ -20383,36 +20528,6 @@
       "confidence_score": 1.0,
       "source": "pages_leadspage",
       "target": "pages_leadspage_statuses"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/LoginPage.jsx",
-      "source_location": "L109",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pages_loginpage",
-      "target": "pages_loginpage_inputstyle"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/LoginPage.jsx",
-      "source_location": "L104",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pages_loginpage",
-      "target": "pages_loginpage_labelstyle"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/LoginPage.jsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "pages_loginpage",
-      "target": "pages_loginpage_loginpage"
     },
     {
       "relation": "contains",
@@ -22077,5 +22192,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "34d9abaff98f568f100ff52986aac264208c7c6c"
+  "built_at_commit": "b589b732b2eac9364e629e00904907c871309d8d"
 }
