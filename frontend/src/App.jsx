@@ -44,7 +44,7 @@ export default function App() {
           } />
 
           <Route path="/capabilities" element={
-            <ProtectedRoute roles={["product", "tech", "admin"]}>
+            <ProtectedRoute roles={["sales", "product", "tech", "admin"]}>
               <Layout><CapabilitiesPage /></Layout>
             </ProtectedRoute>
           } />

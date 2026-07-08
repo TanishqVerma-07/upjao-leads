@@ -9,6 +9,7 @@ const NAV = {
   sales: [
     { to: "/", label: "Leads", icon: LayoutDashboard },
     { to: "/queue", label: "My Queue", icon: Inbox },
+    { to: "/capabilities", label: "Capabilities", icon: FlaskConical },
   ],
   product: [
     { to: "/", label: "Leads", icon: LayoutDashboard },
