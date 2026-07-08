@@ -18,6 +18,11 @@ class LoginRequest(BaseModel):
     password: str
 
 
+class PasswordChange(BaseModel):
+    current_password: str
+    new_password: str
+
+
 class UserCreate(BaseModel):
     name: str
     email: EmailStr

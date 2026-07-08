@@ -7,8 +7,9 @@ from sqlalchemy.orm import Session
 
 from app.config import settings
 from app.database import get_db
+from app.deps import get_current_user
 from app.models import User
-from app.schemas import LoginRequest, TokenResponse
+from app.schemas import LoginRequest, PasswordChange, TokenResponse
 
 router = APIRouter(prefix="/auth", tags=["auth"])
 
@@ -37,3 +38,20 @@ def login(body: LoginRequest, db: Session = Depends(get_db)):
         name=user.name,
         role=user.role,
     )
+
+
+@router.post("/change-password")
+def change_password(
+    body: PasswordChange,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    if not _verify_password(body.current_password, current_user.password_hash):
+        raise HTTPException(status_code=400, detail="Current password is incorrect")
+    if len(body.new_password) < 6:
+        raise HTTPException(status_code=400, detail="New password must be at least 6 characters")
+    if body.new_password == body.current_password:
+        raise HTTPException(status_code=400, detail="New password must be different from the current one")
+    current_user.password_hash = bcrypt.hashpw(body.new_password.encode(), bcrypt.gensalt()).decode()
+    db.commit()
+    return {"ok": True, "message": "Password updated"}

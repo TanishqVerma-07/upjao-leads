@@ -3,7 +3,8 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { addWSListener } from "../ws";
 import { apiFetch } from "../api";
-import { LogOut, LayoutDashboard, Users, Inbox, Bell, CheckCheck, FlaskConical, History, BarChart3 } from "lucide-react";
+import { LogOut, LayoutDashboard, Users, Inbox, Bell, CheckCheck, FlaskConical, History, BarChart3, KeyRound } from "lucide-react";
+import ChangePasswordModal from "./ChangePasswordModal";
 
 const NAV = {
   sales: [
@@ -45,6 +46,7 @@ export default function Layout({ children }) {
 
   const [notifs, setNotifs]       = useState([]);
   const [bellOpen, setBellOpen]   = useState(false);
+  const [pwOpen, setPwOpen]       = useState(false);
   const bellRef                   = useRef(null);
 
   const unread = notifs.filter(n => !n.is_read).length;
@@ -213,6 +215,16 @@ export default function Layout({ children }) {
           )}
         </div>
 
+        <button onClick={() => setPwOpen(true)} style={{
+          display: "flex", alignItems: "center", gap: 10,
+          margin: "0 1rem 0.5rem", padding: "0.6rem 0.75rem",
+          background: "transparent", border: "1px solid rgba(255,255,255,0.2)",
+          borderRadius: 8, color: "#99F6E4", cursor: "pointer",
+          fontSize: 14, transition: "all 150ms ease",
+        }}>
+          <KeyRound size={16} /> Change password
+        </button>
+
         <button onClick={handleLogout} style={{
           display: "flex", alignItems: "center", gap: 10,
           margin: "0 1rem", padding: "0.6rem 0.75rem",
@@ -228,6 +240,8 @@ export default function Layout({ children }) {
       <main style={{ marginLeft: 220, flex: 1, padding: "2rem", background: "#F0FDFA", minHeight: "100vh" }}>
         {children}
       </main>
+
+      {pwOpen && <ChangePasswordModal onClose={() => setPwOpen(false)} />}
     </div>
   );
 }
