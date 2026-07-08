@@ -42,22 +42,25 @@ def seed():
                  password_hash=hash_pw("sales123"), role=UserRole.sales)
     prathmesh = User(name="Prathmesh Kant", email="prathmesh@upjao.ai",
                      password_hash=hash_pw("sales123"), role=UserRole.sales)
-    product1 = User(name="Ananya Singh", email="ananya@upjao.com",
+    # ── Product team (real people) — var names kept to avoid churn ──
+    product1 = User(name="Ritu Mishra", email="ritu@upjao.ai",   # Owner
                     password_hash=hash_pw("product123"), role=UserRole.product)
-    product2 = User(name="Dev Patel", email="dev@upjao.com",
+    product2 = User(name="Pramod Swain", email="pramod@upjao.ai",
                     password_hash=hash_pw("product123"), role=UserRole.product)
-    sindhuja = User(name="Sindhuja", email="sindhuja@upjao.com",
+    sindhuja = User(name="Sindhuja Devaraju", email="sindhuja@upjao.ai",
                      password_hash=hash_pw("product123"), role=UserRole.product)
-    hemali = User(name="Hemali", email="hemali@upjao.com",
-                  password_hash=hash_pw("product123"), role=UserRole.product)
-    # Tech / ML-engineering team — owns model training, formula fixes, deploys
-    tech1 = User(name="Pranav Asthana", email="pranav@upjao.com",
+    # ── Tech / ML-engineering team — owns model training, formula fixes, deploys ──
+    tech1 = User(name="Hemali Shah", email="hemali@upjao.ai",
                  password_hash=hash_pw("tech123"), role=UserRole.tech)
-    tech2 = User(name="Pramod Swain", email="pramod@upjao.com",
+    tech2 = User(name="Harsha", email="harsha@upjao.ai",
+                 password_hash=hash_pw("tech123"), role=UserRole.tech)
+    komal = User(name="Komal", email="komal@upjao.ai",
+                 password_hash=hash_pw("tech123"), role=UserRole.tech)
+    tarun = User(name="Tarun", email="tarun@upjao.ai",
                  password_hash=hash_pw("tech123"), role=UserRole.tech)
 
     db.add_all([admin, sales1, sales2, siddhi, pratamesh, nirja, prathmesh,
-                product1, product2, sindhuja, hemali, tech1, tech2])
+                product1, product2, sindhuja, tech1, tech2, komal, tarun])
     db.flush()
 
     priya, ravi = sales1, sales2  # readable aliases used in later demo leads
@@ -764,8 +767,8 @@ def seed():
     db.commit()
     print("✓ Seed complete.")
     print(f"  Sales   : sahadevsinh@ / satish@ / moksha@ / nitesh@ / nirja@ / prathmesh@ (upjao.ai, sales123)")
-    print(f"  Product : ananya@ / dev@ / sindhuja@ / hemali@   (product123)")
-    print(f"  Tech    : pranav@ / pramod@                      (tech123)")
+    print(f"  Product : ritu@ / pramod@ / sindhuja@            (upjao.ai, product123)")
+    print(f"  Tech    : hemali@ / harsha@ / komal@ / tarun@    (upjao.ai, tech123)")
     print(f"  Admin   : admin@upjao.com                        (admin123)")
     print(f"  Leads   : 15 total — covering new/active/idle/won/lost/dropped statuses")
     print(f"  Tickets : analysis_request, sample_request, general, new_commodity, new_variety, "
