@@ -101,6 +101,11 @@ for _t in BUILDABLE_TYPES:
 TRANSITION_ROLES[(TicketType.tech_request, "New", "In Progress")] = [UserRole.tech]
 TRANSITION_ROLES[(TicketType.tech_request, "In Progress", "Done")] = [UserRole.tech]
 
+# Analysis requests are Product's work end-to-end (Sales only raises them).
+TRANSITION_ROLES[(TicketType.analysis_request, "New", "Accepted")]            = [UserRole.product]
+TRANSITION_ROLES[(TicketType.analysis_request, "Accepted", "AI Analysing")]   = [UserRole.product]
+TRANSITION_ROLES[(TicketType.analysis_request, "AI Analysing", "Done")]       = [UserRole.product]
+
 TERMINAL_STATUSES = {"Done", "Received", "Closed", "Rejected", "Approved", "Resolved"}
 
 # Statuses that count as "open" for queue/lead-status logic
