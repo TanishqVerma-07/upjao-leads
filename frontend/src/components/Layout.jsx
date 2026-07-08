@@ -113,7 +113,7 @@ export default function Layout({ children }) {
         position: "fixed", top: 0, left: 0, bottom: 0,
       }}>
         <div style={{ padding: "0 1.25rem 1.5rem", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
-          <div style={{ fontSize: 18, fontWeight: 700, color: "#5EEAD4" }}>Upjao Leads</div>
+          <div style={{ fontSize: 18, fontWeight: 700, color: "#5EEAD4" }}>Upjao Flow</div>
           <div style={{ fontSize: 12, color: "#99F6E4", marginTop: 2, textTransform: "capitalize" }}>
             {user?.name} · {user?.role}
           </div>

@@ -48,7 +48,7 @@ export default function LoginPage() {
         border: "1px solid #99F6E4",
       }}>
         <div style={{ marginBottom: "2rem" }}>
-          <div style={{ fontSize: 22, fontWeight: 800, color: "#134E4A" }}>Upjao Leads</div>
+          <div style={{ fontSize: 22, fontWeight: 800, color: "#134E4A" }}>Upjao Flow</div>
           <div style={{ fontSize: 14, color: "#6B7280", marginTop: 4 }}>Sign in to your account</div>
         </div>
 

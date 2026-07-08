@@ -11,7 +11,7 @@ from app.routers.ws_router import router as ws_router
 from app.scheduler import start_scheduler, stop_scheduler
 from app.ws import manager
 
-app = FastAPI(title="Upjao Leads API", version="0.1.0")
+app = FastAPI(title="Upjao Flow API", version="0.1.0")
 
 app.add_middleware(
     CORSMiddleware,
