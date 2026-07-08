@@ -27,14 +27,21 @@ def seed():
     # ── Users ──────────────────────────────────────────────────────────────────
     admin = User(name="Admin User", email="admin@upjao.com",
                  password_hash=hash_pw("admin123"), role=UserRole.admin)
-    sales1 = User(name="Priya Sharma", email="priya@upjao.com",
+    # ── Sales team (real people) ──
+    sales1 = User(name="Sahadevsinh Vaghela", email="sahadevsinh@upjao.ai",
                   password_hash=hash_pw("sales123"), role=UserRole.sales)
-    sales2 = User(name="Ravi Kumar", email="ravi@upjao.com",
+    sales2 = User(name="Satish Kumar", email="satish@upjao.ai",
                   password_hash=hash_pw("sales123"), role=UserRole.sales)
-    siddhi = User(name="Siddhi Rao", email="siddhi@upjao.com",
+    # var kept as `siddhi` to avoid churn — this account belongs to moksha
+    siddhi = User(name="moksha nanavati", email="moksha@upjao.ai",
                   password_hash=hash_pw("sales123"), role=UserRole.sales)
-    pratamesh = User(name="Pratamesh", email="pratamesh@upjao.com",
+    # var kept as `pratamesh` — this account belongs to Nitesh
+    pratamesh = User(name="Nitesh Rana", email="nitesh@upjao.ai",
                       password_hash=hash_pw("sales123"), role=UserRole.sales)
+    nirja = User(name="Nirja Chaudhari", email="nirja@upjao.ai",
+                 password_hash=hash_pw("sales123"), role=UserRole.sales)
+    prathmesh = User(name="Prathmesh Kant", email="prathmesh@upjao.ai",
+                     password_hash=hash_pw("sales123"), role=UserRole.sales)
     product1 = User(name="Ananya Singh", email="ananya@upjao.com",
                     password_hash=hash_pw("product123"), role=UserRole.product)
     product2 = User(name="Dev Patel", email="dev@upjao.com",
@@ -49,7 +56,7 @@ def seed():
     tech2 = User(name="Pramod Swain", email="pramod@upjao.com",
                  password_hash=hash_pw("tech123"), role=UserRole.tech)
 
-    db.add_all([admin, sales1, sales2, siddhi, pratamesh,
+    db.add_all([admin, sales1, sales2, siddhi, pratamesh, nirja, prathmesh,
                 product1, product2, sindhuja, hemali, tech1, tech2])
     db.flush()
 
@@ -756,7 +763,7 @@ def seed():
 
     db.commit()
     print("✓ Seed complete.")
-    print(f"  Sales   : priya@ / ravi@ / siddhi@ / pratamesh@  (sales123)")
+    print(f"  Sales   : sahadevsinh@ / satish@ / moksha@ / nitesh@ / nirja@ / prathmesh@ (upjao.ai, sales123)")
     print(f"  Product : ananya@ / dev@ / sindhuja@ / hemali@   (product123)")
     print(f"  Tech    : pranav@ / pramod@                      (tech123)")
     print(f"  Admin   : admin@upjao.com                        (admin123)")
